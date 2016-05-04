@@ -1,2 +1,2 @@
-# OleksiiKhivrenko.github.io
-Goit/frontend
+# GOIT/FRONTEND
+
