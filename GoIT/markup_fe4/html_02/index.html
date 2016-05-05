@@ -6,91 +6,126 @@
 
     <style>
 
-      img {
-        width: 250px;
-        height: 190px;
-      }
+    body{
+      background-color: lightgray;
+    }
 
-      div {
-        width: 610px;   /* ширина */
-        height: 1069px; /* высота */
-        padding: 51px 80px 30px 80px; /* внутренние отступы - верх, право, низ, лево */
-        margin: auto;  /* выравнивание по центру */
-        box-shadow: 0px 0.1px 0.1px; /* небольшая тень для объемности */
-        background-color: white;  /* цвет фона в блоке */
-         /* нужный шрифт */
-      }
+    .main{
+      width: 610px;   /* ширина */
+      height: 1069px; /* высота */
+      padding: 51px 80px 30px 80px; /* внутренние отступы - верх, право, низ, лево */
+      margin: auto;  /* выравнивание по центру */
+      border: 1px ridge grey; /*ширина, тип рамки: dotted, dashed, solid, double, groove, ridge, inset, outset*/
+      background-color: white;  /* цвет фона в блоке */
+      -webkit-box-shadow: 0px 0px 41px -4px rgba(0,0,0,1);
+      -moz-box-shadow: 0px 0px 41px -4px rgba(0,0,0,1);
+      box-shadow: 0px 0px 41px -4px rgba(0,0,0,1);
+    }
 
-      p {
-        font-size: 26px;
-      }
+    .top, .part2, .part3{
+      padding: 10px 0px 0px 0px;
+      border-bottom: solid 1px grey;
+    }
 
-      .text {
+    .bottom{
+      padding: 10px 0px 0px 0px;
+    }
+
+    .photo {
+      width: 250px;
+      height: 190px;
+    }
+
+    .list {
+      font-size: 25px;
+      line-height: 1.5;
+      margin-left: 10px;
+      margin-top: 45px;
+      margin-bottom: 20px;
+    }
+
+      .text, .text1 {
           font-size: 27px;
-          line-height: 2.5;
+          margin-left: 20px;
       }
 
       .text2 {
+          margin-bottom: 0px;
           font-size: 27px;
-          line-height: 1.5;
+          margin-left: 20px;
       }
 
-      .frontend {
-        font-size: 27px;
-        line-height: 1.5;
-        margin-left: 10px;
+      .text3 {
+          margin-top: 10px;
+          font-size: 27px;
+          margin-left: 20px;
       }
 
     </style>
 
   </head>
+
   <body>
 
+    <div class="main">
 
-    <div>
-      <center>
-        <h1>Иванов Иван Иванович</h1>
-        <img src="http://cs9445.userapi.com/u10326294/107077060/x_c914df6e.jpg" alt="loading.." />
-      </center>
+      <div class="top">
 
-      <p>
-        &nbsp;&nbsp;&nbsp; Менеджер по бизнес-администрированию
-      </p>
+          <center>
+            <h1>Хивренко Алексей Валерьевич</h1>
+            <img class="photo" src="http://cs9445.userapi.com/u10326294/107077060/x_c914df6e.jpg" alt="loading.." />
+          </center>
 
-        <hr>
+          <p class="text">
+            Менеджер по бизнес-администрированию
+          </p>
 
-        <p class="text">
-          &nbsp;&nbsp;&nbsp; Хочу учить фронтенд, потому что:
+      </div>
+
+      <div class="part2">
+
+        <p class="text1">
+          Хочу учить фронтенд, потому что:
         </p>
 
-        <ul class="frontend">
+        <ul class="list">
           <li>Хочу заняться чем-то интересным</li>
           <li>Востребованная проффесия</li>
           <li>З\П</li>
         </ul>
 
-        <hr>
+      </div>
+
+      <div class="part3">
 
         <p class="text2">
-          &nbsp;&nbsp;&nbsp; Мой контактный телефон:<br>
-          &nbsp;&nbsp;&nbsp; +380507347964
+          Мой контактный телефон:
         </p>
 
-
+        <p class="text3">
+          +380507347964
+        </p>
 
         <p class="text2">
-          &nbsp;&nbsp;&nbsp; Мой профиль вк:<br>
-          &nbsp;&nbsp;&nbsp;
+          Мой профиль вк:
+        </p>
+
+        <p class="text3">
           <a href="https://vk.com/alexeykhivrenko" target="_blank">https://vk.com/alexeykhivrenko</a>
         </p>
 
-        <hr>
+      </div>
+
+      <div class="bottom">
 
         <p class="text2">
-          &nbsp;&nbsp;&nbsp; Мой фидбек:<br>
-          &nbsp;&nbsp;&nbsp;
-          Забор строить вам не буду :)
-        </p>
+        Мой фидбек:
+      </p>
+      <p class="text3">
+        Забор строить вам не буду :)
+      </p>
+
+      </div>
 
     </div>
 
