@@ -1,0 +1,191 @@
+    * {
+        margin: 0;
+        padding: 0;
+     }
+
+    body {
+        background-color: whitesmoke;
+     }
+
+    #wrapper {
+        background-color: white;
+        box-shadow: 0 0 5px 1px rgba(137, 169, 171, 1);
+        height: 1000px;
+        margin: auto;
+        width: 1060px;
+     }
+
+    header {
+        height: 150px;
+        padding: 40px 40px 0;
+     }
+
+     .image_header {
+        margin: 0 0 60px 0;
+     }
+
+    .links_header{
+      line-height: 0;
+      letter-spacing: -1px;
+      background-image: linear-gradient(#4F4F4F, #363636, #4F4F4F);
+      font-size: 14.67px;
+      text-decoration: none;
+      display: flex;
+      list-style-type: none;
+      }
+
+    .links_header a{
+      text-decoration: none;
+      }
+
+    .Glavnaya_header a{
+      padding: 22px 50px 22px 50px; /* Отступ от рамки вокруг ссылки до текста */
+      display: inline-block; /* Ссылка как блочный элемент */
+      }
+
+    .Tovaru_header a{
+      display: inline-block; /* Ссылка как блочный элемент */
+      padding: 22px 35px 22px 35px;
+    }
+
+    .O_nas_header a{
+      display: inline-block;
+      padding: 22px 60px 22px 60px;
+    }
+
+    .Kontaktu_header a{
+      display: inline-block;
+      padding: 22px 60px 22px 60px;
+      text-decoration: none;
+    }
+
+    .links_header a:hover { /*когда наводишь курсор*/
+        color:white; /* Цвет текста активного пункта */
+        background-color: #2a2a2a;/* Цвет фона активного пункта */
+        border-right: 1px solid #fff; /* Маскируем рамку вокруг ссылки */
+        border-left: 1px solid #fff; /* Маскируем рамку вокруг ссылки */
+        text-decoration: none;
+      }
+
+    .links_header a:link {  /*непосещенная ссылка*/
+          color: white;
+          text-decoration: none;
+       }
+
+    .links_header a:visited { /*посещенная ссылка*/
+         color: white;
+         text-decoration: none;
+       }
+
+       main {
+
+         height: 600px;
+         padding: 40px 40px;
+       }
+
+       .main_block {
+        height: 300px;
+        width: 980px;
+      }
+
+
+        .links_main {
+      width: 250px; /* Ширина меню */
+      list-style: none; /* Для списка убираем маркеры */
+      font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+      font-size: 10pt; /* Размер названий в пункте меню */
+     }
+
+     .main_menu {
+      display: block; /* Ссылка как блочный элемент */
+      padding: 15px 30px; /* Поля вокруг надписи */
+      text-decoration: none; /* Подчеркивание у ссылок убираем */
+      color: #666; /* Цвет текста */
+      border: 1px solid #ccc;/* Рамка вокруг пунктов меню */
+      background-color: white; /* Цвет фона */
+     }
+
+     .main_menu:hover {
+      color: black; /* Цвет текста активного пункта */
+      background-color: #eae5ed; /* Цвет фона активного пункта */
+      padding: 15px 40px;
+     }
+
+     .main_menu:hover ul {
+      display: block; /* При выделении пункта курсором мыши отображается подменю */
+     }
+
+     .main_block{
+       clear:both;
+     }
+
+      .block1{
+        float:left;
+      }
+
+      .content{
+        float:right;
+      }
+
+      .text{
+        width: 678px;
+        margin: 150px 0 0 300px;
+      }
+
+
+       footer {
+        padding: 0 40px;
+       }
+
+       .links_footer{
+         line-height: 0;
+         letter-spacing: -1px;
+         background: #a3a6a4;
+         font-size: 14px;
+         display: flex;
+         list-style-type: none;
+         }
+
+       .Glavnaya_footer a{
+         display: inline-block;
+         padding: 15px 50px 15px 50px; /* Отступ от рамки вокруг ссылки до текста */
+         text-decoration: none;
+         }
+
+       .Tovaru_footer a{
+         display: inline-block; /* Ссылка как блочный элемент */
+         padding: 15px 35px 15px 35px;
+         text-decoration: none;
+       }
+
+       .O_nas_footer a{
+         display: inline-block;
+         padding: 15px 60px 15px 60px;
+         text-decoration: none;
+       }
+
+       .Kontaktu_footer a{
+         display: inline-block;
+         padding: 15px 60px 15px 60px;
+         text-decoration: none;
+       }
+
+       .copy p {
+         display: inline-block;
+         padding: 15px 0px 15px 280px;
+         align: right;
+       }
+
+       .links_footer a:hover { /*когда наводишь курсор*/
+           color:black; /* Цвет текста активного пункта */
+           text-decoration: underline;
+         }
+
+       .links_footer a:link {  /*непосещенная ссылка*/
+             color: black;
+          }
+
+       .links_footer a:visited { /*посещенная ссылка*/
+            color: black;
+            text-decoration: underline;
+          }
