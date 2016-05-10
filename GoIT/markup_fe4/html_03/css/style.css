@@ -27,7 +27,7 @@
     .links_header{
       line-height: 0;
       letter-spacing: -1px;
-      background-image: linear-gradient(#4F4F4F, #363636, #4F4F4F);
+      background: -moz-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
       font-size: 14.67px;
       text-decoration: none;
       display: flex;
@@ -36,6 +36,9 @@
 
     .links_header a{
       text-decoration: none;
+      text-align:center;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
       }
 
     .Glavnaya_header a{
@@ -59,12 +62,15 @@
       text-decoration: none;
     }
 
+
     .links_header a:hover { /*когда наводишь курсор*/
         color:white; /* Цвет текста активного пункта */
         background-color: #2a2a2a;/* Цвет фона активного пункта */
         border-right: 1px solid #fff; /* Маскируем рамку вокруг ссылки */
         border-left: 1px solid #fff; /* Маскируем рамку вокруг ссылки */
         text-decoration: none;
+
+
       }
 
     .links_header a:link {  /*непосещенная ссылка*/
