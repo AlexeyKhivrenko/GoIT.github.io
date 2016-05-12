@@ -1,5 +1,5 @@
 .background{
-  min-height: 100%;
+ display:block;
 }
 
 .background_1st{
@@ -27,16 +27,17 @@
   position: absolute;
   width: 100%;
   top:138px;
-  height: 852px;
+  height: 200%;
+  background-size:cover;
   background: -webkit-repeating-linear-gradient(top, #3ebdcf, #198db8); /* Safari 5.1 - 6.0 */
   background: -o-repeating-linear-gradient(top, #3ebdcf, #198db8); /* Opera 11.1 - 12.0 */
   background: -moz-repeating-linear-gradient(top, #3ebdcf, #198db8); /* Firefox 3.6 - 15 */
   background: repeating-linear-gradient(top, #3ebdcf, #198db8); /* Стандартный синтаксис */
   z-index: 3;
-
 }
 
 #wrapper{
+  min-height: 1000px;
   background-color: white;
   -webkit-box-shadow: 0px 1px 6px 1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 1px 6px 1px rgba(0,0,0,1);
@@ -45,9 +46,8 @@
   left: 50%;
   margin-left: -500px;
   width: 1000px;
-  height: 960px;
+  height: 1007px;
   z-index: 4;
-  min-height: 90%
 }
 
  header{
@@ -145,9 +145,6 @@
     border-bottom: 1px solid rgb(144, 225, 255);
   }
 
-  .panel_menu{
-
-  }
 
   #navigation{
     position: absolute;
@@ -166,8 +163,6 @@
     margin-right: -3px;
     margin-left: -3px;
     padding: 4px 41px 4px 41px;
-
-
   }
 
   #navigation > li > a{ /*стилизируем наши ссылки*/
@@ -238,7 +233,7 @@
 aside {
   padding-top: 30px;
 	width: 1000px;
-  height: 553px;
+  height: 1000px;
 	overflow: hidden; /* чтобы лишее обрезалось */
 	}
 
@@ -246,7 +241,7 @@ aside {
 	width: 25%;
 	float: left;
 	background: #E8E8E8;
-  height: 554px;
+  height: 600px;
   overflow:auto;
 
 	}
@@ -260,7 +255,7 @@ aside {
 	width: 50%;
 	float: left;
 	background: Snow2;
-  height: 554px;
+  height: 600px;
   overflow:auto;
 	}
 
@@ -272,7 +267,7 @@ aside {
     width: 25%;
   	float: left;
   	background: #E8E8E8;
-    height: 554px;
+    height: 600px;
     overflow:auto;
 	}
 
