@@ -27,8 +27,8 @@
   position: absolute;
   width: 100%;
   top:138px;
-  height: 200%;
-  background-size:cover;
+  height: 120%;
+  background: cover;
   background: -webkit-repeating-linear-gradient(top, #3ebdcf, #198db8); /* Safari 5.1 - 6.0 */
   background: -o-repeating-linear-gradient(top, #3ebdcf, #198db8); /* Opera 11.1 - 12.0 */
   background: -moz-repeating-linear-gradient(top, #3ebdcf, #198db8); /* Firefox 3.6 - 15 */
@@ -233,7 +233,7 @@
 aside {
   padding-top: 30px;
 	width: 1000px;
-  height: 1000px;
+  height: 600px;
 	overflow: hidden; /* чтобы лишее обрезалось */
 	}
 
