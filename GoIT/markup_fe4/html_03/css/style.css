@@ -27,7 +27,11 @@
     .links_header{
       line-height: 0;
       letter-spacing: -1px;
+      background: -webkit-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
       background: -moz-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+      background: -o-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+      background: -ms-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+      background: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
       font-size: 14.67px;
       text-decoration: none;
       display: flex;
@@ -95,7 +99,7 @@
       }
 
 
-        .links_main {
+      .links_main {
       width: 250px; /* Ширина меню */
       list-style: none; /* Для списка убираем маркеры */
       font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
@@ -109,6 +113,11 @@
       color: #666; /* Цвет текста */
       border: 1px solid #ccc;/* Рамка вокруг пунктов меню */
       background-color: white; /* Цвет фона */
+      border-bottom: transparent;
+     }
+
+     .Autot{
+         border-bottom:1px solid #ccc;
      }
 
      .main_menu:hover {
