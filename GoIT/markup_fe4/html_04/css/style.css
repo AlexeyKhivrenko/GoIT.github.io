@@ -161,11 +161,9 @@ z-index: 7;
 
   main{
     height: 237px;
-    border-bottom: 1px solid rgb(144, 225, 255);
   }
 
   #navigation{
-    position: absolute;
     -webkit-box-shadow: 0px 2px 8px 2px rgba(0,0,0,1);
     -moz-box-shadow: 0px 2px 8px 2px rgba(0,0,0,1);
     box-shadow: 0px 2px 8px 2px rgba(0,0,0,1);
@@ -174,6 +172,8 @@ z-index: 7;
     float: left;
     display:block;
     background: rgba(32, 32, 32, 0.9);
+    border-top: 1px solid rgb(161, 195, 208);
+    position: absolute;
   }
 
   #navigation > li{ /*стилизируем разделы меню*/
@@ -181,6 +181,7 @@ z-index: 7;
     margin-right: -3px;
     margin-left: -3px;
     padding: 4px 41px 4px 41px;
+    position: relative;
   }
 
   #navigation > li > a{ /*стилизируем наши ссылки*/
@@ -191,34 +192,38 @@ z-index: 7;
   }
 
   #navigation > li > ul{ /*стили для скрытого выпадающего меню*/
-    position:absolute;
     display: none;
-    background: rgba(32, 32, 32, 1);
+    background: rgba(32, 32, 32, 0.9);
     -webkit-box-shadow: 0px 15px 30px -2px rgba(0,0,0,1);
     -moz-box-shadow: 0px 15px 30px -2px rgba(0,0,0,1);
     box-shadow: 0px 15px 30px -2px rgba(0,0,0,1);
     color: white;
-    font: Tahoma;
+    font-style: Tahoma;
   }
 
   #navigation > li:hover > ul {
+    position:absolute;
     display:block;
-    top: 30px;
+    top:25px;
+    padding-top: 30px;
   }
 
   #navigation > li:hover > .podrazdel_pytewestvie{
   margin-left: -16px;
-  padding: 0 40px 10px 20px;
+  padding: 6px 40px 10px 20px;
+
   }
 
   #navigation > li:hover > .podrazdel_yslygi{
     margin-left: -30px;
-    padding: 0 40px 10px 20px;
+    padding: 6px 40px 10px 20px;
+
   }
 
   #navigation > li:hover > .podrazdel_partneram{
     margin-left: -20px;
-    padding: 0 40px 10px 20px;
+    padding: 6px 40px 10px 20px;
+
   }
 
   #navigation > li:hover > ul > li > a{
