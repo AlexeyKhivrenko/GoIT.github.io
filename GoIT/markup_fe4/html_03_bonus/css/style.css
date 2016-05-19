@@ -8,7 +8,7 @@ body{
 }
 
 #wrapper{
-  width: 820px;
+  width: 850px;
   height: 750px;
   margin: 0 auto;
 }
@@ -48,8 +48,20 @@ header{
   margin-bottom: 60px;
 }
 
+.verx > li > p{
+  color: white;
+  text-align: center;
+  margin-top: -7px;
+}
+
 .niz > li{
   display: inline-block;
+}
+
+.niz > li > p{
+  color: white;
+  text-align: center;
+  margin-top: -7px;
 }
 
 footer > p{
