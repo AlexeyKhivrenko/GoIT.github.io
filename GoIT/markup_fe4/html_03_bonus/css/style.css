@@ -1,0 +1,60 @@
+body{
+  background: url(../img/background.png) no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* Современные браузеры */
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+#wrapper{
+  width: 820px;
+  height: 750px;
+  margin: 0 auto;
+}
+
+header{
+  height: 145px;
+}
+
+.asia{
+  position: absolute;
+}
+
+.contacts{
+  width: 140px;
+  color: white;
+  margin-left: 688px;
+  padding-top: 85px;
+  font-size: 10px;
+}
+
+.contacts > p:first-child{
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+.contacts > a{
+  text-decoration: none;
+  color: white;
+}
+
+.contacts > a:visited{
+  color: white;
+}
+
+.verx > li{
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.niz > li{
+  display: inline-block;
+}
+
+footer > p{
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 130px;
+}
