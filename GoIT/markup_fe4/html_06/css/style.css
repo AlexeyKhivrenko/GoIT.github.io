@@ -1,0 +1,162 @@
+#wrapper
+{
+    font-size: 10.94px;
+    font-style: Arial, Tahoma, sans-serif;
+
+    width: 1000px;
+    height: 1310px;
+    margin: 0 auto;
+
+    border: 1px solid black;
+}
+
+header
+{
+    height: 291px;
+    padding: 0 46px;
+
+    border: 1px solid black;
+}
+
+.header_top
+{
+    height: 54px;
+
+    border: 1px solid black;
+}
+
+.telephone > img
+{
+    float: left;
+
+    margin-top: 23px;
+    margin-left: 8px;
+}
+
+.telephone > p
+{
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+
+    float: left;
+
+    padding-top: 25px;
+    padding-left: 5px;
+
+    color: #999;
+}
+
+/*блок для вводных данных*/
+.login
+{
+    float: right;
+
+    width: 520px;
+    height: 30px;
+    margin-top: 12px;
+    padding-top: 5px;
+    margin-right: 100px;
+
+    border: 1px solid black;
+    border-radius: 3px;
+    background: linear-gradient(to top, rgb(13, 51, 88), rgb(28, 97, 128));
+}
+
+.login > img
+{
+    float: left;
+
+    height: 18px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-right: 3px;
+    padding-left: 8px;
+}
+
+.login_data > input[type=text]
+{
+    font-size: 10.91px;
+
+    float: left;
+
+    height: 18px;
+    margin-right: 6px;
+    padding-left: 6px;
+    /*поле логина*/
+
+    weight: 115px;
+}
+
+.login_data > input[type=password]
+{
+    font-size: 10.91px;
+
+    float: left;
+
+    height: 18px;
+    padding-left: 6px;
+    /*поле пароля*/
+
+    weight: 115px;
+}
+
+.login_data > input[type=submit]
+{
+    font-size: 10.91px;
+    font-style: Arial, Tahoma, sans-serif;
+
+    float: left;
+
+    margin-top: 4px;
+    margin-left: 8px;
+
+    color: white;
+    border: none;
+    background: none;
+}
+
+.login_data > .line
+{
+    float: left;
+
+    padding-top: 3px;
+}
+
+.login_data > div > span
+{
+    margin: 0 3px;
+    padding-top: 200px;
+    padding-top: 3px;
+
+    color: white;
+}
+
+
+.login_data > .registr
+{
+    padding-top: 4px;
+    float: left;
+}
+
+.login_data > .registr > a
+{
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 10.91px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+.login_data > .password_forgot
+{
+
+    padding-top: 3px;
+}
+
+.login_data > .password_forgot > a{
+    padding-left: 21px;
+    color: grey;
+    font-style: Arial, Tahoma, sans-serif;
+    font-size: 11px;
+}
