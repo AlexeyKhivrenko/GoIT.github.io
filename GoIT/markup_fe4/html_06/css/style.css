@@ -1,162 +1,1029 @@
 #wrapper
 {
+    font-family: Arial, Tahoma, sans-serif;
     font-size: 10.94px;
-    font-style: Arial, Tahoma, sans-serif;
 
     width: 1000px;
     height: 1310px;
     margin: 0 auto;
-
-    border: 1px solid black;
 }
 
 header
 {
     height: 291px;
     padding: 0 46px;
-
-    border: 1px solid black;
 }
 
 .header_top
 {
-    height: 54px;
-
-    border: 1px solid black;
+    height: 53px;
 }
 
 .telephone > img
 {
     float: left;
 
-    margin-top: 23px;
-    margin-left: 8px;
+    margin-top: 22px;
+    margin-left: 5.2px;
 }
 
 .telephone > p
 {
-    font-family: Arial, sans-serif;
-    font-size: 17px;
+    font-family: Arial;
+    font-size: 17.9px;
 
     float: left;
 
-    padding-top: 25px;
-    padding-left: 5px;
+    padding-top: 22.5px;
+    padding-left: 3.2px;
 
-    color: #999;
+    letter-spacing: .5px;
+
+    color: #595959;
 }
 
 /*блок для вводных данных*/
 .login
 {
-    float: right;
+    float: left;
 
-    width: 520px;
-    height: 30px;
-    margin-top: 12px;
-    padding-top: 5px;
-    margin-right: 100px;
+    width: 495.4px;
+    height: 25.1px;
+    margin-top: 18.3px;
+    margin-left: 15.6px;
 
-    border: 1px solid black;
     border-radius: 3px;
     background: linear-gradient(to top, rgb(13, 51, 88), rgb(28, 97, 128));
+    -webkit-box-shadow: 10px 10px 13px -8px rgba(0,0,0,1);
+       -moz-box-shadow: 10px 10px 13px -8px rgba(0,0,0,1);
+            box-shadow: 10px 10px 13px -8px rgba(0,0,0,1);
 }
 
 .login > img
 {
     float: left;
 
-    height: 18px;
-    padding-top: 3px;
-    padding-right: 3px;
-    padding-right: 3px;
-    padding-left: 8px;
+    width: 14px;
+    height: 19px;
+    margin-top: 3.4px;
+    margin-left: 6.8px;
 }
 
 .login_data > input[type=text]
 {
-    font-size: 10.91px;
+    font-family: Arial;
+    font-size: 10.6px;
 
     float: left;
 
-    height: 18px;
-    margin-right: 6px;
-    padding-left: 6px;
-    /*поле логина*/
+    width: 107.6px;
+    height: 15px;
+    margin-top: 2.4px;
+    margin-left: 4.7px;
+    padding-left: 3.4px;
 
-    weight: 115px;
+    letter-spacing: .45px;
+
+    border: 1px solid #ccc;
+    border-radius: 1px;
 }
 
 .login_data > input[type=password]
 {
-    font-size: 10.91px;
+    font-family: Arial;
+    font-size: 10.6px;
 
     float: left;
 
-    height: 18px;
-    padding-left: 6px;
-    /*поле пароля*/
+    width: 107.6px;
+    height: 15px;
+    margin-top: 2.4px;
+    margin-left: 8px;
+    padding-left: 3.4px;
 
-    weight: 115px;
+    letter-spacing: .4px;
+
+    border: 1px solid #ccc;
+    border-radius: 1px;
 }
+
+
+input[type=text]:focus::-webkit-input-placeholder
+{
+    opacity: 0;
+}/* webkit */
+input[type=text]:focus::-moz-placeholder
+{
+    opacity: 0;
+}/* Firefox 19+ */
+input[type=text]:focus:-moz-placeholder
+{
+    opacity: 0;
+}/* Firefox 18- */
+input[type=text]:focus:-ms-input-placeholder
+{
+    opacity: 0;
+}/* IE */
+input[type=password]:focus::-webkit-input-placeholder
+{
+    opacity: 0;
+}/* webkit */
+input[type=password]:focus::-moz-placeholder
+{
+    opacity: 0;
+}/* Firefox 19+ */
+input[type=password]:focus:-moz-placeholder
+{
+    opacity: 0;
+}/* Firefox 18- */
+input[type=password]:focus:-ms-input-placeholder
+{
+    opacity: 0;
+}/* IE */
 
 .login_data > input[type=submit]
 {
-    font-size: 10.91px;
-    font-style: Arial, Tahoma, sans-serif;
+    font-size: 11.01px;
 
     float: left;
 
-    margin-top: 4px;
-    margin-left: 8px;
+    margin-top: 6.1px;
+    margin-left: 7.6px;
+
+    letter-spacing: .4px;
 
     color: white;
     border: none;
     background: none;
 }
 
-.login_data > .line
+.line
 {
     float: left;
 
-    padding-top: 3px;
+    margin-top: 5.9px;
+    margin-left: 5.2px;
 }
 
-.login_data > div > span
+.line > span
 {
-    margin: 0 3px;
-    padding-top: 200px;
-    padding-top: 3px;
-
     color: white;
 }
 
 
-.login_data > .registr
+.registr
 {
-    padding-top: 4px;
     float: left;
+
+    margin-top: 6.2px;
+    margin-left: 4px;
 }
 
-.login_data > .registr > a
+.registr > a
+{
+    font-size: 11.41px;
+
+    text-decoration: none;
+    letter-spacing: .2px;
+
+    color: white;
+}
+
+.password_forgot
+{
+    float: left;
+
+    margin-top: 6.1px;
+    margin-left: 20.5px;
+}
+
+.password_forgot > a
 {
     font-family: Arial, Tahoma, sans-serif;
-    font-size: 10.91px;
+    font-size: 11.2px;
+
+    text-decoration: none;
+    letter-spacing: .9px;
+
+    color: rgb(193, 191, 192);
+    border-bottom: 1px solid rgb(193, 191, 192);
+}
+
+.menu_right_top
+{
+    float: left;
+
+    width: 74.4px;
+    height: 18.2px;
+    margin-top: 20px;
+    margin-left: 16.4px;
+
+    border: 1px solid rgb(206, 212, 212);
+    border-radius: 11px;
+    -webkit-box-shadow: 0 10px 13px -8px rgba(0,0,0,1);
+       -moz-box-shadow: 0 10px 13px -8px rgba(0,0,0,1);
+            box-shadow: 0 10px 13px -8px rgba(0,0,0,1);
+}
+
+.menu_right_top > .img1
+{
+    margin-left: 8.7px;
+}
+
+.menu_right_top > .img2
+{
+    top: 1px;
+
+    margin-left: 4.5px;
+}
+
+
+.menu_right_top > .img3
+{
+    margin-left: 6.5px;
+}
+
+.menu_right_top > a > img
+{
+    margin-top: 1px;
+}
+
+.img_header
+{
+    height: 236.8px;
+    margin-top: 1px;
+    margin-left: -1.3px;
+
+    background: url(../img/img_zazor.png);
+}
+
+.menu
+{
+    height: 32px;
+    margin: 6.3px 43.8px;
+
+    border: 1px solid rgb(10, 16, 48);
+    border-radius: 4.3px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#464d53+1,0e0e0e+29,0e0e0e+29,0e0e0e+100 */
+    background: #464d53; /* Old browsers */
+    background:    -moz-linear-gradient(top,  #464d53 1%, #0e0e0e 29%, #0e0e0e 29%, #0e0e0e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #464d53 1%,#0e0e0e 29%,#0e0e0e 29%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+    background:         linear-gradient(to bottom,  #464d53 1%,#0e0e0e 29%,#0e0e0e 29%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-box-shadow: 3px 3px 10px 1px rgba(0,0,0,.5);
+       -moz-box-shadow: 3px 3px 10px 1px rgba(0,0,0,.5);
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,.5);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#464d53', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+}
+
+.menu_ul /*box для меню слева*/
+{
+    float: left;
+
+    margin-left: 126px;
+}
+
+.menu_ul > li /*элементы ула меню*/
+{
+    display: inline-block;
+
+    margin-top: 5px;
+}
+
+
+.menu_ul > li > a /*настр ссылочных элементов*/
+{
+    font-family: 'lucida_sans_unicoderegular'; /*подключил свой шрифт*/
+    font-size: 13.64px;
 
     text-decoration: none;
 
     color: white;
+    border-radius: 15px;
 }
 
-.login_data > .password_forgot
+.company > a
 {
-
-    padding-top: 3px;
+    padding: 2px 18.2px 2px 20px;
 }
 
-.login_data > .password_forgot > a{
-    padding-left: 21px;
-    color: grey;
-    font-style: Arial, Tahoma, sans-serif;
-    font-size: 11px;
+.payment > a
+{
+    margin-left: 4px;
+    padding: 2px 9px 2px 9px;
+}
+
+.delivery > a
+{
+    margin-left: 7px;
+    padding: 2px 12px 2px 12px;
+}
+
+.articles > a
+{
+    margin-left: 6.1px;
+    padding: 2px 9px 2px 9px;
+}
+
+.contacts > a
+{
+    margin-left: 1.6px;
+    padding: 2px 12px 2px 12px;
+}
+
+.company > a
+{
+    padding: 2px 18.2px 2px 20px;
+}
+
+.payment > a
+{
+    margin-left: 4px;
+    padding: 2px 9px 2px 9px;
+}
+
+.menu_ul > li > a:hover
+{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#25607a+0,0d3357+95,09233c+100 */
+    background: #25607a; /* Old browsers */
+    background:    -moz-linear-gradient(top,  #25607a 0%, #0d3357 95%, #09233c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #25607a 0%,#0d3357 95%,#09233c 100%); /* Chrome10-25,Safari5.1-6 */
+    background:         linear-gradient(to bottom,  #25607a 0%,#0d3357 95%,#09233c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25607a', endColorstr='#09233c',GradientType=0 ); /* IE6-9 */
+}
+
+.delivery > a:hover
+{
+    margin-left: 7px;
+    padding: 2px 12px 2px 12px;
+
+    background: none;
+}
+
+.articles > a:hover
+{
+    margin-left: 6.1px;
+    padding: 2px 9px 2px 9px;
+}
+
+.contacts > a:hover
+{
+    margin-left: 1.6px;
+    padding: 2px 12px 2px 12px;
+}
+
+.menu_ul_right /*менюшка справа под главн картинкой*/
+{
+    float: right;
+
+    width: 280px;
+    height: 35px;
+
+    color: white;
+}
+
+.menu_ul_right > li
+{
+    font-family: Arial, sans-serif;
+
+    display: inline-block;
+    float: left;
+}
+
+.korzina /*картинка корзины*/
+{
+    margin-top: 7px;
+    margin-left: 52px;
+}
+
+.goods /*товары*/
+{
+    margin-top: 9px;
+    margin-left: 6.4px;
+
+    letter-spacing: .6px;
+
+    color: #899395;
+}
+
+.goods_number /*номер товара*/
+{
+    font-size: 12px;
+
+    margin-top: 9px;
+    margin-left: 1px;
+}
+
+.goods_number > a /*номер товара ред*/
+{
+    text-decoration: none;
+
+    color: #0e5b8f;
+}
+
+.goods_number > a:active /*номер товара актив*/
+{
+    text-decoration: none;
+
+    color: #0e5b8f;
+}
+
+.goods_summ /*сумма товара*/
+{
+    margin-top: 9px;
+    margin-left: 14px;
+
+    letter-spacing: .6px;
+
+    color: #899395;
+}
+
+.goods_price /*стоимость товара*/
+{
+    font-size: 12px;
+
+    margin-top: 9px;
+    margin-left: 11px;
+
+    letter-spacing: .4px;
+}
+
+.goods_price > a /*стоимость товара ссылка*/
+{
+    text-decoration: none;
+
+    color: #0e5b8f;
+}
+
+.goods_price > a:active /*стоимость товара акт ссылка*/
+{
+    text-decoration: none;
+
+    color: #0e5b8f;
+}
+
+#search_menu /*3 БЛОКА С ПОИСКОМ*/
+{
+    height: 145px;
+    margin: 0 45px;
+}
+
+#search_auto /*БЛОК ПОИСКА ОБЩИЙ*/
+{
+    float: left;
+
+    width: 413.4px;
+    height: 134.5px;
+    margin-top: 4px;
+    margin-left: 3.2px;
+
+    border: 1px solid #b6b6b6;
+    border-radius: 19.2px;
+    -webkit-box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
+       -moz-box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
+            box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
+}
+
+.search_discs_for_auto
+{
+    float: left;
+
+    width: 200px;
+    /*ПОИСК ПО ДИСКАМ В ОБЩЕМ ПОИСКЕ (БЛОК)*/
+    height: 106px;
+}
+
+.search_auto > span
+{
+    /*ПОИСК ПО АВТОМОБИЛЮ НАЗВАНИЯ*/
+    display: inline-block;
+}
+
+.discs_text
+{
+    font-family: Arial, sans-serif;
+    font-size: 9.6px;
+    font-weight: 800;
+
+    position: absolute;
+
+    margin-top: 3.2px;
+    margin-left: 20.4px;
+
+    letter-spacing: .5px;
+    /*СЛОВО ДИСКИ В ПОИСК АВТОМОБИЛЯ*/
+
+    color: #134465;
+}
+
+.search_auto_text
+{
+    font-family: Arial, sans-serif;
+    font-size: 12.2px;
+    font-weight: 800;
+
+    position: absolute;
+
+    margin-top: -.4px;
+    margin-left: 126.1px;
+
+    letter-spacing: .2px;
+    /*СЛОВОСОЧ ПОИСК ПО АВТОМОБИЛЯМ*/
+
+    color: #134465;
+}
+
+.tire_text
+{
+    font-family: Arial, sans-serif;
+    font-size: 10.4px;
+    font-weight: 800;
+    /*letter-spacing: 0px;*/
+
+    position: absolute;
+
+    margin-top: 1px;
+    margin-left: 354.6px;
+    /*СЛОВО ШИНЫ В ПОИСК ПО АВТО*/
+
+    color: #134465;
+}
+
+.auto_brand_text_discs
+{
+    /*Марка авто для дисков(марка)*/
+    font-size: 10.3px;
+
+    display: inline-block;
+    float: left;
+    clear: both;
+
+    margin-top: 26.2px;
+    margin-left: 17px;
+
+    letter-spacing: -.2px;
+}
+
+.auto_text_discs
+{
+    font-family: Arial;
+    font-size: 8.6px;
+    /*Марка авто для дисков(авто)*/
+
+    display: inline-block;
+    float: left;
+
+    margin-top: 27px;
+    margin-left: 2.5px;
+}
+
+select[name='auto_brand_discs']
+{
+    width: 102px;
+    height: 17px;
+    margin-top: 21.7px;
+    /*селект для марка авто диски*/
+    margin-left: 21.5px;
+
+    text-indent: .01px;
+    text-overflow: '';
+
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+select::-ms-expand
+{
+    /*для ие кнопка в селекте*/
+    display: none;
+}
+
+.auto_model_text_discs
+{
+    font-size: 10.4px;
+    line-height: 1px;
+
+    display: block;
+    /*ТЕКСТ МОДЕЛЬ*/
+    float: left;
+
+    margin-top: 8.2px;
+    margin-left: 17.5px;
+}
+
+.auto_model_text_discs_2
+{
+    font-family: Arial;
+    /*ТЕКСТ "АВТОМОБИЛЯ"*/
+    font-size: 8.6px;
+
+    display: inline-block;
+    float: left;
+
+    margin-top: 12px;
+    margin-left: -36.8px;
+
+    letter-spacing: .2px;
+}
+
+select[name='auto_model_discs']
+{
+    width: 102px;
+    height: 17px;
+    margin-top: 4.7px;
+    /*селект для модель авто диски_общ*/
+    margin-left: 21.4px;
+
+    text-indent: .01px;
+    text-overflow: '';
+
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+.auto_year_text_discs
+{
+    font-size: 10.4px;
+    line-height: 1px;
+
+    display: block;
+    /*ГОД ВЫПУСКА ТЕКСТ*/
+    float: left;
+
+    margin-top: 8.2px;
+    margin-left: 18px;
+}
+
+.auto_year_text2_discs
+{
+    font-family: Arial;
+    /*ГОД ВЫПУСКА АВТОМОБИЛЯ*/
+    font-size: 8.6px;
+
+    display: inline-block;
+    float: left;
+
+    margin-top: 12px;
+    margin-left: -60px;
+
+    letter-spacing: .2px;
+}
+
+select[name='auto_year_discs']
+{
+    /*селект для модель авто диски_общ*/
+    width: 58px;
+    height: 17px;
+    margin-top: 4.8px;
+    margin-left: 15.4px;
+
+    text-indent: .01px;
+    text-overflow: '';
+
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+.equipment_discs_text
+{
+    font-size: 9.9px;
+
+    display: block;
+    float: left;
+
+    margin-top: 7.6px;
+    margin-left: 18px;
+}
+
+select[name='equipment_discs']
+/*селект для компл авто_диски*/
+{
+    width: 102px;
+    height: 17px;
+    margin-top: 4.8px;
+    margin-left: 4.4px;
+
+    text-indent: .01px;
+    text-overflow: '';
+
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+.search_tire_for_auto
+{
+    float: left;
+
+    width: 200px;
+    /*ПОИСК ПО ДИСКАМ В ОБЩЕМ ПОИСКЕ (БЛОК)*/
+    height: 106px;
+    margin-top: -2px;
+    margin-left: 5px;
+}
+
+
+.auto_brand_text_tire
+{
+    /*Марка авто для шин(марка)*/
+    font-size: 10.3px;
+
+    display: inline-block;
+    float: left;
+    clear: both;
+
+    margin-top: 26.2px;
+    margin-left: 17px;
+
+    letter-spacing: -.2px;
+}
+
+.auto_text_tire
+{
+    font-family: Arial;
+    font-size: 8.6px;
+    /*Марка авто для шин(авто)*/
+
+    display: inline-block;
+    float: left;
+
+    margin-top: 27px;
+    margin-left: 2.5px;
+}
+
+select[name='auto_brand_tires']
+{
+    width: 102px;
+    height: 17px;
+    margin-top: 21.7px;
+    /*селект для марка авто диски*/
+    margin-left: 21.5px;
+
+    text-indent: .01px;
+    text-overflow: '';
+
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+select::-ms-expand
+{
+    /*для ие кнопка в селекте*/
+    display: none;
+}
+
+.auto_model_text_tires
+{
+    font-size: 10.4px;
+    line-height: 1px;
+
+    display: block;
+    /*ТЕКСТ МОДЕЛЬ*/
+    float: left;
+
+    margin-top: 8.2px;
+    margin-left: 17.5px;
+}
+
+.auto_model_text_tires_2
+{
+    font-family: Arial;
+    /*ТЕКСТ "АВТОМОБИЛЯ"*/
+    font-size: 8.6px;
+
+    display: inline-block;
+    float: left;
+
+    margin-top: 12px;
+    margin-left: -36.8px;
+
+    letter-spacing: .2px;
+}
+
+select[name='auto_model_tires']
+{
+    width: 102px;
+    height: 17px;
+    margin-top: 4.7px;
+    /*селект для модель авто шины_общ*/
+    margin-left: 21.4px;
+
+    text-indent: .01px;
+    text-overflow: '';
+
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+.auto_year_text_tires
+{
+    font-size: 9.4px;
+    line-height: 1px;
+
+    display: block;
+    /*ГОД ВЫПУСКА ТЕКСТ*/
+    float: left;
+
+    margin-top: 8.2px;
+    margin-left: 18px;
+}
+
+.auto_year_text2_tires
+{
+    font-family: Arial;
+    /*ГОД ВЫПУСКА АВТОМОБИЛЯ*/
+    font-size: 8.6px;
+
+    display: inline-block;
+    float: left;
+
+    margin-top: 12px;
+    margin-left: -53.1px;
+
+    letter-spacing: .2px;
+}
+
+select[name='auto_year_tires']
+{
+    width: 58px;
+    height: 17px;
+    margin-top: 4.9px;
+    /*селект для модель авто шины_общ*/
+    margin-left: 21.7px;
+
+    text-indent: .01px;
+    text-overflow: '';
+
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+.equipment_tires_text
+{
+    font-size: 9.9px;
+
+    display: block;
+    float: left;
+
+    margin-top: 7.6px;
+    margin-left: 18px;
+}
+
+select[name='equipment_tires']
+{
+    width: 102px;
+    height: 17px;
+    margin-top: 4.8px;
+    /*селект для компл авто_шины*/
+    margin-left: 4.4px;
+
+    text-indent: .01px;
+    text-overflow: '';
+
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+#search_tire
+{
+    float: left;
+
+    width: 191px;
+    height: 135px;
+    margin-top: 4.2px;
+    margin-left: 13.2px;
+
+    border: 1px solid #b6b6b6;
+    border-radius: 19.2px;
+    -webkit-box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
+       -moz-box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
+            box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
+}
+
+#search_disc
+{
+    float: left;
+
+    width: 266px;
+    height: 134.5px;
+    margin-top: 3.2px;
+    margin-left: 10.2px;
+
+    border: 1px solid #b6b6b6;
+    border-radius: 16.1px;
+    -webkit-box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
+       -moz-box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
+            box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
 }
