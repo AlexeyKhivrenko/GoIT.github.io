@@ -201,12 +201,13 @@ input[type=password]:focus:-ms-input-placeholder
 {
     font-family: Arial, Tahoma, sans-serif;
     font-size: 11.2px;
+    padding-bottom: 1.1px;
 
     text-decoration: none;
     letter-spacing: .9px;
 
     color: rgb(193, 191, 192);
-    border-bottom: 1px solid rgb(193, 191, 192);
+    border-bottom: 0.5px solid rgb(193, 191, 192);
 }
 
 .menu_right_top
@@ -1026,4 +1027,128 @@ select[name='equipment_tires']
     -webkit-box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
        -moz-box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
             box-shadow: 3px 4px 15px -1px rgba(0,0,0,.35);
+}
+
+.search_tire_text /*ТЕКСТ СВЕРХУ 2-го БЛОКА ПОИСКА*/
+{
+    font-family: Arial, sans-serif;
+        font-size: 12.1px;
+        font-weight: 800;
+        position: absolute;
+        margin-top: 0.6px;
+        margin-left: 9.4px;
+        color: #134465;
+}
+
+.search_tire_2nd_block /*2й блок для поиска шин*/
+{
+    width: 200px;
+    /*ПОИСК ШИН 2-й блок*/
+    height: 112px;
+}
+
+.size_tire_text {
+    font-size: 9.4px;
+    display: block;
+    float: left;
+    margin-top: 29.6px;
+    margin-left: 13.4px;
+    letter-spacing: 0.8px;
+}
+
+select[name="size_of_tires"]{
+    width: 50.5px;
+    height: 17px;
+    margin-top: 22.5px;
+    margin-left: 5.5px;
+    text-indent: .01px;
+    text-overflow: '';
+
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+.cherto4ka_mejdy_textom{
+    font-size: 12.5px;
+    display: inline-block;
+    margin-left: 2.7px;
+    margin-top: 0.8px;
+}
+
+select[name="size_of_tires2"]{
+    width: 53px;
+        height: 17px;
+        margin-top: 22.5px;
+        margin-left: 2.4px;
+        text-indent: .01px;
+        text-overflow: '';
+        border-right: transparent;
+        border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+.R_text{
+    font-size: 10.4px;
+        display: block;
+        float: left;
+        margin-top: 50px;
+        margin-left: -7px;
+        letter-spacing: 0.8px;
+}
+
+select[name="R_tires"]{
+    width: 46.8px;
+        height: 17px;
+        margin-left: 4.1px;
+        margin-top: 6.6px;
+        display: inline-block;
+    text-indent: .01px;
+    text-overflow: '';
+    border-right: transparent;
+    border-bottom: transparent;
+    background-image: url('../img/strelka.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+       -moz-box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+            box-shadow: inset .8px .8px 0 0 rgba(0,0,0,.4);
+    /*for WebKit*/
+
+    -webkit-appearance: none;
+    /* for FF */
+       -moz-appearance: none;
+    /* for IE */
+        -ms-appearance: none;
+            appearance: none!important;
+}
+
+select:focus:hover{
+    background-image: url('../img/strelka2.png');
 }
