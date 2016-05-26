@@ -4,11 +4,11 @@
      }
 
     body {
-        background-color: whitesmoke;
+        background-color: #D3D3D3;
      }
 
     #wrapper {
-        background-color: white;
+        background-color: #FFFFFF;
         box-shadow: 0 0 5px 1px rgba(137, 169, 171, 1);
         height: 1000px;
         margin: auto;
@@ -68,7 +68,7 @@
 
 
     .links_header a:hover { /*когда наводишь курсор*/
-        color:white; /* Цвет текста активного пункта */
+        color:#fff; /* Цвет текста активного пункта */
         background-color: #2a2a2a;/* Цвет фона активного пункта */
         border-right: 1px solid #fff; /* Маскируем рамку вокруг ссылки */
         border-left: 1px solid #fff; /* Маскируем рамку вокруг ссылки */
@@ -78,12 +78,12 @@
       }
 
     .links_header a:link {  /*непосещенная ссылка*/
-          color: white;
+          color: #fff;
           text-decoration: none;
        }
 
     .links_header a:visited { /*посещенная ссылка*/
-         color: white;
+         color: #fff;
          text-decoration: none;
        }
 
@@ -112,7 +112,7 @@
       text-decoration: none; /* Подчеркивание у ссылок убираем */
       color: #666; /* Цвет текста */
       border: 1px solid #ccc;/* Рамка вокруг пунктов меню */
-      background-color: white; /* Цвет фона */
+      background-color: #fff; /* Цвет фона */
       border-bottom: transparent;
      }
 
@@ -121,7 +121,7 @@
      }
 
      .main_menu:hover {
-      color: black; /* Цвет текста активного пункта */
+      color: #000; /* Цвет текста активного пункта */
       background-color: #eae5ed; /* Цвет фона активного пункта */
       padding: 15px 40px;
      }
@@ -192,15 +192,15 @@
        }
 
        .links_footer a:hover { /*когда наводишь курсор*/
-           color:black; /* Цвет текста активного пункта */
+           color:#000000; /* Цвет текста активного пункта */
            text-decoration: underline;
          }
 
        .links_footer a:link {  /*непосещенная ссылка*/
-             color: black;
+             color: #000000;
           }
 
        .links_footer a:visited { /*посещенная ссылка*/
-            color: black;
+            color: #000000;
             text-decoration: underline;
           }
