@@ -1322,6 +1322,9 @@ aside{
         border: 1px solid #aeb6b9;
         margin-top: 13px;
         margin-left: 43px;
+        -webkit-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
+            -moz-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
+            box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
 }
 
 .catalog_prod > a{
@@ -1333,6 +1336,7 @@ aside{
         letter-spacing: 0px;
         position: absolute;
         color:#104265;
+
 }
 .catalog_prod > a:active{
     color:#104265;
@@ -1556,6 +1560,9 @@ aside{
         border: 1px solid #aeb6b9;
         margin-top: 11px;
             margin-left: 9.5px;
+            webkit-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
 }
 
 .brands > a{
@@ -1785,8 +1792,8 @@ input[id="enter"]{
     background: -webkit-linear-gradient(top, #1e6787 -1%,#1e6787 8%,#0d3358 100%);
     background: linear-gradient(to bottom, #1e6787 -1%,#1e6787 8%,#0d3358 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e6787', endColorstr='#0d3358',GradientType=0 );
-    -webkit-box-shadow: 17px 15px 14px -8px rgba(184,184,184,1);
-    -moz-box-shadow: 17px 15px 14px -8px rgba(184,184,184,1);
+    -webkit-box-shadow: 4px 5px 3px -2px rgba(184,184,184,1);
+    -moz-box-shadow: 4px 5px 3px -2px rgba(184,184,184,1);
     box-shadow: 4px 5px 3px -2px rgba(184,184,184,1);
 
 }
