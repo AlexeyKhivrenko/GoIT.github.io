@@ -37,9 +37,9 @@ header {
     margin-left: 15.6px;
     border-radius: 3px;
     background: linear-gradient(to top, rgb(13, 51, 88), rgb(28, 97, 128));
-    -webkit-box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 1);
-    box-shadow: 10px 10px 13px -8px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, 0.6);
 }
 .login > img {
     float: left;
@@ -173,9 +173,9 @@ input[type=password]:focus:-ms-input-placeholder {
     margin-left: 16.4px;
     border: 1px solid rgb(206, 212, 212);
     border-radius: 11px;
-    -webkit-box-shadow: 0 10px 13px -8px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0 10px 13px -8px rgba(0, 0, 0, 1);
-    box-shadow: 0 10px 13px -8px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0 6px 7px -8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0 6px 7px -8px rgba(0, 0, 0, 1);
+    box-shadow: 0 6px 7px -8px rgba(0, 0, 0, 1);
 }
 .menu_right_top > .img1 {
     margin-left: 8.7px;
