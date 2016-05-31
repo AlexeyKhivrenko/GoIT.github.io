@@ -37,9 +37,9 @@ header {
     margin-left: 15.6px;
     border-radius: 3px;
     background: linear-gradient(to top, rgb(13, 51, 88), rgb(28, 97, 128));
-    -webkit-box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, 0.6);
-    box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, .6);
+    -moz-box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, .6);
+    box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, .6);
 }
 .login > img {
     float: left;
@@ -929,106 +929,100 @@ select[name='R_tires'] {
     -ms-appearance: none;
     appearance: none!important;
 }
-
-.first{
-    float: left;
+.first {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 10px;
     position: relative;
-    z-index:1;
+    z-index: 1;
+    float: left;
     padding-top: 3px;
-        padding-left: 15px;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 10px;
+    padding-left: 15px;
 }
-.second{
-    display:table;
+.second {
+    display: table;
+    padding-top: 3px;
     padding-left: 10px;
-    padding-top: 3px;
 }
-.second:after{
-    /*content: '1 1';*/  /*Op15+*/
-content: '1 1 1 1 1 1 1 1 1 1 1'; /*Op12+*/
-font: .1px/0 a;
-display: block;
-word-spacing: 99in;
-overflow: hidden; /*IE8-*/
-}
-
-label[for="summer"]{
+.second:after {
+    /*Op12+*/
+    font: .1px/0 a;
     display: block;
-        padding-left: 15px;
-        text-indent: -13px;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 11px;
-        letter-spacing: 0.4px;
+    overflow: hidden;
+    /*content: '1 1';*/
+    /*Op15+*/
+    content: '1 1 1 1 1 1 1 1 1 1 1';
+    word-spacing: 99in;
+    /*IE8-*/
 }
-input[id="summer"] {
+label[for='summer'] {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 11px;
+    display: block;
+    padding-left: 15px;
+    text-indent: -13px;
+    letter-spacing: .4px;
+}
+input[id='summer'] {
+    position: relative;
+    top: -2px;
+    left: -1px;
     width: 13px;
-        height: 13px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -2px;
-        left: -1px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
     *overflow: hidden;
 }
-
-label[for="winter"]{
+label[for='winter'] {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 11px;
     display: block;
-        padding-left: 15px;
-        text-indent: -13px;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 11px;
-        letter-spacing: 0.4px;
+    padding-left: 15px;
+    text-indent: -13px;
+    letter-spacing: .4px;
 }
-input[id="winter"] {
+input[id='winter'] {
+    position: relative;
+    top: -2px;
+    left: -1px;
     width: 13px;
-        height: 13px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -2px;
-        left: -1px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
     *overflow: hidden;
 }
-
-label[for="all_seas"]{
+label[for='all_seas'] {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 11px;
     display: block;
-        padding-left: 15px;
-        text-indent: -13px;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 11px;
-        letter-spacing: 0.4px;
+    padding-left: 15px;
+    text-indent: -13px;
+    letter-spacing: .4px;
 }
-input[id="all_seas"] {
+input[id='all_seas'] {
+    position: relative;
+    top: -2px;
+    left: -1px;
     width: 13px;
-        height: 13px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -2px;
-        left: -1px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
     *overflow: hidden;
 }
-
-.sum,.win,.all{
+.sum, .win, .all {
     height: 14px;
-}
-
-.search_tire {
-
 }
 .search_tire > input[type=submit] {
     font-size: 13.9px;
-        font-style: italic;
-        float: right;
-        margin-right: 26px;
-        margin-top: 0;
-        text-decoration: underline;
-        border: none;
-        background: none;
+    font-style: italic;
+    float: right;
+    margin-top: 0;
+    margin-right: 26px;
+    text-decoration: underline;
+    border: none;
+    background: none;
 }
 #search_disc_3rd_box
 /*ПОИСК ДИСКОВ 3-й БЛОК*/
@@ -1300,775 +1294,725 @@ select[name=ET_select] {
     border: none;
     background: none;
 }
-
-
 select:focus:hover {
     background-image: url('../img/strelka2.png');
 }
-
-aside{
-
+aside {
+    float: left;
     width: 235px;
-        height: 635px;
-        float: left;
+    height: 635px;
 }
 
 /*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ!*/
 
-.catalog_prod{
+.catalog_prod {
+    width: 180px;
     height: 25px;
-        width: 180px;
-        border-radius: 12px;
-        border: 1px solid #aeb6b9;
-        margin-top: 13px;
-        margin-left: 43px;
-        -webkit-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
-            -moz-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
-            box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
+    margin-top: 13px;
+    margin-left: 43px;
+    border: 1px solid #aeb6b9;
+    border-radius: 12px;
+    -webkit-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
+    box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
 }
-
-.catalog_prod > a{
+.catalog_prod > a {
+    font-family: 'lucida_sans_unicoderegular';
     font-size: 12.73px;
-        text-decoration: none;
-        margin-top: 3px;
-        margin-left: 28.2px;
-        font-family: 'lucida_sans_unicoderegular';
-        letter-spacing: 0px;
-        position: absolute;
-        color:#104265;
-
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 28.2px;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #104265;
 }
-.catalog_prod > a:active{
-    color:#104265;
+.catalog_prod > a:active {
+    color: #104265;
 }
-
-.catalog_prod > a > img{ /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
+.catalog_prod > a > img {
+    position: absolute;
+    /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
     margin-top: -2px;
     margin-left: -26px;
-    position: absolute;
 }
 
 /*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ/ШИНЫ*/
 
-.tire_left_menu{
+.tire_left_menu {
+    width: 148px;
     height: 26px;
-        width: 148px;
-        border-radius: 12px;
-        border: 1px solid #aeb6b9;
-        margin-top: 13px;
-        margin-left: 45px;
+    margin-top: 13px;
+    margin-left: 45px;
+    border: 1px solid #aeb6b9;
+    border-radius: 12px;
 }
-
-.tire_left_menu > a{
+.tire_left_menu > a {
+    font-family: 'lucida_sans_unicoderegular';
     font-size: 12.73px;
-        text-decoration: none;
-        margin-top: 4px;
-        margin-left: 29px;
-        font-family: 'lucida_sans_unicoderegular';
-        letter-spacing: 1px;
-        position: absolute;
-        color:#104265;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 29px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #104265;
 }
-.tire_left_menu > a:active{
-    color:#104265;
+.tire_left_menu > a:active {
+    color: #104265;
 }
-
-.tire_left_menu > a > img{ /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
+.tire_left_menu > a > img {
+    position: absolute;
+    /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
     margin-top: -3px;
     margin-left: -25px;
-    position: absolute;
 }
-
 .tire_left_menu_ul {
+    width: 150px;
     margin-top: 24.9px;
-        margin-left: 32.5px;
-        width: 150px;
+    margin-left: 32.5px;
 }
-
-.tire_left_menu_ul > li{
+.tire_left_menu_ul > li {
     padding-top: 4.5px;
 }
-
-.tire_left_menu_ul > li > a{
-    display:block;
-    background: url(../img/marker_li.png) no-repeat 2.2px 6.1px;
-    background-size: 5.6%;
-    padding-left: 13.1px;
+.tire_left_menu_ul > li > a {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 12.74px;
+    display: block;
+    margin-bottom: .1px;
+    padding-left: 13.1px;
     text-decoration: none;
     color: #475860;
-    margin-bottom: 0.1px;
+    background: url(../img/marker_li.png) no-repeat 2.2px 6.1px;
+    background-size: 5.6%;
 }
-
-.tire_left_menu_ul > li > a:hover{
+.tire_left_menu_ul > li > a:hover {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
     display: block;
-        border: 0;
-        background: url(../img/marker_li_bold.png) no-repeat 2px 6.63px;
-        background-size: 5.6%;
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 14px;
-        font-style: italic;
-        text-decoration: none;
-        color: #002e7d;
-        text-decoration: underline;
-        padding: 2.3px 0 2.7px 12.1px;
+    padding: 2.3px 0 2.7px 12.1px;
+    text-decoration: none;
+    text-decoration: underline;
+    color: #002e7d;
+    border: 0;
+    background: url(../img/marker_li_bold.png) no-repeat 2px 6.63px;
+    background-size: 5.6%;
 }
 
 /*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ/ДИСКИ!*/
 
-.discs_left_menu{
+.discs_left_menu {
+    width: 148px;
     height: 26px;
-        width: 148px;
-        border-radius: 12px;
-        border: 1px solid #aeb6b9;
-        margin-top: 99px;
-        margin-left: 45px;
+    margin-top: 99px;
+    margin-left: 45px;
+    border: 1px solid #aeb6b9;
+    border-radius: 12px;
 }
-
-.discs_left_menu > a{
+.discs_left_menu > a {
+    font-family: 'lucida_sans_unicoderegular';
     font-size: 12.73px;
-        text-decoration: none;
-        margin-top: 4px;
-        margin-left: 29px;
-        font-family: 'lucida_sans_unicoderegular';
-        letter-spacing: 1px;
-        position: absolute;
-        color:#104265;
-}
-.discs_left_menu > a:active{
-    color:#104265;
-}
-
-.discs_left_menu > a > img{ /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
-    margin-top: -2px;
-        margin-left: -26px;
     position: absolute;
+    margin-top: 4px;
+    margin-left: 29px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #104265;
 }
-
+.discs_left_menu > a:active {
+    color: #104265;
+}
+.discs_left_menu > a > img {
+    position: absolute;
+    /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
+    margin-top: -2px;
+    margin-left: -26px;
+}
 .discs_left_menu_ul {
+    width: 150px;
     margin-top: 24.9px;
-        margin-left: 32.5px;
-        width: 150px;
+    margin-left: 32.5px;
 }
-
-.discs_left_menu_ul > li{
+.discs_left_menu_ul > li {
     padding-top: 4.5px;
 }
-
-.discs_left_menu_ul > li > a{
-    display:block;
-    background: url(../img/marker_li.png) no-repeat 2.2px 6.1px;
-    background-size: 5.6%;
-    padding-left: 13.1px;
+.discs_left_menu_ul > li > a {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 12.74px;
+    display: block;
+    margin-bottom: .1px;
+    padding-left: 13.1px;
     text-decoration: none;
     color: #475860;
-    margin-bottom: 0.1px;
+    background: url(../img/marker_li.png) no-repeat 2.2px 6.1px;
+    background-size: 5.6%;
 }
-
-.discs_left_menu_ul > li > a:hover{
+.discs_left_menu_ul > li > a:hover {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
     display: block;
-        border: 0;
-        background: url(../img/marker_li_bold.png) no-repeat 2px 6.63px;
-        background-size: 5.6%;
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 14px;
-        font-style: italic;
-        text-decoration: none;
-        color: #002e7d;
-        text-decoration: underline;
-        padding: 2.3px 0 2.7px 12.1px;
+    padding: 2.3px 0 2.7px 12.1px;
+    text-decoration: none;
+    text-decoration: underline;
+    color: #002e7d;
+    border: 0;
+    background: url(../img/marker_li_bold.png) no-repeat 2px 6.63px;
+    background-size: 5.6%;
 }
 
 /*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ/БОЛТЫ!*/
 
-.bolts_left_menu{
+.bolts_left_menu {
+    width: 148px;
     height: 26px;
-        width: 148px;
-        border-radius: 12px;
-        border: 1px solid #aeb6b9;
-        margin-top: 99.8px;
-        margin-left: 45px;
+    margin-top: 99.8px;
+    margin-left: 45px;
+    border: 1px solid #aeb6b9;
+    border-radius: 12px;
 }
-
-.bolts_left_menu > a{
+.bolts_left_menu > a {
+    font-family: 'lucida_sans_unicoderegular';
     font-size: 12.73px;
-        text-decoration: none;
-        margin-top: 4px;
-        margin-left: 29px;
-        font-family: 'lucida_sans_unicoderegular';
-        letter-spacing: 1px;
-        position: absolute;
-        color:#104265;
-}
-.bolts_left_menu > a:active{
-    color:#104265;
-}
-
-.bolts_left_menu > a > img{ /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
-    margin-top: -2px;
-        margin-left: -26px;
     position: absolute;
+    margin-top: 4px;
+    margin-left: 29px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #104265;
 }
-
+.bolts_left_menu > a:active {
+    color: #104265;
+}
+.bolts_left_menu > a > img {
+    position: absolute;
+    /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
+    margin-top: -2px;
+    margin-left: -26px;
+}
 .bolts_left_menu_ul {
+    width: 150px;
     margin-top: 24.9px;
-        margin-left: 32.5px;
-        width: 150px;
+    margin-left: 32.5px;
 }
-
-.bolts_left_menu_ul > li{
+.bolts_left_menu_ul > li {
     padding-top: 4.5px;
 }
-
-.bolts_left_menu_ul > li > a{
-    display:block;
-    background: url(../img/marker_li.png) no-repeat 2.2px 7.6px;
-    background-size: 5.6%;
-    padding-left: 13.1px;
+.bolts_left_menu_ul > li > a {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 12.74px;
+    display: block;
+    padding-left: 13.1px;
     text-decoration: none;
     color: #475860;
+    background: url(../img/marker_li.png) no-repeat 2.2px 7.6px;
+    background-size: 5.6%;
 }
-
-.bolts_left_menu_ul > li > a:hover{
+.bolts_left_menu_ul > li > a:hover {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
     display: block;
-        border: 0;
-        background: url(../img/marker_li_bold.png) no-repeat 2px 8.23px;
-        background-size: 5.6%;
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 14px;
-        font-style: italic;
-        text-decoration: none;
-        color: #002e7d;
-        text-decoration: underline;
-        padding: 2.3px 0 2.7px 12.1px;
+    padding: 2.3px 0 2.7px 12.1px;
+    text-decoration: none;
+    text-decoration: underline;
+    color: #002e7d;
+    border: 0;
+    background: url(../img/marker_li_bold.png) no-repeat 2px 8.23px;
+    background-size: 5.6%;
 }
 
 /*ПРАВЫЙ ASIDE БРЕНДЫ*/
 
-.brands{
+.brands {
+    width: 180px;
     height: 25px;
-        width: 180px;
-        border-radius: 12px;
-        border: 1px solid #aeb6b9;
-        margin-top: 11px;
-            margin-left: 9.5px;
-            webkit-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
-    -moz-box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
-    box-shadow: 3px 3px 8px -1px rgba(0,0,0,0.35);
+    margin-top: 11px;
+    margin-left: 9.5px;
+    border: 1px solid #aeb6b9;
+    border-radius: 12px;
+    -moz-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
+    box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
+    webkit-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
 }
-
-.brands > a{
+.brands > a {
+    font-family: 'lucida_sans_unicoderegular';
     font-size: 14px;
-        text-decoration: none;
-        margin-top: 1.2px;
-            margin-left: 29px;
-        font-family: 'lucida_sans_unicoderegular';
-        letter-spacing: 0px;
-        position: absolute;
-        color: #104265;
-}
-.brands > a:active{
-    color:#104265;
-}
-
-.brands > a > img{ /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
-margin-left: -27px;
     position: absolute;
+    margin-top: 1.2px;
+    margin-left: 29px;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #104265;
+}
+.brands > a:active {
+    color: #104265;
+}
+.brands > a > img {
+    position: absolute;
+    /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
+    margin-left: -27px;
 }
 
 /*ПРАВЫЙ ASIDE ШИНЫ*/
-.tires_right_menu{
-    height: 26px;
+
+.tires_right_menu {
     width: 134px;
-    border-radius: 12px;
-    border: 1px solid #aeb6b9;
+    height: 26px;
     margin-top: 14.8px;
     margin-left: 23px;
+    border: 1px solid #aeb6b9;
+    border-radius: 12px;
 }
-
-.tires_right_menu > a{
+.tires_right_menu > a {
+    font-family: 'lucida_sans_unicoderegular';
     font-size: 14px;
-    text-decoration: none;
+    position: absolute;
     margin-top: 2px;
     margin-left: 30px;
-    font-family: 'lucida_sans_unicoderegular';
-    position: absolute;
+    text-decoration: none;
     color: #104265;
 }
-.tires_right_menu > a:active{
-    color:#104265;
+.tires_right_menu > a:active {
+    color: #104265;
 }
-
-.tires_right_menu > a > img{ /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
+.tires_right_menu > a > img {
+    position: absolute;
+    /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
     margin-top: -1px;
-        margin-left: -26px;
-        position: absolute;
+    margin-left: -26px;
 }
-
-.tires_right_menu_checkbox{
-    margin-left:33px;
-}
-
-label[for="brand1"]{
-    display: block;
-        padding-left: 13px;
-        padding-top: 5px;
-        text-indent: 0;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 12.4px;
-        letter-spacing: 0.1px;
-}
-input[id="brand1"] {
-    width: 13px;
-        height: 13px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -4px;
-        left: -11px;
-    *overflow: hidden;
-}
-
-label[for="brand2"]{
-    display: block;
-        padding-left: 13px;
-        padding-top: 5px;
-        text-indent: 0;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 12.4px;
-        letter-spacing: 0.1px;
-}
-input[id="brand2"] {
-    width: 13px;
-        height: 13px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -4px;
-        left: -11px;
-    *overflow: hidden;
-}
-
-label[for="brand3"]{
-    display: block;
-        padding-left: 13px;
-        padding-top: 5px;
-        text-indent: 0;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 12.4px;
-        letter-spacing: 0.1px;
-}
-input[id="brand3"] {
-    width: 13px;
-        height: 13px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -4px;
-        left: -11px;
-    *overflow: hidden;
-}
-/*ПРАВЫЙ ASIDE ДИСКИ*/
-.discs_right_menu{
-    height: 26px;
-    width: 135px;
-    border-radius: 12px;
-    border: 1px solid #aeb6b9;
-    margin-top: 11px;
-        margin-left: 22px;
-}
-
-.discs_right_menu > a{
-    font-size: 14px;
-        text-decoration: none;
-        margin-top: 2px;
-        margin-left: 30px;
-        letter-spacing: 0.2px;
-        font-family: 'lucida_sans_unicoderegular';
-        position: absolute;
-        color: #104265;
-}
-.discs_right_menu > a:active{
-    color:#104265;
-}
-
-.discs_right_menu > a > img{ /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
-    margin-top: -1px;
-        margin-left: -28px;
-        position: absolute;
-}
-
-.discs_right_menu_checkbox{
+.tires_right_menu_checkbox {
     margin-left: 33px;
-    margin-top: 2px;
 }
-
-label[for="brand01"]{
+label[for='brand1'] {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 12.4px;
     display: block;
-        padding-left: 13px;
-        padding-top: 5px;
-        text-indent: 0;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 12.4px;
-        letter-spacing: 0.1px;
+    padding-top: 5px;
+    padding-left: 13px;
+    text-indent: 0;
+    letter-spacing: .1px;
 }
-input[id="brand01"] {
+input[id='brand1'] {
+    position: relative;
+    top: -4px;
+    left: -11px;
     width: 13px;
-        height: 13px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -4px;
-        left: -11px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    *overflow: hidden;
+}
+label[for='brand2'] {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 12.4px;
+    display: block;
+    padding-top: 5px;
+    padding-left: 13px;
+    text-indent: 0;
+    letter-spacing: .1px;
+}
+input[id='brand2'] {
+    position: relative;
+    top: -4px;
+    left: -11px;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    *overflow: hidden;
+}
+label[for='brand3'] {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 12.4px;
+    display: block;
+    padding-top: 5px;
+    padding-left: 13px;
+    text-indent: 0;
+    letter-spacing: .1px;
+}
+input[id='brand3'] {
+    position: relative;
+    top: -4px;
+    left: -11px;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
     *overflow: hidden;
 }
 
-label[for="brand02"]{
-    display: block;
-        padding-left: 13px;
-        padding-top: 5px;
-        text-indent: 0;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 12.4px;
-        letter-spacing: 0.1px;
-}
-input[id="brand02"] {
-    width: 13px;
-        height: 13px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -4px;
-        left: -11px;
-    *overflow: hidden;
-}
+/*ПРАВЫЙ ASIDE ДИСКИ*/
 
-label[for="brand03"]{
-    display: block;
-        padding-left: 13px;
-        padding-top: 5px;
-        text-indent: 0;
-        font-family: 'lucida_sans_unicoderegular';
-        font-size: 12.4px;
-        letter-spacing: 0.1px;
-}
-input[id="brand03"] {
-    width: 13px;
-        height: 13px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -4px;
-        left: -11px;
-    *overflow: hidden;
-}
-
-input[id="enter"]{
+.discs_right_menu {
+    width: 135px;
     height: 26px;
-    margin: 17px 0 0 32px;
-    width: 82px;
-    border: none;
-    color: white;
+    margin-top: 11px;
+    margin-left: 22px;
+    border: 1px solid #aeb6b9;
+    border-radius: 12px;
+}
+.discs_right_menu > a {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 14px;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 30px;
+    text-decoration: none;
+    letter-spacing: .2px;
+    color: #104265;
+}
+.discs_right_menu > a:active {
+    color: #104265;
+}
+.discs_right_menu > a > img {
+    position: absolute;
+    /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
+    margin-top: -1px;
+    margin-left: -28px;
+}
+.discs_right_menu_checkbox {
+    margin-top: 2px;
+    margin-left: 33px;
+}
+label[for='brand01'] {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 12.4px;
+    display: block;
+    padding-top: 5px;
+    padding-left: 13px;
+    text-indent: 0;
+    letter-spacing: .1px;
+}
+input[id='brand01'] {
+    position: relative;
+    top: -4px;
+    left: -11px;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    *overflow: hidden;
+}
+label[for='brand02'] {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 12.4px;
+    display: block;
+    padding-top: 5px;
+    padding-left: 13px;
+    text-indent: 0;
+    letter-spacing: .1px;
+}
+input[id='brand02'] {
+    position: relative;
+    top: -4px;
+    left: -11px;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    *overflow: hidden;
+}
+label[for='brand03'] {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 12.4px;
+    display: block;
+    padding-top: 5px;
+    padding-left: 13px;
+    text-indent: 0;
+    letter-spacing: .1px;
+}
+input[id='brand03'] {
+    position: relative;
+    top: -4px;
+    left: -11px;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    *overflow: hidden;
+}
+input[id='enter'] {
     font-family: Arial;
     font-size: 11.3px;
-    letter-spacing: 0.3px;
+    width: 82px;
+    height: 26px;
+    margin: 17px 0 0 32px;
+    letter-spacing: .3px;
+    color: white;
+    border: none;
     border-radius: 11px;
     background: #1e6787;
     background: -moz-linear-gradient(top, #1e6787 -1%, #1e6787 8%, #0d3358 100%);
-    background: -webkit-linear-gradient(top, #1e6787 -1%,#1e6787 8%,#0d3358 100%);
-    background: linear-gradient(to bottom, #1e6787 -1%,#1e6787 8%,#0d3358 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e6787', endColorstr='#0d3358',GradientType=0 );
-    -webkit-box-shadow: 4px 5px 3px -2px rgba(184,184,184,1);
-    -moz-box-shadow: 4px 5px 3px -2px rgba(184,184,184,1);
-    box-shadow: 4px 5px 3px -2px rgba(184,184,184,1);
-
+    background: -webkit-linear-gradient(top, #1e6787 -1%, #1e6787 8%, #0d3358 100%);
+    background: linear-gradient(to bottom, #1e6787 -1%, #1e6787 8%, #0d3358 100%);
+    -webkit-box-shadow: 4px 5px 3px -2px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 4px 5px 3px -2px rgba(184, 184, 184, 1);
+    box-shadow: 4px 5px 3px -2px rgba(184, 184, 184, 1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e6787', endColorstr='#0d3358', GradientType=0);
 }
-
 
 /*НАСТРОЙКИ ДЛЯ MAIN*/
 
-main{
-        width: 527px;
-        height: 629px;
-        float: left;
-        background: #e6e7e9;
-        background: -moz-linear-gradient(top, #e6e7e9 0%, #93a7b0 100%);
-        background: -webkit-linear-gradient(top, #e6e7e9 0%,#93a7b0 100%);
-        background: linear-gradient(to bottom, #e6e7e9 0%,#93a7b0 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e7e9', endColorstr='#93a7b0',GradientType=0 );
-        margin-top: 9px;
-        border-radius: 6px;
+main {
+    float: left;
+    width: 527px;
+    height: 629px;
+    margin-top: 9px;
+    border-radius: 6px;
+    background: #e6e7e9;
+    background: -moz-linear-gradient(top, #e6e7e9 0%, #93a7b0 100%);
+    background: -webkit-linear-gradient(top, #e6e7e9 0%, #93a7b0 100%);
+    background: linear-gradient(to bottom, #e6e7e9 0%, #93a7b0 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e6e7e9', endColorstr='#93a7b0', GradientType=0);
 }
 
 /*ШИНЫ Goodyear первый столбик*/
-.goodyear{
-    float:left;
+
+.goodyear {
+    float: left;
     margin-top: 11px;
-        margin-left: 24px;
+    margin-left: 24px;
 }
-
-.goodyear a{
-    text-decoration:none;
+.goodyear a {
+    text-decoration: none;
 }
-.goodyear a img{
-    text-align: center;
+.goodyear a img {
+    margin-top: -2px;
     margin-left: -2px;
-        margin-top: -2px;
+    text-align: center;
 }
-
-.name_of_tire{
+.name_of_tire {
     font-family: 'lucida_sans_unicoderegular';
-        font-weight: bold;
-        font-size: 15px;
-        margin-left: 34px;
-        color: #206989;
-        height: 15px;
-}
-
-.class_of_tire{
-    font-family: 'lucida_sans_unicoderegular';
-        font-size: 11.77px;
-        margin-left: 14px;
-        margin-top: 2px;
-        letter-spacing: 0.4px;
-        color:#000;
-}
-
-.cost_of_tire_value{
-    font-family: Arial;
+    font-size: 15px;
     font-weight: bold;
-    font-style: italic;
-    font-size: 17.1px;
-    color: #114366;
-    padding-left: 37px;
+    height: 15px;
+    margin-left: 34px;
+    color: #206989;
 }
-.cost_of_tire_grn{
-    font-family: Arial;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 12px;
-        color: #114366;
-        padding-left: 1.6px;
-        letter-spacing: 0.5px;
-}
-/*Колесо GoodYear 3 столбец 1 кривой - настр*/
-.name_of_tire_krivoi{
-    font-family: 'lucida_sans_unicoderegular';
-        font-weight: bold;
-        font-size: 15px;
-        margin-left: 32px;
-    margin-top: -1px;
-        color: #206989;
-        height: 15px;
-}
-.class_of_tire_krivoi{
+.class_of_tire {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 11.77px;
-    margin-left: 12px;
     margin-top: 2px;
-    margin-bottom:1px;
-    letter-spacing: 0.5px;
-    color:#000;
+    margin-left: 14px;
+    letter-spacing: .4px;
+    color: #000;
+}
+.cost_of_tire_value {
+    font-family: Arial;
+    font-size: 17.1px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 37px;
+    color: #114366;
+}
+.cost_of_tire_grn {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 1.6px;
+    letter-spacing: .5px;
+    color: #114366;
+}
+
+/*Колесо GoodYear 3 столбец 1 кривой - настр*/
+
+.name_of_tire_krivoi {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 15px;
+    font-weight: bold;
+    height: 15px;
+    margin-top: -1px;
+    margin-left: 32px;
+    color: #206989;
+}
+.class_of_tire_krivoi {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 11.77px;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    margin-left: 12px;
+    letter-spacing: .5px;
+    color: #000;
 }
 
 /*ШИНЫ Nokian 2 столбик*/
-.nokian{
+
+.nokian {
+    float: left;
     margin-top: 11px;
     margin-left: 24px;
-    float: left;
 }
-
-.nokian a{
-    text-decoration:none;
+.nokian a {
+    text-decoration: none;
 }
-.nokian a img{
-    text-align: center;
+.nokian a img {
     margin: -2px 0 1px 4px;
+    text-align: center;
 }
-
-.name_of_tire2{
+.name_of_tire2 {
     font-family: 'lucida_sans_unicoderegular';
-    font-weight: bold;
     font-size: 15px;
-    margin-left: 50px;
+    font-weight: bold;
     margin-bottom: -9px;
+    margin-left: 50px;
     color: #206989;
 }
-
-.class_of_tire2{
+.class_of_tire2 {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 11.77px;
-        margin-left: 29px;
-        margin-top: 2px;
-        letter-spacing: 0.5px;
-        color:#000;
+    margin-top: 2px;
+    margin-left: 29px;
+    letter-spacing: .5px;
+    color: #000;
 }
-
-.cost_of_tire_value2{
+.cost_of_tire_value2 {
     font-family: Arial;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 17px;
-        color: #114366;
-        padding-left: 37px;
-        letter-spacing: 0.1px;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 37px;
+    letter-spacing: .1px;
+    color: #114366;
 }
-.cost_of_tire_grn2{
+.cost_of_tire_grn2 {
     font-family: Arial;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 12px;
-        color: #114366;
-        padding-left: 4.6px;
-        letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 4.6px;
+    letter-spacing: .5px;
+    color: #114366;
 }
 
 /*ШИНЫ Hankook 3 столбик*/
-.hankook{
+
+.hankook {
+    float: left;
     margin-top: 11px;
     margin-left: 24px;
-    float: left;
 }
-
-.hankook a{
-    text-decoration:none;
+.hankook a {
+    text-decoration: none;
 }
-.hankook a img{
-    text-align: center;
+.hankook a img {
     margin: -2px 0 0 5px;
+    text-align: center;
 }
-
-.name_of_tire3{
+.name_of_tire3 {
     font-family: 'lucida_sans_unicoderegular';
-        font-weight: bold;
-        font-size: 15px;
-        margin-left: 44px;
-        margin-bottom: -9px;
-        color: #206989;
-}
-
-.class_of_tire3{
-    font-family: 'lucida_sans_unicoderegular';
-        font-size: 11.77px;
-        margin-left: 16px;
-        margin-top: 2px;
-        letter-spacing: 0.6px;
-        color:#000;
-}
-
-.cost_of_tire_value3{
-    font-family: Arial;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 17px;
-        color: #114366;
-        padding-left: 38px;
-            letter-spacing: 0.1px;
-}
-.cost_of_tire_grn3{
-    font-family: Arial;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 12px;
-        color: #114366;
-        padding-left: 3.6px;
-        letter-spacing: 0.5px;
-}
-
-.st_line{
-    height: 202px;
-}
-
-.nd_line{
-    height: 204px;
-}
-
-.rd_line{
-height: 202px;
-}
-
-.clearfix{
-    content:"";
-    clear:both;
-    overflow: hidden;
-}
-
-footer{
-    width: 910px;
-}
-
-.top_footer{
-    height:60px;
-}
-
-.top_footer ul{
-    margin-left: 161px;
-    margin-top: 37px;
-}
-
-.top_footer li{
-    display: table-cell;
-        vertical-align: middle;
-        padding-right: 13px;
-}
-
-.bottom_footer{
-    height: 100px;
-    background-color: #213a4e;
-    margin-top: -8px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: -9px;
     margin-left: 44px;
-    width: 910px;
-    text-align:center;
+    color: #206989;
 }
-.bottom_footer ul{
-    margin: 0 auto;
+.class_of_tire3 {
+    font-family: 'lucida_sans_unicoderegular';
+    font-size: 11.77px;
+    margin-top: 2px;
+    margin-left: 16px;
+    letter-spacing: .6px;
+    color: #000;
 }
-.bottom_footer li{
-    display: inline-block;
-    overflow: hidden;
-    letter-spacing: 0.4px;
+.cost_of_tire_value3 {
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 38px;
+    letter-spacing: .1px;
+    color: #114366;
+}
+.cost_of_tire_grn3 {
     font-family: Arial;
     font-size: 12px;
-    margin-top: 10px;
-    padding: 0 3.7px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 3.6px;
+    letter-spacing: .5px;
+    color: #114366;
 }
-.bottom_footer a{
-    color: #fff;
-    text-decoration:none;
+.st_line {
+    height: 202px;
 }
-.bottom_footer a:hover{
-    color: #3d7691;
+.nd_line {
+    height: 204px;
 }
-.bottom_footer span{
-    padding: 0 1px;
-    color: #fff;
+.rd_line {
+    height: 202px;
+}
+.clearfix {
+    clear: both;
+    overflow: hidden;
+    content: '';
+}
+footer {
+    width: 910px;
+}
+.top_footer {
+    height: 60px;
+}
+.top_footer ul {
+    margin-top: 37px;
+    margin-left: 161px;
+}
+.top_footer li {
+    display: table-cell;
+    padding-right: 13px;
     vertical-align: middle;
 }
-.bottom_footer li:nth-child(4n){
-    padding-right:3px;
+.bottom_footer {
+    width: 910px;
+    height: 100px;
+    margin-top: -8px;
+    margin-left: 44px;
+    text-align: center;
+    background-color: #213a4e;
 }
-
-.bottom_footer li:nth-child(5n){
+.bottom_footer ul {
+    margin: 0 auto;
+}
+.bottom_footer li {
+    font-family: Arial;
+    font-size: 12px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 0 3.7px;
+    letter-spacing: .4px;
+}
+.bottom_footer a {
+    text-decoration: none;
+    color: #fff;
+}
+.bottom_footer a:hover {
+    color: #3d7691;
+}
+.bottom_footer span {
+    padding: 0 1px;
+    vertical-align: middle;
+    color: #fff;
+}
+.bottom_footer li:nth-child(4n) {
+    padding-right: 3px;
+}
+.bottom_footer li:nth-child(5n) {
     padding-right: 5px;
 }
-
-.bottom_footer p{
-    color: #804740;
+.bottom_footer p {
     font-size: 10.4px;
     margin-top: 12px;
     margin-left: -2.9px;
+    color: #804740;
 }
