@@ -85,25 +85,33 @@
         <div id="search_menu">
             <div id="search_auto">
 
-                <span class="discs_text">Диски:</span>
-                <span class="search_auto_text">Поиск по автомобилю</span>
-                <span class="tire_text">Шины:</span>
+                    <div class="search_auto_text_top">
+                        <span class="discs_text">Диски:</span>
+                        <span class="search_auto_text">Поиск по автомобилю</span>
+                        <span class="tire_text">Шины:</span>
+                    </div>
+
 
                 <form action="/">
-
-                    <div class="search_discs_for_auto">
+                <div class="search">
+                    <div class="search_auto_discs_characters">
 
                         <span class="auto_brand_text_discs">Марка</span>
                         <span class="auto_text_discs">авто:</span>
+                        <span class="auto_model_text_discs">Модель</span>
+                        <span class="auto_model_text_discs_2">автомобиля:</span>
+                        <span class="auto_year_text_discs">Год выпуска</span>
+                        <span class="auto_year_text2_discs">автомобиля:</span>
+                        <span class="equipment_discs_text">Комплектация:</span>
 
+                    </div>
+
+                    <div class="search_auto_discs_selects">
                         <select name="auto_brand_discs">
                             <option value="1" label=" "></option>
                             <option value="2" label=" "></option>
                             <option value="3" label=" "></option>
                         </select>
-
-                        <span class="auto_model_text_discs">Модель</span>
-                        <span class="auto_model_text_discs_2">автомобиля:</span>
 
                         <select name="auto_model_discs">
                             <option value="1" label=" "></option>
@@ -111,16 +119,11 @@
                             <option value="3" label=" "></option>
                         </select>
 
-                        <span class="auto_year_text_discs">Год выпуска</span>
-                        <span class="auto_year_text2_discs">автомобиля:</span>
-
                         <select name="auto_year_discs">
                             <option value="1" label=" "></option>
                             <option value="2" label=" "></option>
                             <option value="3" label=" "></option>
                         </select>
-
-                        <span class="equipment_discs_text">Комплектация:</span>
 
                         <select name="equipment_discs">
                             <option value="1" label=" "></option>
@@ -130,19 +133,25 @@
 
                     </div>
 
-                    <div class="search_tire_for_auto">
+                    <div class="search_auto_tire_characters">
 
-                        <span class="auto_brand_text_tire">Марка</span>
-                        <span class="auto_text_tire">авто:</span>
+                        <span class="auto_brand_text_discs">Марка</span>
+                        <span class="auto_text_discs">авто:</span>
+                        <span class="auto_model_text_discs">Модель</span>
+                        <span class="auto_model_text_discs_2">автомобиля:</span>
+                        <span class="auto_year_text_discs">Год выпуска</span>
+                        <span class="auto_year_text2_discs">автомобиля:</span>
+                        <span class="equipment_discs_text">Комплектация:</span>
 
+                    </div>
+
+
+                    <div class="search_auto_tires_selects">
                         <select name="auto_brand_tires">
                             <option value="1" label=" "></option>
                             <option value="2" label=" "></option>
                             <option value="3" label=" "></option>
                         </select>
-
-                        <span class="auto_model_text_tires">Модель</span>
-                        <span class="auto_model_text_tires_2">автомобиля:</span>
 
                         <select name="auto_model_tires">
                             <option value="1" label=" "></option>
@@ -150,26 +159,23 @@
                             <option value="3" label=" "></option>
                         </select>
 
-                        <span class="auto_year_text_tires">Год выпуска</span>
-                        <span class="auto_year_text2_tires">автомобиля:</span>
-
                         <select name="auto_year_tires">
                             <option value="1" label=" "></option>
                             <option value="2" label=" "></option>
                             <option value="3" label=" "></option>
                         </select>
 
-                        <span class="equipment_tires_text">Комплектация:</span>
-
                         <select name="equipment_tires">
                             <option value="1" label=" "></option>
                             <option value="2" label=" "></option>
                             <option value="3" label=" "></option>
                         </select>
-
                     </div>
 
-                    <div class="search_auto">
+                </div>
+
+
+                    <div class="search_auto_input">
                         <input type="submit" value="поиск...">
                     </div>
 
@@ -179,11 +185,18 @@
 
             <div id="search_tire">
 
-                <span class="search_tire_text">поиск шин</span>
+                    <div class="search_tire_block_top">
+                        <span>поиск шин</span>
+                    </div>
+
+                    <div class="search_tire_character">
+                        <span class="size_tire_text">Размер:</span>
+                        <span class="R_text">R</span>
+                        <span class="season_text">Сезон:</span>
+                    </div>
 
                 <div class="search_tire_2nd_block">
                     <form action="/">
-                        <span class="size_tire_text">Размер:</span>
 
                         <select name="size_of_tires">
                             <option value="1" label=" "></option>
@@ -191,15 +204,13 @@
                             <option value="3" label="145" selected="selected">145</option>
                         </select>
 
-                        <span class="cherto4ka_mejdy_textom">/</span>
+                        <span class="line_between_text">/</span>
 
                         <select name="size_of_tires2">
                             <option value="1" label=" "></option>
                             <option value="2" label=" "></option>
                             <option value="3" label=" "></option>
                         </select>
-
-                        <span class="R_text">R</span>
 
                         <select name="R_tires">
                             <option value="1" label=" "></option>
@@ -208,10 +219,6 @@
                         </select>
 
                         <div class="checkobox_season">
-                            <div class="first"><span>Сезон:</span></div>
-
-                            <div class="second">
-
 
                                 <p class="sum">
                                     <label for="summer">
@@ -232,7 +239,6 @@
                                 <input type="submit" value="поиск...">
                             </div>
 
-                        </div>
 
                     </form>
                 </div>
@@ -247,46 +253,39 @@
                         <span>поиск дисков</span>
                     </div>
 
-                    <span class="search_discs_diameter_text">Диаметр</span>
-                    <span class="search_disc_text">диска:</span>
-
-                    <select name="diameter_of_discs">
-                        <option value="1" label=" ">1</option>
-                        <option value="2" label=" ">2</option>
-                        <option value="3" label="14" selected="selected">14</option>
-                    </select>
-
-                    <div class="Kolichestvo_krepejnux_otverstvii_box">
+                    <div class="search_discs_characters">
+                        <span class="search_discs_diameter_text">Диаметр</span>
+                        <span class="search_disc_text">диска:</span>
                         <span class="search_discs_quantity_text">Количество</span>
-                        <br>
-                        <span class="search_disc_krepejnux_text">крепёжных</span>
-                        <br>
-                        <span class="search_disc_otverstvii_text">отверстий</span>
+                        <span class="search_disc_fastener_text">крепёжных</span>
+                        <span class="search_disc_holes_text">отверстий</span>
 
-                        <select name="kolichestvo_krepejnux_otverstvii">
-                            <option value="1" label=" ">1</option>
-                            <option value="2" label=" ">2</option>
-                            <option value="3" label="3" selected="selected">3</option>
-                        </select>
-
+                        <span class="DLFH_diametr">Диаметр</span>
+                        <span class="DLFH_location">расположения</span>
+                        <span class="DLFH_fastener">крепежных</span>
+                        <span class="DLFH_holes">отверстий:</span>
                     </div>
 
-                    <div class="DRKO_box">
-                        <span class="text1">Диаметр</span>
-                        <br>
-                        <span class="text2">расположения</span>
-                        <br>
-                        <span class="text3">крепежных</span>
-                        <br>
-                        <span class="text4">отверстий:</span>
+                    <div class="search_discs_select">
 
-                        <select name="DRKO_select">
-                            <option value="1" label=" ">1</option>
-                            <option value="2" label=" ">2</option>
-                            <option value="3" label="12" selected="selected">12</option>
+                                            <select name="diameter_of_discs">
+                                                <option value="1" label=" ">1</option>
+                                                <option value="2" label=" ">2</option>
+                                                <option value="3" label="14" selected="selected">14</option>
+                                            </select>
 
-                        </select>
+                                                <select name="QFH">
+                                                    <option value="1" label=" ">1</option>
+                                                    <option value="2" label=" ">2</option>
+                                                    <option value="3" label="3" selected="selected">3</option>
+                                                </select>
 
+                                                <select name="DLFH">
+                                                    <option value="1" label=" ">1</option>
+                                                    <option value="2" label=" ">2</option>
+                                                    <option value="3" label="12" selected="selected">12</option>
+
+                                                </select>
                     </div>
 
                 </div>
@@ -327,39 +326,43 @@
 
         <aside>
 
-            <div class="catalog_prod">
-                <a href="#"><img src="img/icon.png" alt="">КАТАЛОГ ПРОДУКЦИИ:</a>
-            </div>
+            <ul>
+                <li class="catalog_prod">
+                    <a href="#"><img src="img/icon.png" alt="">КАТАЛОГ ПРОДУКЦИИ:</a>
+                </li>
 
-            <div class="tire_left_menu">
-                <a href="#"><img src="img/tire.png" alt="">ШИНЫ</a>
-                <ul class="tire_left_menu_ul">
-                    <li><a href="#">Наименование 1</a></li>
-                    <li><a href="#">Наименование 2</a></li>
-                    <li><a href="#">Наименование 3</a></li>
-                    <li><a href="#">Наименование 4</a></li>
-                </ul>
-            </div>
+                <li class="tire_left_menu">
+                    <a href="#">ШИНЫ</a>
+                        <ul class="tire_left_menu_ul">
+                            <li><a href="#">Наименование 1</a></li>
+                            <li><a href="#">Наименование 2</a></li>
+                            <li><a href="#">Наименование 3</a></li>
+                            <li><a href="#">Наименование 4</a></li>
+                        </ul>
+                </li>
 
-            <div class="discs_left_menu">
-                <a href="#"><img src="img/tire.png" alt="">ДИСКИ</a>
+                <li class="discs_left_menu">
+                    <a href="#">ДИСКИ</a>
+
                 <ul class="discs_left_menu_ul">
                     <li><a href="#">Наименование 1</a></li>
                     <li><a href="#">Наименование 2</a></li>
                     <li><a href="#">Наименование 3</a></li>
                     <li><a href="#">Наименование 4</a></li>
                 </ul>
-            </div>
+                </li>
 
-            <div class="bolts_left_menu">
-                <a href="#"><img src="img/tire.png" alt="">БОЛТЫ</a>
+                <li class="bolts_left_menu">
+                    <a href="#">БОЛТЫ</a>
+
                 <ul class="bolts_left_menu_ul">
                     <li><a href="">Наименование 1</a></li>
                     <li><a href="">Наименование 2</a></li>
                     <li><a href="">Наименование 3</a></li>
                     <li><a href="">Наименование 4</a></li>
                 </ul>
-            </div>
+                </li>
+            </ul>
 
         </aside>
 
@@ -472,57 +475,53 @@
         </main>
 
         <aside>
-            <div class="brands">
-                <a href="#"><img src="img/icon.png" alt="">БРЕНДЫ:</a>
-            </div>
+            <ul>
+                <form action="/">
+                <li class="brands">
+                    <a href="#"><img src="img/icon.png" alt="">БРЕНДЫ:</a>
+                </li>
+                <li class="tires_right_menu">
+                    <a href="#">ШИНЫ</a>
+                    <ul class="tires_right_menu_checkbox">
+                        <li>
+                                <label for="brand1">
+                                    <input type="checkbox" id="brand1" value="a1">Бренд 1</label>
+                        </li>
+                        <li>
+                                <label for="brand2">
+                                    <input type="checkbox" id="brand2" value="a1">Бренд 2</label>
+                        </li>
+                        <li>
+                                <label for="brand3">
+                                    <input type="checkbox" id="brand3" value="a1">Бренд 3</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="discs_right_menu">
+                    <a href="#">ДИСКИ</a>
+                    <ul class="discs_right_menu_checkbox">
+                        <li>
+                            <label for="brand01">
+                                <input type="checkbox" id="brand01" value="a1">Бренд 1</label>
+                        </li>
+                        <li>
+                            <label for="brand02">
+                                <input type="checkbox" id="brand02" value="a1">Бренд 2</label>
+                        </li>
+                        <li>
+                            <label for="brand03">
+                                <input type="checkbox" id="brand03" value="a1">Бренд 3</label>
+                        </li>
+                    </ul>
 
-            <form action="/">
-                <div class="tires_right_menu">
-                    <a href="#"><img src="img/tire.png" alt="">ШИНЫ</a>
-                </div>
-
-                <div class="tires_right_menu_checkbox">
-
-                    <p>
-                        <label for="brand1">
-                            <input type="checkbox" id="brand1" value="a1">Бренд 1</label>
-                    </p>
-                    <p>
-                        <label for="brand2">
-                            <input type="checkbox" id="brand2" value="a1">Бренд 2</label>
-                    </p>
-                    <p>
-                        <label for="brand3">
-                            <input type="checkbox" id="brand3" value="a1">Бренд 3</label>
-                    </p>
-
-                </div>
-
-                <div class="discs_right_menu">
-                    <a href="#"><img src="img/tire.png" alt="">ДИСКИ</a>
-                </div>
-
-                <div class="discs_right_menu_checkbox">
-
-                    <p>
-                        <label for="brand01">
-                            <input type="checkbox" id="brand01" value="a1">Бренд 1</label>
-                    </p>
-                    <p>
-                        <label for="brand02">
-                            <input type="checkbox" id="brand02" value="a1">Бренд 2</label>
-                    </p>
-                    <p>
-                        <label for="brand03">
-                            <input type="checkbox" id="brand03" value="a1">Бренд 3</label>
-                    </p>
-                </div>
-                <p>
-                    <input type="submit" id="enter" value="ВЫБРАТЬ">
-                </p>
-
-
+            </li>
+            <li>
+                <input type="submit" id="enter" value="ВЫБРАТЬ">
+            </li>
             </form>
+            </ul>
+
+
 
         </aside>
         <div class="clearfix">
