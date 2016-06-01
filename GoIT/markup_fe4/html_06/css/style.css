@@ -298,9 +298,8 @@ input[type=password]:focus:-ms-input-placeholder {
 
 {
     float: right;
-    width: 280px;
-    height: 35px;
-    color: white;
+        color: white;
+        margin-right: 13px;
 }
 .menu_ul_right > li {
     font-family: Arial, sans-serif;
