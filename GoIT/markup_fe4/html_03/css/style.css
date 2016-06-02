@@ -69,13 +69,13 @@
       }
 
       .sidebar{
+          width: 250px; /* Ширина меню */
           float:left;
           margin-left: 50px;
           margin-top: 50px;
       }
 
       .menu_left {
-      width: 250px; /* Ширина меню */
       list-style: none; /* Для списка убираем маркеры */
       font-size: 12px; /* Размер названий в пункте меню */
      }
@@ -89,7 +89,7 @@
       border-bottom: transparent;
      }
 
-     .menu_left li:nth-child(6n){
+     .menu_left li:last-child{
          border-bottom:1px solid #ccc;
      }
 
@@ -99,16 +99,26 @@
       padding: 15px 40px;
      }
 
-     main{
+     .content{
          float: right;
-         margin-right: 50px;
-         margin-top: 50px;
+             width: 678px;
+             margin-right: 50px;
+             margin-top: 50px;
      }
 
      .content img{
          float: right;
-         min-width: 700px;
+         margin-bottom: 50px;
      }
+
+      .content img:after{
+              content: "";
+              clear:both;
+              display: block;
+              overflow: hidden;
+              visibility: hidden;
+          }
+
 
      .content:after{
          content: "";
@@ -118,10 +128,12 @@
          visibility: hidden;
      }
 
-      .text{
-        width: 660px;
-        padding: 20px 20px;
-      }
+     .text{
+         margin: 0 20px 100px 20px;
+         line-height: 23px;
+         letter-spacing: 0.2px;
+     }
+
 
         .links_footer{
         background: #a3a6a4;
@@ -153,5 +165,5 @@
         }
 
         nav{
-            margin: 0 50px;
+            margin: 0 50px 100px 50px;
         }
