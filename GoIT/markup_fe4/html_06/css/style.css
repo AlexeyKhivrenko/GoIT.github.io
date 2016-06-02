@@ -220,15 +220,16 @@ input[type=password]:focus:-ms-input-placeholder {
 /*box для меню слева*/
 
 {
-    float: left;
+    float: inline-block;
     margin-left: 126px;
 }
 .menu_ul > li
 /*элементы ула меню*/
 
 {
-    display: inline-block;
-    margin-top: 5px;
+    float:left;
+    margin-top:5px;
+    padding-right:3px;
 }
 .menu_ul > li > a
 /*настр ссылочных элементов*/
@@ -297,9 +298,7 @@ input[type=password]:focus:-ms-input-placeholder {
 /*менюшка справа под главн картинкой*/
 
 {
-    float: right;
-        color: white;
-        margin-right: 13px;
+    display:inline-block;
 }
 .menu_ul_right > li {
     font-family: Arial, sans-serif;
@@ -310,8 +309,8 @@ input[type=password]:focus:-ms-input-placeholder {
 /*картинка корзины*/
 
 {
-    margin-top: 7px;
-    margin-left: 52px;
+    margin-top: 8px;
+    margin-left: 53px;
 }
 .goods
 /*товары*/
