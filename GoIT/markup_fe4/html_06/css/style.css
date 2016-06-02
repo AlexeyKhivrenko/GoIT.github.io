@@ -310,7 +310,7 @@ input[type=password]:focus:-ms-input-placeholder {
 
 {
     margin-top: 8px;
-    margin-left: 53px;
+    margin-left: 56px;
 }
 .goods
 /*товары*/
@@ -1317,11 +1317,15 @@ aside {
 .catalog_prod > a:active {
     color: #104265;
 }
-.catalog_prod > a > img {
-    position: absolute;
-    /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
-    margin-top: -2px;
-    margin-left: -26px;
+.catalog_prod > a:before {
+        content: " ";
+        position: absolute;
+        margin-left: -27px;
+        margin-top: -1px;
+        height: 20px;
+        width: 23px;
+        background: url(../img/icon.png) 100%;
+        display: inline-block;
 }
 
 /*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ/ШИНЫ*/
@@ -1555,10 +1559,15 @@ aside {
 .brands > a:active {
     color: #104265;
 }
-.brands > a > img {
-    position: absolute;
-    /*КЛИКАБЕЛЬНАЯ ИКОНКА*/
-    margin-left: -27px;
+.brands > a:before{
+    content: " ";
+        position: absolute;
+        margin-left: -28px;
+        margin-top: 1px;
+        height: 20px;
+        width: 23px;
+        background: url(../img/icon.png) 100%;
+        display: inline-block;
 }
 
 /*ПРАВЫЙ ASIDE ШИНЫ*/
@@ -1597,12 +1606,49 @@ aside {
     margin-left: 8px;
     margin-top: 3px;
 }
+input[type="checkbox"] {
+display:none;
+position:absolute;
+z-index:-1000;
+left:-1000px;
+overflow: hidden;
+clip: rect(0 0 0 0);
+height:1px;
+width:1px;
+margin:-1px;
+padding:0;
+border:0;
+}
+input[type="checkbox"] + label span{
+    padding-left: 26px;
+    height:13px;
+    display:inline-block;
+    line-height:13px;
+    background-repeat:no-repeat;
+    background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_80bd7531008aa503319b332e424f94c7.png);
+    background-position: 0 0;
+    font-size:13px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+input[type="checkbox"]:checked + label span {
+    display: inline-block;
+    background-position: 0 -13px;
+    background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_80bd7531008aa503319b332e424f94c7.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+}
 label[for='brand1'] {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 12.4px;
     display: block;
     padding-top: 5px;
-    padding-left: 13px;
+    padding-left: 0;
     text-indent: 0;
     letter-spacing: .1px;
 }
@@ -1622,7 +1668,7 @@ label[for='brand2'] {
     font-size: 12.4px;
     display: block;
     padding-top: 5px;
-    padding-left: 13px;
+    padding-left: 0;
     text-indent: 0;
     letter-spacing: .1px;
 }
@@ -1642,7 +1688,7 @@ label[for='brand3'] {
     font-size: 12.4px;
     display: block;
     padding-top: 5px;
-    padding-left: 13px;
+    padding-left: 0;
     text-indent: 0;
     letter-spacing: .1px;
 }
@@ -1700,7 +1746,7 @@ label[for='brand01'] {
     font-size: 12.4px;
     display: block;
     padding-top: 5px;
-    padding-left: 13px;
+    padding-left: 0;
     text-indent: 0;
     letter-spacing: .1px;
 }
@@ -1720,7 +1766,7 @@ label[for='brand02'] {
     font-size: 12.4px;
     display: block;
     padding-top: 5px;
-    padding-left: 13px;
+    padding-left: 0;
     text-indent: 0;
     letter-spacing: .1px;
 }
@@ -1740,7 +1786,7 @@ label[for='brand03'] {
     font-size: 12.4px;
     display: block;
     padding-top: 5px;
-    padding-left: 13px;
+    padding-left: 0;
     text-indent: 0;
     letter-spacing: .1px;
 }
