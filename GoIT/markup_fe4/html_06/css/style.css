@@ -1,8 +1,14 @@
+html,
+body {
+  height: 100%;
+}
 #wrapper {
     font-family: Arial, Tahoma, sans-serif;
     font-size: 10.94px;
     width: 1000px;
+    position: relative;
     height: 1310px;
+    min-height: 100%;
     margin: 0 auto;
 }
 header {
@@ -1288,7 +1294,7 @@ select:focus:hover {
 aside {
     float: left;
     width: 235px;
-    height: 635px;
+    height: 638px;
 }
 
 /*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ!*/
@@ -2013,12 +2019,18 @@ main {
     height: 202px;
 }
 .clearfix {
-    clear: both;
-    overflow: hidden;
-    content: '';
+    visibility: hidden;
+            display: block;
+            content: "";
+            clear: both;
+            height: 0;
 }
 footer {
-    width: 910px;
+    position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 190px;
+  width: 910px;
 }
 .top_footer {
     height: 60px;
