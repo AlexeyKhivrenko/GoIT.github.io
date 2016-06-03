@@ -23,7 +23,7 @@ body {
 }
 #wrap1 {
     display: table-row;
-    height: 88%;
+    height: 100%;
 }
 .image_header {
     padding: 40px 50px;
