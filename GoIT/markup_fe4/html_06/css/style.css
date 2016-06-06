@@ -12,7 +12,6 @@ body {
     margin: 0 auto;
 }
 header {
-    height: 291px;
     padding: 0 46px;
 }
 .header_top {
@@ -23,14 +22,36 @@ header {
     margin-top: 22px;
     margin-left: 5.2px;
 }
-.telephone > p {
-    font-family: Arial;
-    font-size: 17.9px;
-    float: left;
-    padding-top: 22.5px;
-    padding-left: 3.2px;
-    letter-spacing: .5px;
-    color: #595959;
+.telephone a:first-child:before{
+  content: " ";
+      position: absolute;
+      margin-left: -25px;
+      margin-top: -1px;
+      height: 21px;
+      width: 22px;
+      background: url(../img/telephone.png) 100%;
+      display: inline-block;
+}
+.telephone > a {
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 17.9px;
+  float: left;
+  padding-top: 22.5px;
+  padding-left: 30px;
+  letter-spacing: .5px;
+  color: #595959;
+}
+
+.telephone a:last-child{
+  margin-left: -24px;
+}
+.password_forgot:after{
+  content: " ";
+  clear:both;
+  display:block;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 /*блок для вводных данных*/
@@ -61,11 +82,22 @@ header {
     width: 107.6px;
     height: 15px;
     margin-top: 2.4px;
-    margin-left: 4.7px;
+    margin-left: 25px;
     padding-left: 3.4px;
     letter-spacing: .45px;
     border: 1px solid #ccc;
     border-radius: 1px;
+}
+.login_data > span:before{
+  content: " ";
+      position: absolute;
+      margin-left: 7px;
+      margin-top: 5px;
+      height: 18px;
+      width: 14px;
+      background: url("../img/zamok.png");
+      background-size: 14px;
+      display: inline-block;
 }
 .login_data > input[type=password] {
     font-family: Arial;
@@ -196,6 +228,13 @@ input[type=password]:focus:-ms-input-placeholder {
 .menu_right_top > a > img {
     margin-top: 1px;
 }
+.menu_right_top:after{
+    content: " ";
+    clear:both;
+    display:block;
+    overflow: hidden;
+    visibility: hidden;
+  }
 .img_header {
     height: 236.8px;
     margin-top: 1px;
@@ -226,7 +265,7 @@ input[type=password]:focus:-ms-input-placeholder {
 /*box для меню слева*/
 
 {
-    float: inline-block;
+    float:left;
     margin-left: 126px;
 }
 .menu_ul > li
@@ -322,10 +361,20 @@ input[type=password]:focus:-ms-input-placeholder {
 /*товары*/
 
 {
-    margin-top: 9px;
-    margin-left: 6.4px;
-    letter-spacing: .6px;
-    color: #899395;
+  margin-top: 9px;
+  margin-left: 83.4px;
+  letter-spacing: .6px;
+  color: #899395;
+}
+.goods:before{
+  content: " ";
+  position: absolute;
+  display: inline-block;
+  width: 21px;
+  height: 17px;
+  margin-left: -27px;
+  margin-top: -2px;
+  background: url("../img/korzina.png");
 }
 .goods_number
 /*номер товара*/
@@ -392,20 +441,21 @@ input[type=password]:focus:-ms-input-placeholder {
 /*БЛОК ПОИСКА ОБЩИЙ*/
 
 {
-    float: left;
-    width: 413.4px;
-    height: 134.5px;
-    margin-top: 4px;
-    margin-left: 3.2px;
-    border: 1px solid #b6b6b6;
-    border-radius: 19.2px;
-    -webkit-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
-    -moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
-    box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+  float: left;
+  width: 413.5px;
+  height: 131.5px;
+  margin-top: 6px;
+  margin-left: 3.2px;
+  border: 1px solid #b6b6b6;
+  border-radius: 19.2px;
+  -webkit-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+  -moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+  box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 }
 /*В 1 БЛОКЕ ПОИСКА БЛОК ДЛЯ НАЗВАНИЙ(ВВЕРХУ)*/
 .search_auto_text_top{
     height:17px;
+      margin-bottom: -1px;
 
 }
 .search_auto_text_top:after{
@@ -416,24 +466,23 @@ input[type=password]:focus:-ms-input-placeholder {
     visibility:hidden;
 }
 .discs_text {
-    font-family: Arial, sans-serif;
-    font-size: 9.6px;
-    font-weight: 800;
-    position: absolute;
-    margin-top: 3.2px;
-    margin-left: 20.4px;
-    letter-spacing: .5px;
-    /*СЛОВО ДИСКИ В ПОИСК АВТОМОБИЛЯ*/
-    color: #134465;
+  font-family: Arial, sans-serif;
+      font-size: 9.6px;
+      font-weight: 800;
+      position: absolute;
+      margin-top: 1.5px;
+      margin-left: 20.4px;
+      letter-spacing: .5px;
+      color: #134465;
 }
 .search_auto_text {
-    font-family: Arial, sans-serif;
-    font-size: 12.2px;
-    font-weight: 800;
-    position: absolute;
-    margin-top: -.4px;
-    margin-left: 126.1px;
-    letter-spacing: .2px;
+  font-family: Arial, sans-serif;
+      font-size: 12.2px;
+      font-weight: 800;
+      position: absolute;
+      margin-top: -2.4px;
+      margin-left: 126.1px;
+      letter-spacing: .2px;
     /*СЛОВОСОЧ ПОИСК ПО АВТОМОБИЛЯМ*/
     color: #134465;
 }
@@ -1009,6 +1058,13 @@ input[id='all_seas'] {
     -moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
     box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 }
+#search_disc_3rd_box:after{
+  content: " ";
+  display:block;
+  clear:both;
+  visibility: hidden;
+  overflow:hidden;
+}
 .search_discs {
     display: inline-block;
     width: 176px;
@@ -1324,14 +1380,14 @@ aside {
     color: #104265;
 }
 .catalog_prod > a:before {
-        content: " ";
-        position: absolute;
-        margin-left: -27px;
-        margin-top: -1px;
-        height: 20px;
-        width: 23px;
-        background: url(../img/icon.png) 100%;
-        display: inline-block;
+  content: " ";
+position: absolute;
+margin-left: -25px;
+margin-top: 0;
+height: 20px;
+width: 21px;
+background: url(../img/icon.png) 100%;
+display: inline-block;
 }
 
 /*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ/ШИНЫ*/
@@ -1410,7 +1466,7 @@ aside {
 .discs_left_menu {
     width: 148px;
     height: 26px;
-    margin-top: 99px;
+    margin-top: 100px;
     margin-left: 45px;
     border: 1px solid #aeb6b9;
     border-radius: 12px;
@@ -1626,16 +1682,17 @@ padding:0;
 border:0;
 }
 input[type="checkbox"] + label span{
-    padding-left: 26px;
-    height:13px;
-    display:inline-block;
-    line-height:13px;
-    background-repeat:no-repeat;
-    background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_80bd7531008aa503319b332e424f94c7.png);
-    background-position: 0 0;
-    font-size:13px;
-    vertical-align:middle;
-    cursor:pointer;
+  padding-left: 26px;
+  margin-top: -1px;
+  height: 13px;
+  display: inline-block;
+  line-height: 13px;
+  background-repeat: no-repeat;
+  background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_80bd7531008aa503319b332e424f94c7.png);
+  background-position: 0 0;
+  font-size: 11px;
+  vertical-align: middle;
+  cursor: pointer;
 
 }
 input[type="checkbox"]:checked + label span {
@@ -1860,6 +1917,7 @@ main {
 .name_of_tire {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 15px;
+    margin-top:1px;
     font-weight: bold;
     height: 15px;
     margin-left: 34px;

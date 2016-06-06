@@ -17,18 +17,19 @@
 
                 <div class="telephone">
 
-                    <img src="img/telephone.png" alt="" />
-                    <p>(044)123-45-67 (044)567-89-10</p>
+                    <!-- <img src="img/telephone.png" alt="" /> -->
+                    <a href="tel:(044)1234567">(044)123-45-67</a>
+                    <a href="tel:(044)567-89-10">(044)567-89-10</a>
 
                 </div>
 
                 <div class="login">
-
-                    <img src="img/zamok.png" alt="">
+<!--
+                    <img src="img/zamok.png" alt=""> -->
 
                     <form action="/" class="login_data">
 
-                        <input type="text" name="login" placeholder="логин">
+                        <span></span><input type="text" name="login" placeholder="логин">
                         <input type="password" name="password" placeholder="пароль">
                         <input type="submit" name="login_submit" value="вход">
 
@@ -73,7 +74,7 @@
                 </ul>
 
             <ul class="menu_ul_right">
-                <li class="korzina"><img src="img/korzina.png" alt=""></li>
+                <!-- <li class="korzina"><img src="img/korzina.png" alt=""></li> -->
                 <li class="goods"><span>товаров:</span></li>
                 <li class="goods_number"><a href="#">0</a></li>
                 <li class="goods_summ"><span>на сумму:</span></li>
@@ -222,16 +223,19 @@
                         <div class="checkobox_season">
 
                                 <p class="sum">
+                                    <input type="checkbox" id="summer" value="a1">
                                     <label for="summer">
-                                        <input type="checkbox" id="summer" value="a1">лето</label>
+                                        <span>лето</span></label>
                                 </p>
                                 <p class="win">
+                                    <input type="checkbox" id="winter" value="a1">
                                     <label for="winter">
-                                        <input type="checkbox" id="winter" value="a1">зима</label>
+                                        <span>зима</span></label>
                                 </p>
                                 <p class="all">
-                                    <label for="all_seas">
-                                        <input type="checkbox" id="all_seas" value="a1">всесез</label>
+                                        <input type="checkbox" id="all_seas" value="a1">
+                                        <label for="all_seas">
+                                        <span>всесез</span></label>
                                 </p>
 
                             </div>
