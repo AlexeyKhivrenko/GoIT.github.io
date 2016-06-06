@@ -205,7 +205,7 @@ main {
 
 .leftColumn {
     float: left;
-    width: 24.5%;
+    width: 25%;
     margin-top: 4px;
     margin-bottom: -20000px;
     padding: 10px 3px 0 3px;
@@ -213,6 +213,7 @@ main {
     text-align: center;
     border-left: 1px solid #c8c8c8;
     background-color: rgba(200, 200, 200, .4);
+    box-sizing: border-box;
 }
 .leftColumn h1 {
     font-weight: bold;
@@ -226,18 +227,20 @@ main {
     padding: 10px 3px 0 3px;
     padding-bottom: 20010px;
     text-align: center;
+    box-sizing: border-box;
 }
 .rightColumn {
     float: right;
     overflow: hidden;
-    width: 24.5%;
-    margin-top: -16px;
+    width: 25%;
+    margin-top: 4px;
     margin-bottom: -20000px;
     padding: 10px 3px 0 3px;
     padding-bottom: 20010px;
     text-align: center;
     border-left: 1px solid #c8c8c8;
     background-color: rgba(200, 200, 200, .4);
+    box-sizing: border-box;
 }
 .rightColumn h1 {
     font-weight: bold;
