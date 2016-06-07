@@ -15,7 +15,9 @@ header {
     padding: 0 46px;
 }
 .header_top {
-    height: 53px;
+  position: relative;
+overflow: hidden;
+margin-bottom: 10px;
 }
 .telephone > img {
     float: left;
@@ -434,23 +436,25 @@ input[type=password]:focus:-ms-input-placeholder {
 /*3 БЛОКА С ПОИСКОМ*/
 
 {
-    height: 145px;
-    margin: 0 45px;
+  margin: 0 45px;
+  position: relative;
+  overflow: hidden;
 }
 #search_auto
 /*БЛОК ПОИСКА ОБЩИЙ*/
 
 {
   float: left;
-  width: 413.5px;
-  height: 131.5px;
-  margin-top: 6px;
-  margin-left: 3.2px;
-  border: 1px solid #b6b6b6;
-  border-radius: 19.2px;
-  -webkit-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
-  -moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
-  box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+      width: 416px;
+      height: 134px;
+      margin-top: 6px;
+      margin-left: 3.2px;
+      border: 1px solid #b6b6b6;
+      border-radius: 19.2px;
+      box-sizing: border-box;
+      -webkit-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+      -moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+      box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 }
 /*В 1 БЛОКЕ ПОИСКА БЛОК ДЛЯ НАЗВАНИЙ(ВВЕРХУ)*/
 .search_auto_text_top{
@@ -824,16 +828,17 @@ select[name='equipment_tires'] {
 }
 /*2й БЛОК для поиска ШИН*/
 #search_tire {
-    float: left;
-    width: 191px;
-    height: 135px;
-    margin-top: 4.2px;
-    margin-left: 13.2px;
-    border: 1px solid #b6b6b6;
-    border-radius: 19.2px;
-    -webkit-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
-    -moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
-    box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+  float: left;
+  width: 193px;
+  height: 137px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-left: 13px;
+  border: 1px solid #b6b6b6;
+  border-radius: 19.2px;
+  -webkit-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+  -moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+  box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 }
 .search_tire_block_top{
     font-family: Arial, sans-serif;
@@ -1047,16 +1052,17 @@ input[id='all_seas'] {
 /*ПОИСК ДИСКОВ 3-й БЛОК*/
 
 {
-    float: left;
-    width: 265.4px;
-    height: 135px;
-    margin-top: 3.2px;
-    margin-left: 11px;
-    border: 1px solid #b6b6b6;
-    border-radius: 19.2px;
-    -webkit-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
-    -moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
-    box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+  float: left;
+width: 267px;
+height: 137px;
+box-sizing: border-box;
+margin-top: 4px;
+margin-left: 11px;
+border: 1px solid #b6b6b6;
+border-radius: 16px;
+-webkit-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+-moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
+box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 }
 #search_disc_3rd_box:after{
   content: " ";
@@ -1348,9 +1354,10 @@ select:focus:hover {
     background-image: url('../img/strelka2.png');
 }
 aside {
-    float: left;
-    width: 235px;
-    height: 638px;
+  float: left;
+      width: 235px;
+      box-sizing: border-box;
+      margin-top: 4px;
 }
 
 /*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ!*/
@@ -1504,15 +1511,15 @@ display: inline-block;
     padding-top: 4.5px;
 }
 .discs_left_menu_ul > li > a {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.74px;
-    display: block;
-    margin-bottom: .1px;
-    padding-left: 13.1px;
-    text-decoration: none;
-    color: #475860;
-    background: url(../img/marker_li.png) no-repeat 2.2px 6.1px;
-    background-size: 5.6%;
+  font-family: 'lucida_sans_unicoderegular';
+  font-size: 12.74px;
+  display: block;
+  margin-bottom: -0.5px;
+  padding-left: 12.1px;
+  text-decoration: none;
+  color: #475860;
+  background: url(../img/marker_li.png) no-repeat 2.2px 6.1px;
+  background-size: 5.6%;
 }
 .discs_left_menu_ul > li > a:hover {
     font-family: Arial;
@@ -1520,7 +1527,7 @@ display: inline-block;
     font-weight: bold;
     font-style: italic;
     display: block;
-    padding: 2.3px 0 2.7px 12.1px;
+    padding: 2.4px 0 2.7px 12.1px;
     text-decoration: none;
     text-decoration: underline;
     color: #002e7d;
@@ -1543,7 +1550,7 @@ display: inline-block;
     font-family: 'lucida_sans_unicoderegular';
     font-size: 12.73px;
     position: absolute;
-    margin-top: 4px;
+    margin-top: 2px;
     margin-left: 29px;
     text-decoration: none;
     letter-spacing: 1px;
@@ -1574,7 +1581,8 @@ display: inline-block;
     font-family: 'lucida_sans_unicoderegular';
     font-size: 12.74px;
     display: block;
-    padding-left: 13.1px;
+    padding-left: 12px;
+    margin-top: -0.3px;
     text-decoration: none;
     color: #475860;
     background: url(../img/marker_li.png) no-repeat 2.2px 7.6px;
@@ -1586,7 +1594,7 @@ display: inline-block;
     font-weight: bold;
     font-style: italic;
     display: block;
-    padding: 2.3px 0 2.7px 12.1px;
+    padding: 2px 0 2.7px 12.1px;
     text-decoration: none;
     text-decoration: underline;
     color: #002e7d;
@@ -1887,10 +1895,10 @@ input[id='enter'] {
 /*НАСТРОЙКИ ДЛЯ MAIN*/
 
 main {
-    float: left;
-    width: 527px;
-    height: 629px;
-    margin-top: 9px;
+  float: left;
+      width: 527px;
+      box-sizing: border-box;
+      margin-top: 13px;
     border-radius: 6px;
     background: #e6e7e9;
     background: -moz-linear-gradient(top, #e6e7e9 0%, #93a7b0 100%);
@@ -1903,8 +1911,10 @@ main {
 
 .goodyear {
     float: left;
-    margin-top: 11px;
+    margin-bottom: 8px;
+    margin-top: 10px;
     margin-left: 24px;
+    box-sizing:border-box;
 }
 .goodyear a {
     text-decoration: none;
@@ -1976,6 +1986,7 @@ main {
     float: left;
         margin-top: 11px;
         margin-left: 21px;
+            box-sizing:border-box;
 }
 .nokian a {
     text-decoration: none;
@@ -2025,6 +2036,7 @@ main {
     float: left;
     margin-top: 11px;
     margin-left: 21px;
+        box-sizing:border-box;
 }
 .hankook a {
     text-decoration: none;
@@ -2068,13 +2080,17 @@ main {
     color: #114366;
 }
 .st_line {
-    height: 202px;
+  position: relative;
+overflow: hidden;
 }
 .nd_line {
-    height: 204px;
+  position: relative;
+overflow: hidden;
 }
 .rd_line {
-    height: 202px;
+  position: relative;
+overflow: hidden;
+    margin-bottom: 20px;
 }
 .clearfix {
     visibility: hidden;
