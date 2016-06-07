@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+table{
+  border-collapse: collapse;
+}
+tr{
+  height:40px;
+}
+td{
+  border: 5px solid black;
+  width:80px;
+}
+
+.top{
+  border-top: transparent;
+}
+
+.top:first-child{
+  border-left:transparent;
+  width:40px;
+}
+
+.left{
+  border-left: transparent;
+  width: 40px;
+}
+
+.bottom{
+  border-bottom:transparent;
+}
+.bottom:last-child, .right{
+  border-right:transparent;
+  width: 40px;
+}
+.right_alone{
+  width:40px;
+}
+
+.second{
+  height:80px;
+}
+
+.third{
+  height: 80px;
+}
+.sixth, .seventh{
+  height: 20px;
+}
+
+.yellow{
+  background: rgb(255, 255, 0);
+}
+
+.tomat{
+  background: rgb(255, 77, 0);
+}
+
+.blue{
+  background: rgb(33, 76, 139);
+}
+.black{
+  background: black;
+}
