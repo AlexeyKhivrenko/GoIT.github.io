@@ -18,23 +18,18 @@
         <li><a class="Menu_l" href="#">Forum</a></li>
         <li><a class="Menu_l" href="#">Contato</a></li>
         <li><a class="Menu_l" href="#">Ajuda</a></li>
-        <li><img class="palochka" src="img/palochka.png" alt=""></li>
-        <li><img class="flag" src="img/flag.png" alt=""></li>
+
         <li><p class="minhas">Minhas Ofertas</p></li>
 
-        <li><p class="ola">Ola!</p></li>
-        <li><a class="enter" href="#">Entrar</a></li>
-        <li><p class="ou">ou</p></li>
-        <li><a class="reg" href="#">Codastre-sa</a></li>
+        <li class="enter_panel"><p class="ola">Ola!</p>
+        <a class="enter" href="#">Entrar</a>
+        <p class="ou">ou</p>
+        <a class="reg" href="#">Codastre-sa</a></li>
 
       </ul>
 
     </div>
   </header>
-
-  <div class="background">
-    <img class="background_img" src="img/background.png" alt="">
-  </div>
 
   <main>
       <div class="head">
@@ -66,17 +61,18 @@
                <input type="email" name="email" placeholder="Email Address" required=""/>
                <input type="password" name="password" placeholder="Choose Password" required=""/>
                <input type="password" name="passwordconfirm" placeholder="Password Confirm" required=""/>
-               <input type="checkbox" name="name" value="" required="">
-               <span class="agreement" >Send me Youbike updates and tips</span>
+               <input type="checkbox" name="name" id="agreement_checkbox" required="">
+               <label for="agreement_checkbox"><span class="agreement">Send me Youbike updates and tips</span></label>
+
                <input type="submit" value="Create my Account"/>
 
-               <div class="text_snizy1">
+               <div class="agreement_text1">
 
                <p>By clicking the button above, you agree to the Terms of Service</p>
 
                </div>
 
-               <div class="text_snizy2">
+               <div class="agreement_text2">
 
               <p>Xiew our Privacy Policy.</p>
             </div>
