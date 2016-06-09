@@ -91,7 +91,7 @@ margin-bottom: 10px;
   padding-bottom: 3px;
 }
 
-.login_data > span:before{
+.login_data > p:before{
   content: " ";
       position: absolute;
       margin-left: 7px;
