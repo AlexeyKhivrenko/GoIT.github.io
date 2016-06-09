@@ -2,15 +2,27 @@ html,
 body {
   height: 100%;
 }
+
 #wrapper {
     font-family: Arial, Tahoma, sans-serif;
     font-size: 10.94px;
     width: 1000px;
+    height:100%;
+    display:table;
     position: relative;
-    height: 1310px;
-    min-height: 100%;
     margin: 0 auto;
 }
+.content{
+  display: table-row;
+  height: 100%;
+}
+/*.content:after{
+  overflow: hidden;
+  visibility: hidden;
+  content: ".";
+  display:table-row;
+  clear:both;
+}*/
 header {
     padding: 0 46px;
 }
@@ -18,6 +30,10 @@ header {
   position: relative;
 overflow: hidden;
 margin-bottom: 10px;
+}
+.telephone{
+  overflow: hidden;
+      float: left;
 }
 .telephone > img {
     float: left;
@@ -61,7 +77,7 @@ margin-bottom: 10px;
 .login {
     float: left;
     width: 495.4px;
-    height: 25.1px;
+  padding: 3px 0;
     margin-top: 18.3px;
     margin-left: 15.6px;
     border-radius: 3px;
@@ -70,46 +86,44 @@ margin-bottom: 10px;
     -moz-box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, .6);
     box-shadow: 1px 7px 4px -4px rgba(0, 0, 0, .6);
 }
-.login > img {
-    float: left;
-    width: 14px;
-    height: 19px;
-    margin-top: 3.4px;
-    margin-left: 6.8px;
+.login_data{
+  overflow: hidden;
+  padding-bottom: 3px;
+}
+
+.login_data > span:before{
+  content: " ";
+      position: absolute;
+      margin-left: 7px;
+      margin-top: 2px;
+      height: 17px;
+      width: 14px;
+      background: url("../img/zamok.png");
+      background-size: 14px;
+      display: inline-block;
 }
 .login_data > input[type=text] {
     font-family: Arial;
     font-size: 10.6px;
     float: left;
     width: 107.6px;
-    height: 15px;
-    margin-top: 2.4px;
+    padding: 0.8px 0 1.2px;
+    margin-top: 0.4px;
     margin-left: 25px;
     padding-left: 3.4px;
     letter-spacing: .45px;
     border: 1px solid #ccc;
     border-radius: 1px;
 }
-.login_data > span:before{
-  content: " ";
-      position: absolute;
-      margin-left: 7px;
-      margin-top: 5px;
-      height: 18px;
-      width: 14px;
-      background: url("../img/zamok.png");
-      background-size: 14px;
-      display: inline-block;
-}
+
 .login_data > input[type=password] {
     font-family: Arial;
     font-size: 10.6px;
     float: left;
     width: 107.6px;
-    height: 15px;
-    margin-top: 2.4px;
+    padding: 0.8px 0 1.2px 3.4px;
+    margin-top: 0.4px;
     margin-left: 8px;
-    padding-left: 3.4px;
     letter-spacing: .4px;
     border: 1px solid #ccc;
     border-radius: 1px;
@@ -165,25 +179,25 @@ input[type=password]:focus:-ms-input-placeholder {
 .login_data > input[type=submit] {
     font-size: 11.01px;
     float: left;
-    margin-top: 6.1px;
-    margin-left: 7.6px;
+    margin-top: 3px;
+        margin-left: 8.6px;
     letter-spacing: .4px;
     color: white;
     border: none;
     background: none;
 }
-.line {
-    float: left;
-    margin-top: 5.9px;
-    margin-left: 5.2px;
+.vertical_slash {
+  float: left;
+      margin-top: 2.9px;
+      margin-left: 4.2px;
 }
-.line > span {
+.vertical_slash > span {
     color: white;
 }
 .registr {
-    float: left;
-    margin-top: 6.2px;
-    margin-left: 4px;
+  float: left;
+      margin-top: 3.2px;
+      margin-left: 4px;
 }
 .registr > a {
     font-size: 11.41px;
@@ -193,8 +207,8 @@ input[type=password]:focus:-ms-input-placeholder {
 }
 .password_forgot {
     float: left;
-    margin-top: 6.1px;
-    margin-left: 20.5px;
+        margin-top: 3.1px;
+        margin-left: 20.5px;
 }
 .password_forgot > a {
     font-family: Arial, Tahoma, sans-serif;
@@ -208,8 +222,8 @@ input[type=password]:focus:-ms-input-placeholder {
 .menu_right_top {
     float: left;
     width: 74.4px;
-    height: 18.2px;
-    margin-top: 20px;
+    padding: 1px 0 4px;
+    margin-top: 19px;
     margin-left: 16.4px;
     border: 1px solid rgb(206, 212, 212);
     border-radius: 11px;
@@ -238,13 +252,13 @@ input[type=password]:focus:-ms-input-placeholder {
     visibility: hidden;
   }
 .img_header {
-    height: 236.8px;
+    padding: 118.5px 0;
     margin-top: 1px;
     margin-left: -1.3px;
     background: url(../img/img_zazor.png);
 }
 .menu {
-    height: 32px;
+    padding-bottom: 7px;
     margin: 6.3px 43.8px;
     border: 1px solid rgb(10, 16, 48);
     border-radius: 4.3px;
@@ -438,7 +452,6 @@ input[type=password]:focus:-ms-input-placeholder {
 {
   margin: 0 45px;
   position: relative;
-  overflow: hidden;
 }
 #search_auto
 /*БЛОК ПОИСКА ОБЩИЙ*/
@@ -446,7 +459,7 @@ input[type=password]:focus:-ms-input-placeholder {
 {
   float: left;
       width: 416px;
-      height: 134px;
+      padding-bottom: 9px;
       margin-top: 6px;
       margin-left: 3.2px;
       border: 1px solid #b6b6b6;
@@ -458,8 +471,8 @@ input[type=password]:focus:-ms-input-placeholder {
 }
 /*В 1 БЛОКЕ ПОИСКА БЛОК ДЛЯ НАЗВАНИЙ(ВВЕРХУ)*/
 .search_auto_text_top{
-    height:17px;
-      margin-bottom: -1px;
+  padding-bottom: 17px;
+  margin-bottom: -1px;
 
 }
 .search_auto_text_top:after{
@@ -494,9 +507,7 @@ input[type=password]:focus:-ms-input-placeholder {
     font-family: Arial, sans-serif;
     font-size: 10.4px;
     font-weight: 800;
-    /*letter-spacing: 0px;*/
     position: absolute;
-    margin-top: 1px;
     margin-left: 354.6px;
     /*СЛОВО ШИНЫ В ПОИСК ПО АВТО*/
     color: #134465;
@@ -505,16 +516,16 @@ input[type=password]:focus:-ms-input-placeholder {
 /*РАЗДЕЛИЛ НА 4 БЛОКА ПОИСК ПО АВТО*/
 /*1-й БЛОК*/
 .search{
-    height:85px;
+    overflow: hidden;
 }
 .search:after{
     content: "";
+    display:block;
     clear:both;
     overflow:hidden;
 }
 .search_auto_discs_characters{
     float:left;
-    height: 85px;
     border:1px solid transparent;
 }
 .auto_brand_text_discs {
@@ -578,7 +589,6 @@ input[type=password]:focus:-ms-input-placeholder {
 }
 /*2-й БЛОК*/
 .search_auto_discs_selects{
-    height: 85px;
     float:left;
     border: 1px solid transparent;
 }
@@ -587,7 +597,7 @@ select[name='auto_brand_discs'] {
     margin-left: 1px;
     display:block;
     width: 102px;
-    height: 17px;
+    padding: 1px 0;
     /*селект для марка авто диски*/
     text-indent: .01px;
     text-overflow: '';
@@ -613,12 +623,11 @@ select::-ms-expand {
 }
 
 select[name='auto_model_discs'] {
-    margin-top: 5px;
-    margin-left: 1px;
-
+  margin-top: 4px;
+      margin-left: 1px;
+      padding: 1px 0;
     display:block;
     width: 102px;
-    height: 17px;
     /*селект для модель авто диски_общ*/
     text-indent: .01px;
     text-overflow: '';
@@ -642,10 +651,10 @@ select[name='auto_model_discs'] {
 select[name='auto_year_discs'] {
     /*селект для модель авто диски_общ*/
     display:block;
-    margin-top: 5px;
+    margin-top: 4px;
+    padding: 1px 0;
     margin-left: 1px;
     width: 58px;
-    height: 17px;
     text-indent: .01px;
     text-overflow: '';
     border-right: transparent;
@@ -669,11 +678,11 @@ select[name='equipment_discs']
 /*селект для компл авто_диски*/
 
 {
-    margin-top: 5px;
-    margin-left: 1px;
+  margin-top: 4px;
+      margin-left: 1px;
+      padding: 1px 0;
     display:block;
     width: 102px;
-    height: 17px;
     text-indent: .01px;
     text-overflow: '';
     border-right: transparent;
@@ -697,20 +706,18 @@ select[name='equipment_discs']
     float: left;
         padding-left: 9px;
         margin-top: -2px;
-        height: 85px;
         border: 1px solid transparent;
 }
 /*4й БЛОК*/
 .search_auto_tires_selects{
     float:left;
-    height: 85px;
     border:1px solid transparent;
 }
 
 select[name='auto_brand_tires'] {
     margin-top:1px;
+    padding: 1px 0;
     width: 102px;
-    height: 17px;
     display:block;
     /*селект для марка авто диски*/
     text-indent: .01px;
@@ -737,9 +744,9 @@ select::-ms-expand {
 }
 
 select[name='auto_model_tires'] {
-    margin-top:5px;
+    margin-top:4px;
+    padding: 1px 0;
     width: 102px;
-    height: 17px;
     display:block;
 
     /*селект для модель авто шины_общ*/
@@ -764,9 +771,9 @@ select[name='auto_model_tires'] {
 }
 
 select[name='auto_year_tires'] {
-    margin-top:5px;
+  margin-top: 4px;
+  padding: 1px 0;
     width: 58px;
-    height: 17px;
     display:block;
 
     /*селект для модель авто шины_общ*/
@@ -791,9 +798,9 @@ select[name='auto_year_tires'] {
 }
 
 select[name='equipment_tires'] {
-    margin-top:5px;
+  margin-top: 4px;
+  padding: 1px 0;
     width: 102px;
-    height: 17px;
     display:block;
     /*селект для компл авто_шины*/
 
@@ -818,8 +825,8 @@ select[name='equipment_tires'] {
 .search_auto_input input {
     font-size: 14px;
         float: right;
-        padding-right: 20px;
-        padding-top: 4px;
+        padding-right: 21px;
+          padding-top: 2px;
         font-style: italic;
         text-decoration: underline;
         border: none;
@@ -830,7 +837,7 @@ select[name='equipment_tires'] {
 #search_tire {
   float: left;
   width: 193px;
-  height: 137px;
+  padding-bottom: 10px;
   box-sizing: border-box;
   margin-top: 5px;
   margin-left: 13px;
@@ -848,12 +855,12 @@ select[name='equipment_tires'] {
     margin-top: -1px;
     color: #134465;
     border:1px solid transparent;
-    height:15px;
+    letter-spacing: -0.1px;
 }
 /*ОПИСЫВАЮЩИЙ БЛОК В ПОИСК ШИН*/
 .search_tire_character{
     float:left;
-    height:90px;
+    margin-top: -2px;
     border:1px solid transparent;
 }
 .size_tire_text {
@@ -867,14 +874,14 @@ select[name='equipment_tires'] {
 .R_text {
     font-size: 10.5px;
         display: block;
-        padding-left: 45px;
+        padding-left: 44px;
         padding-top: 10px;
 }
 
 .season_text{
     font-size: 10px;
         display: block;
-        padding-left: 14px;
+        padding-left: 13px;
         padding-top: 6px;
 }
 
@@ -884,16 +891,15 @@ select[name='equipment_tires'] {
     float: left;
         border: 1px solid transparent;
         width: 130px;
-        height: 90px;
+    margin-top: -2px;
 }
 
 select[name='size_of_tires'] {
     font-size: 10.6px;
-    margin-left: 4px;
+    margin-left: 3px;
     margin-top: 5px;
-    padding-left: 1px;
     width: 50.5px;
-    height: 17px;
+    padding: 2px 0 2px 2px;
     text-indent: .01px;
     text-overflow: '';
     border-right: transparent;
@@ -912,16 +918,16 @@ select[name='size_of_tires'] {
     -ms-appearance: none;
     appearance: none!important;
 }
-.line_between_text {
+.slash_between_select {
     font-size: 12.5px;
         display: inline-block;
         margin-top: 0.9px;
-        margin-left: 2px;
+        margin-left: 3px;
 }
 select[name='size_of_tires2'] {
-    margin-left: 3px;
+    margin-left: 4px;
     width: 53px;
-    height: 17px;
+padding-bottom: 1px;
     text-indent: .01px;
     text-overflow: '';
     border-right: transparent;
@@ -947,7 +953,7 @@ select[name='R_tires'] {
         margin-left: 4px;
         display: inline-block;
         width: 45px;
-    height: 17px;
+    padding: 2px 0 2px 1px;
     text-indent: .01px;
     text-overflow: '';
     border-right: transparent;
@@ -968,8 +974,8 @@ select[name='R_tires'] {
 }
 
 .checkobox_season {
-    margin-top: 4px;
-    margin-left: 1px;
+  margin-top: 8px;
+  margin-left: 2px;
 }
 .checkobox_season:after {
     content:"";
@@ -984,17 +990,7 @@ label[for='summer'] {
     text-indent: -13px;
     letter-spacing: .4px;
 }
-input[id='summer'] {
-    position: relative;
-    top: -2px;
-    left: -1px;
-    width: 13px;
-    height: 13px;
-    margin: 0;
-    padding: 0;
-    vertical-align: bottom;
-    *overflow: hidden;
-}
+
 label[for='winter'] {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 11px;
@@ -1003,17 +999,7 @@ label[for='winter'] {
     text-indent: -13px;
     letter-spacing: .4px;
 }
-input[id='winter'] {
-    position: relative;
-    top: -2px;
-    left: -1px;
-    width: 13px;
-    height: 13px;
-    margin: 0;
-    padding: 0;
-    vertical-align: bottom;
-    *overflow: hidden;
-}
+
 label[for='all_seas'] {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 11px;
@@ -1022,25 +1008,18 @@ label[for='all_seas'] {
     text-indent: -13px;
     letter-spacing: .4px;
 }
-input[id='all_seas'] {
-    position: relative;
-    top: -2px;
-    left: -1px;
-    width: 13px;
-    height: 13px;
-    margin: 0;
-    padding: 0;
-    vertical-align: bottom;
-    *overflow: hidden;
-}
+
 .sum, .win, .all {
-    height: 14px;
+    margin-top: -4px;
+}
+.search_tire{
+  overflow: hidden;
 }
 .search_tire input {
     font-size: 14px;
         float: right;
         padding-right: 12px;
-        margin-top: -1px;
+        margin-top: -5px;
         font-style: italic;
         text-decoration: underline;
         border: none;
@@ -1053,28 +1032,28 @@ input[id='all_seas'] {
 
 {
   float: left;
-width: 267px;
-height: 137px;
-box-sizing: border-box;
-margin-top: 4px;
-margin-left: 11px;
+  width: 268px;
+  padding-bottom: 9px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-left: 10px;
 border: 1px solid #b6b6b6;
 border-radius: 16px;
 -webkit-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 -moz-box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 }
-#search_disc_3rd_box:after{
-  content: " ";
+.clearfix{
   display:block;
-  clear:both;
-  visibility: hidden;
   overflow:hidden;
+  visibility: hidden;
+  content: ".";
+  clear:both;
+
 }
 .search_discs {
     display: inline-block;
     width: 176px;
-    height: 100px;
 }
 
 .search_discs_text {
@@ -1095,7 +1074,7 @@ box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 .search_discs_diameter_text {
     font-size: 10px;
         display: inline-block;
-        margin-top: 5px;
+        margin-top: 4px;
         margin-left: 15px;
         letter-spacing: .6px;
 }
@@ -1142,7 +1121,7 @@ box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
         display: block;
         margin-top: -1px;
         margin-left: 14px;
-        letter-spacing: 0.1px;
+        letter-spacing: 0.3px;
                color: #8d989c;
 }
 .DLFH_fastener{
@@ -1164,7 +1143,6 @@ box-shadow: 2px 4px 5px 0.00px rgba(150, 150, 150, 0.75);
 
 .search_discs_select{
     float: left;
-    height: 92px;
     margin-top: 1px;
     margin-left: 1px;
 }
@@ -1172,10 +1150,9 @@ select[name=diameter_of_discs] {
     font-size: 10.6px;
         display: block;
         width: 56px;
-        height: 17px;
-        margin-top: 2px;
-        margin-left: 2px;
-        padding-left: 3px;
+        margin-top: 1px;
+            margin-left: 2px;
+            padding: 2px 0 2px 3px;
     border-right: transparent;
     border-bottom: transparent;
     background-image: url('../img/strelka.png');
@@ -1197,10 +1174,9 @@ select[name=QFH] {
     font-size: 10.6px;
     display: block;
         width: 50px;
-        height: 17px;
         margin-top: 14px;
         margin-left: 2px;
-        padding-left: 4px;
+        padding: 2px 0 2px 4px;
     border-right: transparent;
     border-bottom: transparent;
     background-image: url('../img/strelka.png');
@@ -1222,10 +1198,9 @@ select[name=DLFH] {
     font-size: 10.6px;
         display: block;
         width: 58px;
-        height: 17px;
         margin-top: 15px;
         margin-left: 2px;
-        padding-left: 1.4px;
+        padding: 2px 0 2px 2px;
     border-right: transparent;
     border-bottom: transparent;
     background-image: url('../img/strelka.png');
@@ -1246,7 +1221,6 @@ select[name=DLFH] {
     display: inline-block;
     float: right;
     width: 80px;
-    height: 100px;
 }
 .DCO_text1 {
     font-size: 10px;
@@ -1281,12 +1255,12 @@ select[name=DLFH] {
 select[name=DCO_select] {
     font-size: 10.6px;
     width: 58px;
-    height: 17px;
     margin-top: 43px;
-    margin-right: 12px;
     margin-left: 1.6px;
-    padding-top: 0;
-    padding-left: 1.4px;
+    margin-top: 43px;
+    display: block;
+    margin-left: 1px;
+    padding: 2px 0 2px 2px;
     border-right: transparent;
     border-bottom: transparent;
     background-image: url('../img/strelka.png');
@@ -1306,7 +1280,7 @@ select[name=DCO_select] {
 .ET_text1 {
     font-size: 10px;
     display: inline-block;
-    margin-top: 6.5px;
+    margin-top: 5.5px;
     letter-spacing: -1.4px;
 }
 .ET_text2 {
@@ -1320,10 +1294,9 @@ select[name=DCO_select] {
 select[name=ET_select] {
     font-size: 10.6px;
     width: 58px;
-    height: 17px;
     margin-top: 3px;
-    margin-left: 1.6px;
-    padding-left: 1.4px;
+    margin-left: 1px;
+    padding: 2px 0 2px 2px;
     border-right: transparent;
     border-bottom: transparent;
     background-image: url('../img/strelka.png');
@@ -1340,10 +1313,13 @@ select[name=ET_select] {
     -ms-appearance: none;
     appearance: none!important;
 }
+.search_discs_in_disc_menu{
+  overflow:hidden;
+}
 .search_discs_in_disc_menu input{
     font-size: 13.9px;
     font-style: italic;
-    margin-top: 9px;
+    margin-top: -3px;
     margin-left: 198px;
     text-decoration: underline;
     border: none;
@@ -1353,14 +1329,18 @@ select[name=ET_select] {
 select:focus:hover {
     background-image: url('../img/strelka2.png');
 }
-aside {
+main{
+  overflow: hidden;
+  position:relative;
+}
+.block1, .block3 {
   float: left;
-      width: 235px;
+      width: 23.5%;
       box-sizing: border-box;
       margin-top: 4px;
 }
 
-/*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ!*/
+/*НАСТРОЙКИ В BLOCK1 для КАТАЛОГ ПРОДУКЦИИ!*/
 
 .catalog_prod {
     width: 180px;
@@ -1397,7 +1377,7 @@ background: url(../img/icon.png) 100%;
 display: inline-block;
 }
 
-/*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ/ШИНЫ*/
+/*НАСТРОЙКИ В BLOCK1 для КАТАЛОГ ПРОДУКЦИИ/ШИНЫ*/
 
 .tire_left_menu {
     width: 148px;
@@ -1468,7 +1448,7 @@ display: inline-block;
     background-size: 5.6%;
 }
 
-/*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ/ДИСКИ!*/
+/*НАСТРОЙКИ В BLOCK1 для КАТАЛОГ ПРОДУКЦИИ/ДИСКИ!*/
 
 .discs_left_menu {
     width: 148px;
@@ -1536,7 +1516,7 @@ display: inline-block;
     background-size: 5.6%;
 }
 
-/*НАСТРОЙКИ В ASIDE для КАТАЛОГ ПРОДУКЦИИ/БОЛТЫ!*/
+/*НАСТРОЙКИ В BLOCK1 для КАТАЛОГ ПРОДУКЦИИ/БОЛТЫ!*/
 
 .bolts_left_menu {
     width: 148px;
@@ -1603,7 +1583,7 @@ display: inline-block;
     background-size: 5.6%;
 }
 
-/*ПРАВЫЙ ASIDE БРЕНДЫ*/
+/*ПРАВЫЙ BLOCK3 БРЕНДЫ*/
 
 .brands {
     width: 180px;
@@ -1640,7 +1620,7 @@ display: inline-block;
         display: inline-block;
 }
 
-/*ПРАВЫЙ ASIDE ШИНЫ*/
+/*BLOCK3 ШИНЫ*/
 
 .tires_right_menu {
     width: 134px;
@@ -1723,17 +1703,6 @@ label[for='brand1'] {
     text-indent: 0;
     letter-spacing: .1px;
 }
-input[id='brand1'] {
-    position: relative;
-    top: -4px;
-    left: -11px;
-    width: 13px;
-    height: 13px;
-    margin: 0;
-    padding: 0;
-    vertical-align: bottom;
-    *overflow: hidden;
-}
 label[for='brand2'] {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 12.4px;
@@ -1742,17 +1711,6 @@ label[for='brand2'] {
     padding-left: 0;
     text-indent: 0;
     letter-spacing: .1px;
-}
-input[id='brand2'] {
-    position: relative;
-    top: -4px;
-    left: -11px;
-    width: 13px;
-    height: 13px;
-    margin: 0;
-    padding: 0;
-    vertical-align: bottom;
-    *overflow: hidden;
 }
 label[for='brand3'] {
     font-family: 'lucida_sans_unicoderegular';
@@ -1763,19 +1721,8 @@ label[for='brand3'] {
     text-indent: 0;
     letter-spacing: .1px;
 }
-input[id='brand3'] {
-    position: relative;
-    top: -4px;
-    left: -11px;
-    width: 13px;
-    height: 13px;
-    margin: 0;
-    padding: 0;
-    vertical-align: bottom;
-    *overflow: hidden;
-}
 
-/*ПРАВЫЙ ASIDE ДИСКИ*/
+/*BLOCK3 ДИСКИ*/
 
 .discs_right_menu {
     width: 135px;
@@ -1821,17 +1768,6 @@ label[for='brand01'] {
     text-indent: 0;
     letter-spacing: .1px;
 }
-input[id='brand01'] {
-    position: relative;
-    top: -4px;
-    left: -11px;
-    width: 13px;
-    height: 13px;
-    margin: 0;
-    padding: 0;
-    vertical-align: bottom;
-    *overflow: hidden;
-}
 label[for='brand02'] {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 12.4px;
@@ -1840,17 +1776,6 @@ label[for='brand02'] {
     padding-left: 0;
     text-indent: 0;
     letter-spacing: .1px;
-}
-input[id='brand02'] {
-    position: relative;
-    top: -4px;
-    left: -11px;
-    width: 13px;
-    height: 13px;
-    margin: 0;
-    padding: 0;
-    vertical-align: bottom;
-    *overflow: hidden;
 }
 label[for='brand03'] {
     font-family: 'lucida_sans_unicoderegular';
@@ -1861,22 +1786,11 @@ label[for='brand03'] {
     text-indent: 0;
     letter-spacing: .1px;
 }
-input[id='brand03'] {
-    position: relative;
-    top: -4px;
-    left: -11px;
-    width: 13px;
-    height: 13px;
-    margin: 0;
-    padding: 0;
-    vertical-align: bottom;
-    *overflow: hidden;
-}
 input[id='enter'] {
     font-family: Arial;
     font-size: 11.3px;
     width: 82px;
-    height: 26px;
+    padding: 6px 2px 8px 2px;
     margin: 93px 0 0 32px;
     letter-spacing: .3px;
     color: #fff;
@@ -1891,12 +1805,28 @@ input[id='enter'] {
     box-shadow: 4px 5px 3px -2px rgba(184, 184, 184, 1);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e6787', endColorstr='#0d3358', GradientType=0);
 }
+input[type="submit"]:hover{
+  cursor:pointer;
+}
+input[id='enter']:hover{
+  cursor: pointer;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e6787+0,0a2b47+100 */
+  background: #1e6787; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e6787 0%, #0a2b47 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #1e6787 0%,#0a2b47 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #1e6787 0%,#0a2b47 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e6787', endColorstr='#0a2b47',GradientType=0 ); /* IE6-9 */
 
-/*НАСТРОЙКИ ДЛЯ MAIN*/
+-webkit-box-shadow: 0px 1px 6px 2px rgba(30,87,109,1);
+-moz-box-shadow: 0px 1px 6px 2px rgba(30,87,109,1);
+box-shadow: 0px 1px 6px 2px rgba(30,87,109,1);
 
-main {
+}
+/*НАСТРОЙКИ ДЛЯ BLOCK2*/
+
+.block2 {
   float: left;
-      width: 527px;
+      width: 52.6%;
       box-sizing: border-box;
       margin-top: 13px;
     border-radius: 6px;
@@ -1929,7 +1859,7 @@ main {
     font-size: 15px;
     margin-top:1px;
     font-weight: bold;
-    height: 15px;
+    margin-bottom: -9px;
     margin-left: 34px;
     color: #206989;
 }
@@ -1961,16 +1891,16 @@ main {
 
 /*Колесо GoodYear 3 столбец 1 кривой - настр*/
 
-.name_of_tire_krivoi {
+.name_of_tire_different {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 15px;
     font-weight: bold;
-    height: 15px;
+    margin-bottom: -8px;
     margin-top: -1px;
     margin-left: 32px;
     color: #206989;
 }
-.class_of_tire_krivoi {
+.class_of_tire_different {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 11.77px;
     margin-top: 2px;
@@ -2097,17 +2027,14 @@ overflow: hidden;
             display: block;
             content: "";
             clear: both;
-            height: 0;
+
 }
 footer {
-    position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 190px;
+  position:relative;
   width: 910px;
 }
 .top_footer {
-    height: 60px;
+    padding-bottom: 30px;
 }
 .top_footer ul {
     margin-top: 37px;
@@ -2119,12 +2046,12 @@ footer {
     vertical-align: middle;
 }
 .bottom_footer {
-    width: 910px;
-    height: 100px;
-    margin-top: -8px;
-    margin-left: 44px;
-    text-align: center;
-    background-color: #213a4e;
+  width: 910px;
+      margin-top: -7px;
+      padding-bottom: 50px;
+      margin-left: 44px;
+      text-align: center;
+      background-color: #213a4e;
 }
 .bottom_footer ul {
     margin: 0 auto;
