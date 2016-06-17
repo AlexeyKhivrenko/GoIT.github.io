@@ -448,6 +448,8 @@ header {
     .sponsors{
         border-top:1px solid rgb(230, 230, 230);
         border-bottom:1px solid rgb(216, 216, 216);
+        position:relative;
+        overflow: hidden;
     }
 
     .sponsors-menu{
@@ -552,7 +554,7 @@ header {
     color: rgb(200, 200, 200);
     }
 
-    .column3-blocks--curr3:after{
+    .column3-blocks:after, .column3-blocks--curr3:after{
         content: '.';
         visibility: hidden;
         overflow:hidden;
@@ -561,13 +563,13 @@ header {
     }
 
     .red{
-        height:200px;
+        margin:20px;
         background-color: red;
     }
 
 
     footer{
-        height:400px;
+        margin:20px;
     }
 
 
