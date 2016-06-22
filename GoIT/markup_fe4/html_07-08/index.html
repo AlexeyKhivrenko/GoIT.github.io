@@ -6,21 +6,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min-960px.css" media="(min-width: 960px)">
+    <link rel="stylesheet" href="css/min-768px.css" media="(min-width: 768px) and (max-width: 959px)">
+    <link rel="stylesheet" href="css/min-480px.css" media="(min-width: 480px) and (max-width: 767px)">
+    <link rel="stylesheet" href="css/min-320px.css" media="(max-width: 479px)">
+
 </head>
 
 <body>
 
+    <div class="wrapper">
     <header class="header">
-        <div class="wrapper">
+        <div class="width">
             <div class="head">
                 <a href="">
                     <img class="header_logo" src="img/header_logo.png" alt="">
                 </a>
 
-
                 <ul class="menu">
-                    <li class="menu__item menu__item--curr">
-                        <a href="" class="menu__link">HOME</a>
+                    <li class="menu__item">
+                        <a href="" class="menu__link menu__link--first">HOME</a>
                     </li>
                     <li class="menu__item">
                         <a href="" class="menu__link">ABOUT</a>
@@ -35,14 +40,14 @@
                         <a href="" class="menu__link">LOREM INPSUM</a>
                     </li>
                     <li class="menu__item">
-                        <a href="" class="menu__link">DOLOR SIT AMET</a>
+                        <a href="" class="menu__link menu__link--last">DOLOR SIT AMET</a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="slider">
-            <div class="wrapper">
+            <div class="width">
                 <div class="slider-left">
                     <h2 class="slider__mainHead">
                             <span>Lorem</span>
@@ -50,7 +55,7 @@
                             <span>Dolor</span>
                          </h2>
 
-                    <h4 class="slider__secHead">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h4>
+                    <h4 class="slider__secHead">IT WILL MAKE ALL OF YOUR DREAMS COME <span>TRUE</span></h4>
                     <p class="slider__text">
                         Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod
                         id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.
@@ -66,7 +71,7 @@
 
         </div>
 
-        <div class="wrapper">
+        <div class="width">
 
             <ul class="slider-box">
                 <li>
@@ -90,7 +95,7 @@
 
 
     <section class="column">
-        <div class="wrapper">
+        <div class="width">
 
             <div class="column-block">
                 <h2 class="column-block__tittle">ABOUT OUR COMPANY</h2>
@@ -117,7 +122,7 @@
 
     <section class="column2">
 
-        <div class="wrapper">
+        <div class="width">
 
             <div class="feed-wrap">
                 <div class="feedback">
@@ -170,7 +175,7 @@
         </div>
 
         <div class="sponsors">
-            <div class="wrapper">
+            <div class="width">
             <ul class="sponsors-menu">
                 <li>
                     <a class="sponsor-menu__sponsor1" href=""></a>
@@ -201,7 +206,7 @@
 
     <section class="column3">
 
-        <div class="wrapper">
+        <div class="width">
             <div class="column3-blocks">
                 <p class="column3-block1__tittle">PIGBULL<span>ER</span></p>
                 <p class="culumn3-block1__copyright">Copyright 2013, Pingbull AS</p>
@@ -218,39 +223,38 @@
                 <p class="column3-block__text column3-block--text">Nunc turpis neque, feugiat eget eleif- end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul- vinar. Quisque urna risus, mattis pulvi- nar bibendum in, venenatis quis</p>
             </div>
 
-            <div class="red">
-                123
-            </div>
         </div>
 
 
     </section>
-
+</div>
     <footer>
-        <div class="wrapper">
-            <ul class="menu--curr">
+        <div class="width">
+            <ul class="menu menu--curr">
                 <li class="menu__item menu__item--curr">
-                    <a href="" class="menu__link">HOME</a>
+                    <a href="" class="menu__link menu--link">HOME</a>
                 </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">ABOUT</a>
+                <li class="menu__item menu__item--curr">
+                    <a href="" class="menu__link menu--link">ABOUT</a>
                 </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">BLOG</a>
+                <li class="menu__item menu__item--curr">
+                    <a href="" class="menu__link menu--link">BLOG</a>
                 </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">PRODUCTS</a>
+                <li class="menu__item menu__item--curr">
+                    <a href="" class="menu__link menu--link">PRODUCTS</a>
                 </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">LOREM INPSUM</a>
+                <li class="menu__item menu__item--curr">
+                    <a href="" class="menu__link menu--link">LOREM INPSUM</a>
                 </li>
-                <li class="menu__item">
-                    <a href="" class="menu__link">DOLOR SIT AMET</a>
+                <li class="menu__item menu__item--curr">
+                    <a href="" class="menu__link menu--link">DOLOR SIT AMET</a>
                 </li>
             </ul>
+
+            <p class="designer">Designed by <span>Pingbull AS</span></p>
         </div>
 
-        <p>Designed by Pingbull AS</p>
+
 
     </footer>
 
