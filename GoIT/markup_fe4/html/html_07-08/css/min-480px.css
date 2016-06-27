@@ -28,7 +28,7 @@
         border: 1px solid transparent;
     }
     .menu:hover {
-        border: 1px solid black;
+        border: 1px solid #000;
         border-radius: 10px;
         background-color: rgba(34, 26, 39, .6);
     }
@@ -108,7 +108,7 @@
         margin-left: 36px;
         letter-spacing: .5px;
         color: #fff;
-        text-shadow: black 0 1px 1px;
+        text-shadow: #000 0 1px 1px;
     }
     .slider__mainHead span:nth-child(2) {
         letter-spacing: -.6px;
@@ -149,6 +149,14 @@
         height: 19px;
         content: ' ';
         background: url('../img/slider.png');
+    }
+    .slider-box li:nth-child(2) a {
+        position: relative;
+        display: block;
+        width: 19px;
+        height: 19px;
+        content: ' ';
+        background: url('../img/slider.png') 100%;
     }
     .slider-box a:hover {
         position: relative;
@@ -241,7 +249,7 @@
         text-shadow: 1px 1px 4px #000;
     }
     .column-block__link:hover {
-        text-shadow: white 0 0 10px;
+        text-shadow: #fff 0 0 10px;
     }
     .column-block--link {
         /*Another parametr in maket for this elemt*/
@@ -257,7 +265,18 @@
     .column2 {
         background-color: rgb(249, 249, 249);
     }
+    .feedback:before {
+        content: " ";
+        display: block;
+        height: 19px;
+        width: 19px;
+        top: 100%;
+        left: 86%;
+        background: url('../img/coner.png') 100%;
+        position: absolute;
+    }
     .feedback {
+        position:relative;
         display: inline-block;
         width: 415px;
         margin-top: 70px;
@@ -326,6 +345,14 @@
         content: ' ';
         background: url('../img/slider2.png');
     }
+    .slider-box--curr li:nth-child(2) a {
+        position: relative;
+        display: block;
+        width: 19px;
+        height: 19px;
+        content: ' ';
+        background: url('../img/slider2.png') 21px 20px;
+    }
     .slider-box--curr a:hover {
         position: relative;
         display: block;
@@ -340,7 +367,7 @@
     .updates a {
         margin-bottom: 86px;
         text-decoration: none;
-        color: black;
+        color: #000;
     }
     .updates:after {
         display: block;
@@ -406,42 +433,31 @@
         border-bottom: 1px solid rgb(216, 216, 216);
     }
     .sponsors-menu {
-        margin-top: 17px;
+        margin-top: 16px;
         margin-bottom: 37px;
-        margin-left: 90px;
     }
     .sponsors-menu li {
         display: inline-block;
-        margin-top: 20px;
-        margin-left: -9px;
+        vertical-align: middle;
+        margin-top: 21px;
     }
     .sponsor-menu__sponsor1 {
-        position: relative;
-        display: block;
-        width: 110px;
-        height: 65px;
-        content: ' ';
-        background: url('../img/logos.png') no-repeat;
+        margin-left: 81px;
     }
     .sponsor2 {
-        margin-left: 20px;
-        background: url('../img/logos.png') -132px 0 no-repeat;
+        margin-left: 53px;
     }
     .sponsor3 {
-        margin-left: 20px;
-        background: url('../img/logos.png') -264px 0 no-repeat;
+        margin-left: 52px;
     }
     .sponsor4 {
-        margin-left: -31px;
-        background: url('../img/logos.png') -394px 0 no-repeat;
+        margin-left: 66px;
     }
     .sponsor5 {
-        margin-left: 15px;
-        background: url('../img/logos.png') -522px 0 no-repeat;
+        margin-left: 56px;
     }
     .sponsor6 {
-        margin-left: 48px;
-        background: url('../img/logos.png') -682px 0 no-repeat;
+        margin-left: 54px;
     }
     .sponsors__menu li {
         display: inline-block;
@@ -585,7 +601,7 @@
         text-align: center;
         margin-left: -3px;
         margin-bottom: 84px;
-        color: white;
+        color: #fff;
         text-shadow: 0 2px 2px #000;
     }
     .designer span {

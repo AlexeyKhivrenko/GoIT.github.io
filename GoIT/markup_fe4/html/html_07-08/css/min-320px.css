@@ -144,6 +144,14 @@
         content: ' ';
         background: url('../img/slider.png');
     }
+    .slider-box li:nth-child(2) a {
+        position: relative;
+        display: block;
+        width: 19px;
+        height: 19px;
+        content: ' ';
+        background: url('../img/slider.png') 100%;
+    }
     .slider-box a:hover {
         position: relative;
         display: block;
@@ -251,7 +259,18 @@
     .column2 {
         background-color: rgb(249, 249, 249);
     }
+    .feedback:before {
+        position: absolute;
+        top: 100%;
+        left: 86%;
+        display: block;
+        width: 19px;
+        height: 19px;
+        content: ' ';
+        background: url('../img/coner.png') 100%;
+    }
     .feedback {
+        position: relative;
         display: inline-block;
         width: 256px;
         margin-top: 70px;
@@ -321,6 +340,14 @@
         height: 19px;
         content: ' ';
         background: url('../img/slider2.png');
+    }
+    .slider-box--curr li:nth-child(2) a {
+        position: relative;
+        display: block;
+        width: 19px;
+        height: 19px;
+        content: ' ';
+        background: url('../img/slider2.png') 21px 20px;
     }
     .slider-box--curr a:hover {
         position: relative;
@@ -402,43 +429,37 @@
         border-bottom: 1px solid rgb(216, 216, 216);
     }
     .sponsors-menu {
-        margin-bottom: 69px;
+        margin-bottom: 72px;
     }
     .sponsors-menu li {
         display: inline-block;
+        margin-top: 57px;
+        vertical-align: middle;
     }
     .sponsor-menu__sponsor1 {
-        position: relative;
         display: block;
-        width: 110px;
-        height: 65px;
-        margin-top: 52px;
+        margin-top: -4px;
         margin-left: 61px;
-        content: ' ';
-        background: url('../img/logos.png') no-repeat;
     }
     .sponsor2 {
-        margin-left: 10px;
-        background: url('../img/logos.png') -132px 0 no-repeat;
+        margin-left: 53px;
     }
     .sponsor3 {
-        margin-top: 56px;
-        margin-left: 63px;
-        background: url('../img/logos.png') -264px 0 no-repeat;
+        margin-left: 69px;
+        margin-top: 0;
+        /*used child parametr*/
     }
     .sponsor4 {
-        margin-left: 8px;
-        background: url('../img/logos.png') -394px 0 no-repeat;
+        margin-left: 63px;
+        margin-top: 1px;
     }
     .sponsor5 {
-        margin-top: 0;
-        margin-left: 36px;
-        background: url('../img/logos.png') -522px 0 no-repeat;
+        margin-left: 41px;
+        margin-top: -20px;
     }
     .sponsor6 {
-        margin-top: 39px;
-        margin-left: 40px;
-        background: url('../img/logos.png') -685px 0 no-repeat;
+        margin-left: 54px;
+        margin-top: -18px;
     }
     .sponsors__menu li {
         display: inline-block;
