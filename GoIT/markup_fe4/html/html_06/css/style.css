@@ -245,6 +245,8 @@ input[type=password]:focus:-ms-input-placeholder {
 .menu {
     margin: 4px 45px 6px 43px;
     padding-bottom: 7px;
+    position: relative;
+    overflow: hidden;
     border: 1px solid rgb(10, 16, 48);
     border-radius: 4.3px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#464d53+1,0e0e0e+29,0e0e0e+29,0e0e0e+100 */
@@ -336,15 +338,18 @@ padding-top: 1px;
     padding: 2px 9px 2px 9px;
 }
 .contacts> a:hover {
-    margin-left: 2px;
+    margin-left: 1px;
     padding: 2px 12px 2px 12px;
 }
 .menu_ul_right
 /*менюшка справа под главн картинкой*/
 
 {
+    float: right;
+    position: relative;
     display: inline-block;
     margin-top: 1px;
+    margin-right: 12px;
 }
 .menu_ul_right> li {
     font-family: Arial, sans-serif;
@@ -363,9 +368,8 @@ padding-top: 1px;
 
 {
     margin-top: 8px;
-    margin-left: 94px;
-    letter-spacing: .6px;
-    color: #899395;
+        letter-spacing: .6px;
+        color: #899395;
 }
 .goods:before {
     position: absolute;
@@ -1672,10 +1676,10 @@ input[id='enter']:hover {
 
 .first-column, .second-column, .third-column {
     float: left;
-    box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 8px;
-    margin-left: 24px;
+        box-sizing: border-box;
+        margin-top: 9px;
+        margin-bottom: 6px;
+        margin-left: 24px;
 }
 .first-column a, .second-column a, .third-column a {
     text-decoration: none;
@@ -1685,22 +1689,24 @@ input[id='enter']:hover {
     margin-left: -2px;
     text-align: center;
 }
-.name_of_tire, .name_of_tire2, .name_of_tire3 {
+.tire_tittle, .tire_tittle2, .tire_tittle3 {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 15px;
     font-weight: bold;
     margin-top: 1px;
-    margin-bottom: -9px;
-    margin-left: 34px;
+    margin-bottom: -10px;
+    margin-left: 33px;
     color: #206989;
+    display: block;
 }
-.class_of_tire, .class_of_tire2, .class_of_tire3 {
+.tire_model, .tire_model2, .tire_model3 {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12px;
-    margin-top: 2px;
-    margin-left: 14px;
-    letter-spacing: .4px;
-    color: #000;
+        font-size: 12px;
+        margin-top: 2px;
+        margin-left: 13px;
+        letter-spacing: .4px;
+        color: #000;
+        display: block;
 }
 .cost_of_tire_value, .cost_of_tire_value2, .cost_of_tire_value3 {
     font-family: Arial;
@@ -1720,35 +1726,39 @@ input[id='enter']:hover {
     color: #114366;
 }
 
+.tire_tittle3{
+    margin-left: 45px;
+        margin-top: 0;
+}
+
 /*Колесо GoodYear 3 столбец 1 кривой - настр*/
 
-.name_of_tire_different {
-    margin-top: -1px;
-    margin-bottom: -8px;
+.tire_tittle_different {
+    margin-top: 1px;
     margin-left: 32px;
 }
-.class_of_tire_different {
-    margin-bottom: 1px;
+.tire_model_different {
     margin-left: 12px;
-    letter-spacing: .5px;
+    letter-spacing: 0.4px;
 }
 
 /*ШИНЫ Nokian 2 столбик*/
 
 .second-column {
-    margin-top: 11px;
+    margin-top: 9px;
     margin-left: 21px;
 }
 
 .second-column a img {
     margin: -2px 0 1px 4px;
 }
-.name_of_tire2 {
+.tire_tittle2 {
     margin-left: 50px;
 }
-.class_of_tire2 {
+.tire_model2 {
     margin-left: 29px;
-    letter-spacing: .5px;
+        margin-top: 1px;
+        letter-spacing: 0.4px;
 }
 .cost_of_tire_value2 {
     padding-left: 38px;
@@ -1765,13 +1775,13 @@ input[id='enter']:hover {
     margin-left: 21px;
 }
 .third-column a img {
-    margin: -2px 0 0 5px;
+    margin: -3px 0 0 5px;
 }
 .name_of_tire3 {
     margin-bottom: -9px;
     margin-left: 45px;
 }
-.class_of_tire3 {
+.tire_model3 {
     margin-left: 16px;
     letter-spacing: .6px;
 }
@@ -1793,8 +1803,9 @@ input[id='enter']:hover {
 }
 .rd_line {
     position: relative;
-    overflow: hidden;
-    margin-bottom: 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        margin-top: 5px;
 }
 .clearfix {
     display: block;
@@ -1807,11 +1818,11 @@ footer {
     width: 910px;
 }
 .top_footer {
-    padding-bottom: 30px;
+    padding-bottom: 23px;
 }
 .top_footer ul {
-    margin-top: 37px;
-    margin-left: 161px;
+    margin-top: 38px;
+    margin-left: 160px;
 }
 .top_footer li {
     display: table-cell;
@@ -1820,11 +1831,10 @@ footer {
 }
 .bottom_footer {
     width: 910px;
-    margin-top: -7px;
-    margin-left: 44px;
-    padding-bottom: 50px;
-    text-align: center;
-    background-color: #213a4e;
+        margin-left: 44px;
+        padding-bottom: 52px;
+        text-align: center;
+        background-color: #213a4e;
 }
 .bottom_footer ul {
     margin: 0 auto;
@@ -1834,8 +1844,9 @@ footer {
     font-size: 12px;
     display: inline-block;
     margin-top: 10px;
-    padding: 0 4px;
-    letter-spacing: .4px;
+    padding: 1px 15px 0 7px;
+    letter-spacing: 0.2px;
+    border-right: 1px solid #fff;
 }
 .bottom_footer a {
     text-decoration: none;
@@ -1850,14 +1861,12 @@ footer {
     color: #fff;
 }
 .bottom_footer li:nth-child(4n) {
-    padding-right: 3px;
-}
-.bottom_footer li:nth-child(5n) {
-    padding-right: 5px;
+    margin-right: -10px;
+    border: transparent;
 }
 .bottom_footer p {
     font-size: 11px;
-    margin-top: 12px;
-    margin-left: -3px;
+    margin-top: 14px;
+    margin-left: -2px;
     color: #804740;
 }
