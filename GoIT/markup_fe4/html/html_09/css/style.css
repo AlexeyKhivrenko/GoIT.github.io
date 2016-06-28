@@ -29,7 +29,14 @@
 html, body {
     font-family: 'league_gothicregular';
     height: 100%;
+    box-sizing: border-box;
 }
+*,
+*:before,
+*:after { /*correct work at IE8++*/
+  box-sizing:inherit;
+}
+
 .wrapper {
     height: 100%;
     display: table;
@@ -37,7 +44,7 @@ html, body {
     width: 100%;
     background-color: rgb(236, 236, 236);
 }
-header {
+.header {
     background: url('../img/head-img.jpg') no-repeat top center;
     background-size: 100% 300%;
 }
