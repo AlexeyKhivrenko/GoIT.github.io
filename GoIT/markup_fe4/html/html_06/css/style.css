@@ -3,7 +3,7 @@ html, body {
 }
 #wrapper {
     font-family: Arial, Tahoma, sans-serif;
-    font-size: 10.94px;
+    font-size: 11px;
     position: relative;
     display: table;
     width: 1000px;
@@ -38,30 +38,17 @@ header {
 .telephone> img {
     float: left;
     margin-top: 22px;
-    margin-left: 5.2px;
-}
-.telephone a:first-child:before {
-    position: absolute;
-    display: inline-block;
-    width: 22px;
-    height: 21px;
-    margin-top: -1px;
-    margin-left: -25px;
-    content: ' ';
-    background: url(../img/telephone.png) 100%;
+    margin-left: 5px;
 }
 .telephone> a {
     font-family: Arial;
-    font-size: 17.9px;
+    font-size: 18px;
     float: left;
-    padding-top: 22.5px;
-    padding-left: 30px;
+    padding-top: 23px;
+    padding-left: 4px;
     text-decoration: none;
     letter-spacing: .5px;
     color: #595959;
-}
-.telephone a:last-child {
-    margin-left: -24px;
 }
 .password_forgot:after {
     display: block;
@@ -75,9 +62,9 @@ header {
 
 .login {
     float: left;
-    width: 495.4px;
-    margin-top: 18.3px;
-    margin-left: 15.6px;
+    width: 495px;
+    margin-top: 18px;
+    margin-left: 16px;
     padding: 3px 0;
     border-radius: 3px;
     background: linear-gradient(to top, rgb(13, 51, 88), rgb(28, 97, 128));
@@ -92,36 +79,36 @@ header {
 .login_data> p:before {
     position: absolute;
     display: inline-block;
-    width: 14px;
-    height: 17px;
+    width: 13px;
+    height: 18px;
     margin-top: 2px;
     margin-left: 7px;
     content: ' ';
-    background: url('../img/zamok.png');
+    background: url('../img/zamok.png') 100% no-repeat;
     background-size: 14px;
 }
 .login_data> input[type=text] {
     font-family: Arial;
-    font-size: 10.6px;
+    font-size: 11px;
     float: left;
-    width: 107.6px;
-    margin-top: .4px;
-    margin-left: 25px;
-    padding: .8px 0 1.2px;
-    padding-left: 3.4px;
-    letter-spacing: .45px;
+    width: 108px;
+    margin-top: 1px;
+    margin-left: 24px;
+    padding: 1px 0 1px;
+    padding-left: 4px;
+    letter-spacing: .5px;
     border: 1px solid #ccc;
     border-radius: 1px;
 }
 .login_data> input[type=password] {
     font-family: Arial;
-    font-size: 10.6px;
+    font-size: 11px;
     float: left;
-    width: 107.6px;
-    margin-top: .4px;
-    margin-left: 8px;
-    padding: .8px 0 1.2px 3.4px;
-    letter-spacing: .4px;
+    width: 108px;
+    margin-top: 1px;
+    margin-left: 7px;
+    padding: 1px 0 1px 4px;
+    letter-spacing: 0.5px;
     border: 1px solid #ccc;
     border-radius: 1px;
 }
@@ -174,53 +161,56 @@ input[type=password]:focus:-ms-input-placeholder {
 /* IE */
 
 .login_data> input[type=submit] {
-    font-size: 11.01px;
-    float: left;
-    margin-top: 3px;
-    margin-left: 8.6px;
-    letter-spacing: .4px;
-    color: white;
-    border: none;
-    background: none;
+    font-size: 11px;
+        float: left;
+        margin-top: 3px;
+        margin-left: 8px;
+        letter-spacing: .4px;
+        color: white;
+        border: none;
+        background: none;
+        border-right: 1px solid white;
+        padding-right: 5px;
 }
 .vertical_slash {
     float: left;
-    margin-top: 2.9px;
-    margin-left: 4.2px;
+    margin-top: 3px;
+    margin-left: 4px;
 }
 .vertical_slash> span {
     color: white;
 }
 .registr {
     float: left;
-    margin-top: 3.2px;
+    margin-top: 3px;
     margin-left: 4px;
 }
 .registr> a {
-    font-size: 11.41px;
-    text-decoration: none;
-    letter-spacing: .2px;
-    color: white;
+    font-size: 11px;
+        margin-left: 1px;
+        text-decoration: none;
+        letter-spacing: 0.3px;
+        color: white;
 }
 .password_forgot {
     float: left;
-    margin-top: 3.1px;
-    margin-left: 20.5px;
+    margin-top: 3px;
+    margin-left: 21px;
 }
 .password_forgot> a {
     font-family: Arial, Tahoma, sans-serif;
-    font-size: 11.2px;
-    padding-bottom: 1.1px;
+    font-size: 11px;
+    padding-bottom: 1px;
     text-decoration: none;
-    letter-spacing: .9px;
+    letter-spacing: 1px;
     color: rgb(193, 191, 192);
     border-bottom: .5px solid rgb(193, 191, 192);
 }
 .menu_right_top {
     float: left;
-    width: 74.4px;
+    width: 74px;
     margin-top: 19px;
-    margin-left: 16.4px;
+    margin-left: 16px;
     padding: 1px 0 4px;
     border: 1px solid rgb(206, 212, 212);
     border-radius: 11px;
@@ -229,17 +219,18 @@ input[type=password]:focus:-ms-input-placeholder {
     box-shadow: 0 6px 7px -8px rgba(0, 0, 0, 1);
 }
 .menu_right_top> .img1 {
-    margin-left: 8.7px;
+    margin-left: 9px;
 }
 .menu_right_top> .img2 {
-    top: 1px;
-    margin-left: 4.5px;
+    margin-left: 6px;
 }
 .menu_right_top> .img3 {
-    margin-left: 6.5px;
+    margin-left: 7px;
 }
 .menu_right_top> a> img {
     margin-top: 1px;
+    display: inline-block;
+    margin-left: -1px;
 }
 .menu_right_top:after {
     display: block;
@@ -248,14 +239,11 @@ input[type=password]:focus:-ms-input-placeholder {
     overflow: hidden;
     content: ' ';
 }
-.img_header {
-    margin-top: 1px;
-    margin-left: -1.3px;
-    padding: 118.5px 0;
-    background: url(../img/img_zazor.png);
+.img_header img{
+    margin-left: -2px;
 }
 .menu {
-    margin: 6.3px 43.8px;
+    margin: 4px 45px 6px 43px;
     padding-bottom: 7px;
     border: 1px solid rgb(10, 16, 48);
     border-radius: 4.3px;
@@ -279,7 +267,8 @@ input[type=password]:focus:-ms-input-placeholder {
 
 {
     float: left;
-    margin-left: 126px;
+margin-left: 127px;
+padding-top: 1px;
 }
 .menu_ul> li
 /*элементы ула меню*/
@@ -287,21 +276,20 @@ input[type=password]:focus:-ms-input-placeholder {
 {
     float: left;
     margin-top: 5px;
-    padding-right: 3px;
+    padding-right: 4px;
 }
 .menu_ul> li> a
 /*настр ссылочных элементов*/
 
 {
     font-family: 'lucida_sans_unicoderegular';
-    /*подключил свой шрифт*/
-    font-size: 13.64px;
+    font-size: 13.5px;
     text-decoration: none;
     color: white;
     border-radius: 15px;
 }
 .company> a {
-    padding: 2px 18.2px 2px 20px;
+    padding: 2px 18px 2px 20px;
 }
 .payment> a {
     margin-left: 4px;
@@ -312,15 +300,14 @@ input[type=password]:focus:-ms-input-placeholder {
     padding: 2px 12px 2px 12px;
 }
 .articles> a {
-    margin-left: 6.1px;
+    margin-left: 6px;
     padding: 2px 9px 2px 9px;
 }
 .contacts> a {
-    margin-left: 1.6px;
-    padding: 2px 12px 2px 12px;
+    margin-left: 13px;
 }
 .company> a {
-    padding: 2px 18.2px 2px 20px;
+    padding: 2px 18px 2px 20px;
 }
 .payment> a {
     margin-left: 4px;
@@ -345,11 +332,11 @@ input[type=password]:focus:-ms-input-placeholder {
     background: none;
 }
 .articles> a:hover {
-    margin-left: 6.1px;
+    margin-left: 6px;
     padding: 2px 9px 2px 9px;
 }
 .contacts> a:hover {
-    margin-left: 1.6px;
+    margin-left: 2px;
     padding: 2px 12px 2px 12px;
 }
 .menu_ul_right
@@ -357,6 +344,7 @@ input[type=password]:focus:-ms-input-placeholder {
 
 {
     display: inline-block;
+    margin-top: 1px;
 }
 .menu_ul_right> li {
     font-family: Arial, sans-serif;
@@ -374,8 +362,8 @@ input[type=password]:focus:-ms-input-placeholder {
 /*товары*/
 
 {
-    margin-top: 9px;
-    margin-left: 83.4px;
+    margin-top: 8px;
+    margin-left: 94px;
     letter-spacing: .6px;
     color: #899395;
 }
@@ -415,9 +403,9 @@ input[type=password]:focus:-ms-input-placeholder {
 /*сумма товара*/
 
 {
-    margin-top: 9px;
-    margin-left: 14px;
-    letter-spacing: .6px;
+    margin-top: 8px;
+    margin-left: 15px;
+    letter-spacing: 0.3px;
     color: #899395;
 }
 .goods_price
@@ -425,9 +413,9 @@ input[type=password]:focus:-ms-input-placeholder {
 
 {
     font-size: 12px;
-    margin-top: 9px;
-    margin-left: 11px;
-    letter-spacing: .4px;
+        margin-top: 8px;
+        margin-left: 10px;
+        letter-spacing: .4px;
 }
 .goods_price> a
 /*стоимость товара ссылка*/
@@ -456,15 +444,15 @@ input[type=password]:focus:-ms-input-placeholder {
 {
     float: left;
     box-sizing: border-box;
-    width: 416px;
-    margin-top: 6px;
-    margin-left: 3.2px;
+    width: 415px;
+    margin-top: 5px;
+    margin-left: 3px;
     padding-bottom: 9px;
     border: 1px solid #b6b6b6;
-    border-radius: 19.2px;
-    -webkit-box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .75);
-    -moz-box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .75);
-    box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .75);
+    border-radius: 19px;
+    -webkit-box-shadow: 2px 4px 5px 0 rgba(150, 150, 150, .7);
+    -moz-box-shadow: 2px 4px 5px 0 rgba(150, 150, 150, .7);
+    box-shadow: 2px 4px 5px 0 rgba(150, 150, 150, .7);
 }
 
 /*В 1 БЛОКЕ ПОИСКА БЛОК ДЛЯ НАЗВАНИЙ(ВВЕРХУ)*/
@@ -482,31 +470,32 @@ input[type=password]:focus:-ms-input-placeholder {
 }
 .discs_text {
     font-family: Arial, sans-serif;
-    font-size: 9.6px;
+    font-size: 10px;
     font-weight: 800;
     position: absolute;
-    margin-top: 1.5px;
-    margin-left: 20.4px;
+    margin-top: 2px;
+    margin-left: 20px;
     letter-spacing: .5px;
     color: #134465;
 }
 .search_auto_text {
     font-family: Arial, sans-serif;
-    font-size: 12.2px;
-    font-weight: 800;
-    position: absolute;
-    margin-top: -2.4px;
-    margin-left: 126.1px;
-    letter-spacing: .2px;
+        font-size: 12px;
+        font-weight: 800;
+        position: absolute;
+        margin-top: -2px;
+        margin-left: 126px;
+        letter-spacing: 0.3px;
+        color: #134465;
     /*СЛОВОСОЧ ПОИСК ПО АВТОМОБИЛЯМ*/
     color: #134465;
 }
 .tire_text {
     font-family: Arial, sans-serif;
-    font-size: 10.4px;
+    font-size: 10px;
     font-weight: 800;
     position: absolute;
-    margin-left: 354.6px;
+    margin-left: 355px;
     /*СЛОВО ШИНЫ В ПОИСК ПО АВТО*/
     color: #134465;
 }
@@ -538,7 +527,7 @@ input[type=password]:focus:-ms-input-placeholder {
 }
 .auto_text_discs {
     font-family: Arial;
-    font-size: 8.6px;
+    font-size: 9px;
     /*Марка авто для дисков(авто)*/
     display: inline-block;
     color: #8d989c;
@@ -554,7 +543,7 @@ input[type=password]:focus:-ms-input-placeholder {
 .auto_model_text_discs_2 {
     font-family: Arial;
     /*ТЕКСТ "АВТОМОБИЛЯ"*/
-    font-size: 8.6px;
+    font-size: 9px;
     display: inline-block;
     padding-top: 3px;
     padding-left: 17px;
@@ -567,13 +556,12 @@ input[type=password]:focus:-ms-input-placeholder {
     display: block;
     padding-top: 8px;
     padding-left: 16px;
-    letter-spacing: .5px;
     /*ГОД ВЫПУСКА ТЕКСТ*/
 }
 .auto_year_text2_discs {
     font-family: Arial;
     /*ГОД ВЫПУСКА АВТОМОБИЛЯ*/
-    font-size: 8.6px;
+    font-size: 9px;
     display: inline-block;
     padding-top: 3px;
     padding-left: 17px;
@@ -608,9 +596,9 @@ select[name='auto_brand_discs'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -637,9 +625,9 @@ select[name='auto_model_discs'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -662,9 +650,9 @@ select[name='auto_year_discs'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -689,9 +677,9 @@ select[name='equipment_discs']
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -729,9 +717,9 @@ select[name='auto_brand_tires'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -757,9 +745,9 @@ select[name='auto_model_tires'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -781,9 +769,9 @@ select[name='auto_year_tires'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -805,9 +793,9 @@ select[name='equipment_tires'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -832,24 +820,24 @@ select[name='equipment_tires'] {
 
 #search_tire {
     float: left;
-    box-sizing: border-box;
-    width: 193px;
-    margin-top: 5px;
-    margin-left: 13px;
-    padding-bottom: 10px;
-    border: 1px solid #b6b6b6;
-    border-radius: 19.2px;
-    -webkit-box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .75);
-    -moz-box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .75);
-    box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .75);
+        box-sizing: border-box;
+        width: 195px;
+        margin-top: 4px;
+        margin-left: 13px;
+        padding-bottom: 10px;
+        border: 1px solid #b6b6b6;
+        border-radius: 19px;
+    -webkit-box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .7);
+    -moz-box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .7);
+    box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .7);
 }
 .search_tire_block_top {
     font-family: Arial, sans-serif;
-    font-size: 12.1px;
+    font-size: 12px;
     font-weight: 800;
     margin-top: -1px;
     padding-left: 9px;
-    letter-spacing: -.1px;
+    letter-spacing: 0.2px;
     color: #134465;
     border: 1px solid transparent;
 }
@@ -862,22 +850,22 @@ select[name='equipment_tires'] {
     border: 1px solid transparent;
 }
 .size_tire_text {
-    font-size: 9.5px;
+    font-size: 10px;
     display: block;
     padding-top: 12px;
     padding-left: 13px;
-    letter-spacing: .4px;
 }
 .R_text {
-    font-size: 10.5px;
-    display: block;
-    padding-top: 10px;
-    padding-left: 44px;
+    font-size: 10px;
+        display: block;
+        padding-top: 10px;
+        padding-left: 45px;
 }
 .season_text {
     font-size: 10px;
     display: block;
-    padding-top: 6px;
+    padding-top: 7px;
+    letter-spacing: 0.4px;
     padding-left: 13px;
 }
 
@@ -890,10 +878,10 @@ select[name='equipment_tires'] {
     border: 1px solid transparent;
 }
 select[name='size_of_tires'] {
-    font-size: 10.6px;
-    width: 50.5px;
+    font-size: 11px;
+    width: 51px;
     margin-top: 5px;
-    margin-left: 3px;
+    margin-left: 4px;
     padding: 2px 0 2px 2px;
     text-indent: .01px;
     text-overflow: '';
@@ -902,9 +890,9 @@ select[name='size_of_tires'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -914,14 +902,14 @@ select[name='size_of_tires'] {
     appearance: none!important;
 }
 .slash_between_select {
-    font-size: 12.5px;
+    font-size: 12px;
     display: inline-block;
-    margin-top: .9px;
+    margin-top: 1px;
     margin-left: 3px;
 }
 select[name='size_of_tires2'] {
     width: 53px;
-    margin-left: 4px;
+    margin-left: 3px;
     padding-bottom: 1px;
     text-indent: .01px;
     text-overflow: '';
@@ -930,9 +918,9 @@ select[name='size_of_tires2'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -942,7 +930,7 @@ select[name='size_of_tires2'] {
     appearance: none!important;
 }
 select[name='R_tires'] {
-    font-size: 10.6px;
+    font-size: 11px;
     display: inline-block;
     width: 45px;
     margin-top: 7px;
@@ -955,9 +943,9 @@ select[name='R_tires'] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -1023,14 +1011,14 @@ label[for='all_seas'] {
     float: left;
     box-sizing: border-box;
     width: 268px;
-    margin-top: 4px;
-    margin-left: 10px;
+    margin-top: 3px;
+    margin-left: 9px;
     padding-bottom: 9px;
     border: 1px solid #b6b6b6;
     border-radius: 16px;
-    -webkit-box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .75);
-    -moz-box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .75);
-    box-shadow: 2px 4px 5px .00px rgba(150, 150, 150, .75);
+    -webkit-box-shadow: 2px 4px 5px rgba(150, 150, 150, .75);
+    -moz-box-shadow: 2px 4px 5px 0 rgba(150, 150, 150, .75);
+    box-shadow: 2px 4px 5px 0 rgba(150, 150, 150, .75);
 }
 .clearfix {
     display: block;
@@ -1045,12 +1033,11 @@ label[for='all_seas'] {
 }
 .search_discs_text {
     font-family: Arial, sans-serif;
-    font-size: 12.1px;
-    font-weight: 800;
-    margin-top: 1.6px;
-    margin-left: 8.6px;
-    letter-spacing: .7px;
-    color: #134465;
+        font-size: 13px;
+        font-weight: 800;
+        margin-bottom: 1px;
+        margin-left: 9px;
+        color: #134465;
 }
 .search_discs_characters {
     float: left;
@@ -1131,7 +1118,7 @@ label[for='all_seas'] {
     margin-left: 1px;
 }
 select[name=diameter_of_discs] {
-    font-size: 10.6px;
+    font-size: 11px;
     display: block;
     width: 56px;
     margin-top: 1px;
@@ -1154,7 +1141,7 @@ select[name=diameter_of_discs] {
     appearance: none!important;
 }
 select[name=QFH] {
-    font-size: 10.6px;
+    font-size: 11px;
     display: block;
     width: 50px;
     margin-top: 14px;
@@ -1177,7 +1164,7 @@ select[name=QFH] {
     appearance: none!important;
 }
 select[name=DLFH] {
-    font-size: 10.6px;
+    font-size: 11px;
     display: block;
     width: 58px;
     margin-top: 15px;
@@ -1188,9 +1175,9 @@ select[name=DLFH] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -1207,40 +1194,40 @@ select[name=DLFH] {
 .DCO_text1 {
     font-size: 10px;
     position: absolute;
-    margin-top: 5.5px;
+    margin-top: 6px;
     letter-spacing: .6px;
 }
 .DCO_text2 {
-    font-size: 8.4px;
+    font-size: 9px;
     position: absolute;
-    margin-top: 13.8px;
-    margin-left: -.6px;
+    margin-top: 14px;
+    margin-left: -1px;
     letter-spacing: .5px;
     color: #8d989c;
 }
 .DCO_text3 {
-    font-size: 8.1px;
+    font-size: 8px;
     position: absolute;
-    margin-top: 22.9px;
-    margin-left: .7px;
+    margin-top: 23px;
+    margin-left: 1px;
     letter-spacing: .6px;
     color: #8d989c;
 }
 .DCO_text4 {
     font-size: 8px;
     position: absolute;
-    margin-top: 31.5px;
-    margin-left: .7px;
+    margin-top: 32px;
+    margin-left: 1px;
     letter-spacing: .9px;
     color: #8d989c;
 }
 select[name=DCO_select] {
-    font-size: 10.6px;
+    font-size: 11px;
     display: block;
     width: 58px;
     margin-top: 43px;
     margin-top: 43px;
-    margin-left: 1.6px;
+    margin-left: 2px;
     margin-left: 1px;
     padding: 2px 0 2px 2px;
     border-right: transparent;
@@ -1248,9 +1235,9 @@ select[name=DCO_select] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -1262,14 +1249,14 @@ select[name=DCO_select] {
 .ET_text1 {
     font-size: 10px;
     display: inline-block;
-    margin-top: 5.5px;
+    margin-top: 6px;
     letter-spacing: -1.4px;
 }
 .ET_text2 {
     font-size: 8px;
     display: block;
-    margin-top: -1.5px;
-    margin-left: 3.6px;
+    margin-top: -2px;
+    margin-left: 4px;
     letter-spacing: .7px;
     color: #8d989c;
 }
@@ -1284,9 +1271,9 @@ select[name=ET_select] {
     background-image: url('../img/strelka.png');
     background-repeat: no-repeat;
     background-position: right center;
-    -webkit-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
-    box-shadow: inset .8px .8px 0 0 rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .4);
     /*for WebKit*/
     -webkit-appearance: none;
     /* for FF */
@@ -1299,7 +1286,7 @@ select[name=ET_select] {
     overflow: hidden;
 }
 .search_discs_in_disc_menu input {
-    font-size: 13.9px;
+    font-size: 14px;
     font-style: italic;
     margin-top: -3px;
     margin-left: 198px;
@@ -1326,267 +1313,160 @@ main {
 
 .catalog_prod {
     width: 180px;
-    height: 25px;
     margin-top: 13px;
     margin-left: 43px;
+    padding: 2px 0 2px 0;
     border: 1px solid #aeb6b9;
     border-radius: 12px;
-    -webkit-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
-    -moz-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
-    box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
+    -webkit-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .4);
+    box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .4);
 }
-.catalog_prod> a {
+.catalog_prod a {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.73px;
-    position: absolute;
-    margin-top: 3px;
-    margin-left: 28.2px;
-    text-decoration: none;
-    letter-spacing: 0;
-    color: #104265;
-}
-.catalog_prod> a:active {
-    color: #104265;
-}
-.catalog_prod> a:before {
-    position: absolute;
+    font-size: 12px;
     display: inline-block;
-    width: 21px;
-    height: 20px;
-    margin-top: 0;
-    margin-left: -25px;
-    content: ' ';
-    background: url(../img/icon.png) 100%;
+    margin-top: 1px;
+    margin-left: 28px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #104265;
+}
+.catalog_prod a:active {
+    color: #104265;
+}
+.catalog_prod a:before {
+    position: absolute;
+        display: inline-block;
+        width: 21px;
+        height: 20px;
+        margin-top: -1px;
+        margin-left: -25px;
+        content: ' ';
+        background: url(../img/icon.png) 100%;
 }
 
 /*НАСТРОЙКИ В BLOCK1 для КАТАЛОГ ПРОДУКЦИИ/ШИНЫ*/
 
-.tire_left_menu {
-    width: 148px;
-    height: 26px;
-    margin-top: 13px;
-    margin-left: 45px;
+.tire_left_menu > a, .discs_left_menu > a, .bolts_left_menu> a{
+    width: 119px;
+    display: block;
     border: 1px solid #aeb6b9;
     border-radius: 12px;
-}
-.tire_left_menu> a {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.73px;
-    position: absolute;
-    margin-top: 4px;
-    margin-left: 29px;
+    font-size: 13px;
+    margin-top: 13px;
+    padding: 4px 0 1px 29px;
+    margin-left: 45px;
     text-decoration: none;
     letter-spacing: 1px;
     color: #104265;
 }
-.tire_left_menu> a:before {
-    position: absolute;
-    display: inline-block;
-    width: 24px;
-    height: 23px;
-    margin-top: -3px;
-    margin-left: -26px;
-    content: ' ';
-    background: url(../img/tire.png) 100%;
+
+.tire_left_menu > a:before, .discs_left_menu> a:before, .bolts_left_menu> a:before {
+        position: absolute;
+        display: inline-block;
+        width: 24px;
+        height: 23px;
+        margin-top: -3px;
+        margin-left: -26px;
+        content: ' ';
+        background: url(../img/tire.png) 100%;
 }
-.tire_left_menu> a:active {
+.tire_left_menu > a:active, .discs_left_menu> a:active, .bolts_left_menu> a:active {
     color: #104265;
 }
-.tire_left_menu_ul {
+.tire_left_menu_ul, .discs_left_menu_ul, .bolts_left_menu_ul{
     width: 150px;
-    margin-top: 24.9px;
-    margin-left: 32.5px;
+        margin-top: -3px;
+        margin-left: 78px;
 }
 .tire_left_menu_ul> li {
-    padding-top: 4.5px;
+    padding-top: 5px;
 }
-.tire_left_menu_ul> li> a {
+.tire_left_menu_ul> li> a, .discs_left_menu_ul> li> a, .bolts_left_menu_ul> li > a {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.74px;
-    display: block;
-    margin-bottom: .1px;
-    padding-left: 13.1px;
-    text-decoration: none;
-    color: #475860;
-    background: url(../img/marker_li.png) no-repeat 2.2px 6.1px;
-    background-size: 5.6%;
+        font-size: 13px;
+        display: block;
+        margin-bottom: .1px;
+        padding-left: 13px;
+        letter-spacing: -0.2px;
+        text-decoration: none;
+        color: #475860;
+        background: url(../img/marker_li.png) no-repeat 2px 6px;
+        background-size: 5.6%;
 }
-.tire_left_menu_ul> li> a:hover {
+.tire_left_menu_ul> li> a:hover, .discs_left_menu_ul> li> a:hover, .bolts_left_menu_ul> li> a:hover {
     font-family: Arial;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    display: block;
-    padding: 2.3px 0 2.7px 12.1px;
-    text-decoration: none;
-    text-decoration: underline;
-    color: #002e7d;
-    border: 0;
-    background: url(../img/marker_li_bold.png) no-repeat 2px 6.63px;
-    background-size: 5.6%;
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        display: block;
+        padding: 2px 0 3px 12px;
+        text-decoration: none;
+        text-decoration: underline;
+        color: #002e7d;
+        border: 0;
+        background: url(../img/marker_li_bold.png) no-repeat 2px 6px;
+        background-size: 5.6%;
 }
 
 /*НАСТРОЙКИ В BLOCK1 для КАТАЛОГ ПРОДУКЦИИ/ДИСКИ!*/
 
-.discs_left_menu {
-    width: 148px;
-    height: 26px;
-    margin-top: 100px;
-    margin-left: 45px;
-    border: 1px solid #aeb6b9;
-    border-radius: 12px;
+.discs_left_menu > a {
+        margin-top: -1px;
 }
-.discs_left_menu> a {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.73px;
-    position: absolute;
-    margin-top: 4px;
-    margin-left: 29px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: #104265;
-}
-.discs_left_menu> a:active {
-    color: #104265;
-}
+
 .discs_left_menu> a:before {
-    position: absolute;
-    display: inline-block;
-    width: 24px;
-    height: 23px;
-    margin-top: -2px;
     margin-left: -27px;
-    content: ' ';
-    background: url(../img/tire.png) 100%;
-}
-.discs_left_menu_ul {
-    width: 150px;
-    margin-top: 24.9px;
-    margin-left: 32.5px;
 }
 .discs_left_menu_ul> li {
     padding-top: 4.5px;
 }
-.discs_left_menu_ul> li> a {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.74px;
-    display: block;
-    margin-bottom: -.5px;
-    padding-left: 12.1px;
-    text-decoration: none;
-    color: #475860;
-    background: url(../img/marker_li.png) no-repeat 2.2px 6.1px;
-    background-size: 5.6%;
-}
-.discs_left_menu_ul> li> a:hover {
-    font-family: Arial;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    display: block;
-    padding: 2.4px 0 2.7px 12.1px;
-    text-decoration: none;
-    text-decoration: underline;
-    color: #002e7d;
-    border: 0;
-    background: url(../img/marker_li_bold.png) no-repeat 2px 6.63px;
-    background-size: 5.6%;
-}
 
 /*НАСТРОЙКИ В BLOCK1 для КАТАЛОГ ПРОДУКЦИИ/БОЛТЫ!*/
 
-.bolts_left_menu {
-    width: 148px;
-    height: 26px;
-    margin-top: 99.8px;
-    margin-left: 45px;
-    border: 1px solid #aeb6b9;
-    border-radius: 12px;
+.bolts_left_menu > a {
+    margin-top: -1px;
 }
-.bolts_left_menu> a {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.73px;
-    position: absolute;
-    margin-top: 2px;
-    margin-left: 29px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: #104265;
-}
-.bolts_left_menu> a:active {
-    color: #104265;
-}
+
 .bolts_left_menu> a:before {
-    position: absolute;
-    display: inline-block;
-    width: 24px;
-    height: 23px;
-    margin-top: -2px;
     margin-left: -27px;
-    content: ' ';
-    background: url(../img/tire.png) 100%;
-}
-.bolts_left_menu_ul {
-    width: 150px;
-    margin-top: 24.9px;
-    margin-left: 32.5px;
 }
 .bolts_left_menu_ul> li {
     padding-top: 4.5px;
 }
-.bolts_left_menu_ul> li> a {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.74px;
-    display: block;
-    margin-top: -.3px;
-    padding-left: 12px;
-    text-decoration: none;
-    color: #475860;
-    background: url(../img/marker_li.png) no-repeat 2.2px 7.6px;
-    background-size: 5.6%;
-}
-.bolts_left_menu_ul> li> a:hover {
-    font-family: Arial;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    display: block;
-    padding: 2px 0 2.7px 12.1px;
-    text-decoration: none;
-    text-decoration: underline;
-    color: #002e7d;
-    border: 0;
-    background: url(../img/marker_li_bold.png) no-repeat 2px 8.23px;
-    background-size: 5.6%;
+
+.bolts_left_menu ul{
+    margin-top:-2px;
 }
 
 /*ПРАВЫЙ BLOCK3 БРЕНДЫ*/
 
 .brands {
     width: 180px;
-    height: 25px;
     margin-top: 11px;
-    margin-left: 9.5px;
+    margin-left: 11px;
+    padding: 0 0 2px 0;
     border: 1px solid #aeb6b9;
     border-radius: 12px;
-    -moz-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
-    box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
-    webkit-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .35);
+    -webkit-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .4);
+    box-shadow: 3px 3px 8px -1px rgba(0, 0, 0, .4);
 }
-.brands> a {
+.brands a {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 14px;
-    position: absolute;
-    margin-top: 1.2px;
+    display:inline-block;
+    margin-top: 1px;
     margin-left: 29px;
     text-decoration: none;
-    letter-spacing: 0;
     color: #104265;
 }
-.brands> a:active {
+.brands a:active {
     color: #104265;
 }
-.brands> a:before {
+.brands a:before {
     position: absolute;
     display: inline-block;
     width: 23px;
@@ -1599,27 +1479,24 @@ main {
 
 /*BLOCK3 ШИНЫ*/
 
-.tires_right_menu {
-    width: 134px;
-    height: 26px;
-    margin-top: 14.8px;
-    margin-left: 23px;
-    border: 1px solid #aeb6b9;
-    border-radius: 12px;
+.tires_right_menu > a, .discs_right_menu> a{
+        width: 104px;
+        border: 1px solid #aeb6b9;
+        border-radius: 12px;
+        font-family: 'lucida_sans_unicoderegular';
+        font-size: 14px;
+        display: block;
+        margin-top: 14px;
+        margin-left: 25px;
+        padding: 2px 0 2px 30px;
+        text-decoration: none;
+        color: #104265;
 }
-.tires_right_menu> a {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 14px;
-    display: block;
-    margin-top: 2px;
-    margin-left: 30px;
-    text-decoration: none;
+
+.tires_right_menu> a:active, .discs_right_menu> a:active {
     color: #104265;
 }
-.tires_right_menu> a:active {
-    color: #104265;
-}
-.tires_right_menu> a:before {
+.tires_right_menu> a:before, .discs_right_menu> a:before {
     position: absolute;
     display: inline-block;
     width: 24px;
@@ -1629,9 +1506,8 @@ main {
     content: ' ';
     background: url(../img/tire.png) 100%;
 }
-.tires_right_menu_checkbox {
-    margin-top: 3px;
-    margin-left: 8px;
+.tires_right_menu_checkbox, .discs_right_menu_checkbox {
+margin-left: 35px;
 }
 input[type='checkbox'] {
     position: absolute;
@@ -1672,7 +1548,7 @@ input[type='checkbox']:checked+ label span {
 }
 label[for='brand1'] {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.4px;
+    font-size: 12px;
     display: block;
     padding-top: 5px;
     padding-left: 0;
@@ -1681,7 +1557,7 @@ label[for='brand1'] {
 }
 label[for='brand2'] {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.4px;
+    font-size: 12px;
     display: block;
     padding-top: 5px;
     padding-left: 0;
@@ -1690,7 +1566,7 @@ label[for='brand2'] {
 }
 label[for='brand3'] {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.4px;
+    font-size: 12px;
     display: block;
     padding-top: 5px;
     padding-left: 0;
@@ -1700,44 +1576,19 @@ label[for='brand3'] {
 
 /*BLOCK3 ДИСКИ*/
 
-.discs_right_menu {
-    width: 135px;
-    height: 26px;
-    margin-top: 86px;
-    margin-left: 22px;
-    border: 1px solid #aeb6b9;
-    border-radius: 12px;
-}
 .discs_right_menu> a {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 14px;
-    position: absolute;
-    margin-top: 2px;
-    margin-left: 30px;
-    text-decoration: none;
-    letter-spacing: .2px;
-    color: #104265;
-}
-.discs_right_menu> a:active {
-    color: #104265;
+margin-top: 11px;
 }
 .discs_right_menu> a:before {
-    position: absolute;
-    display: inline-block;
-    width: 24px;
-    height: 23px;
-    margin-top: -1px;
-    margin-left: -28px;
-    content: ' ';
-    background: url(../img/tire.png) 100%;
+margin-left: -29px;
+
 }
 .discs_right_menu_checkbox {
-    margin-top: 29px;
-    margin-left: 9px;
+margin-top: 2px;
 }
 label[for='brand01'] {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.4px;
+    font-size: 12px;
     display: block;
     padding-top: 5px;
     padding-left: 0;
@@ -1746,7 +1597,7 @@ label[for='brand01'] {
 }
 label[for='brand02'] {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.4px;
+    font-size: 12px;
     display: block;
     padding-top: 5px;
     padding-left: 0;
@@ -1755,7 +1606,7 @@ label[for='brand02'] {
 }
 label[for='brand03'] {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 12.4px;
+    font-size: 12px;
     display: block;
     padding-top: 5px;
     padding-left: 0;
@@ -1764,11 +1615,11 @@ label[for='brand03'] {
 }
 input[id='enter'] {
     font-family: Arial;
-    font-size: 11.3px;
+    font-size: 11px;
     width: 82px;
-    margin: 93px 0 0 32px;
+    margin: 17px 0 0 34px;
     padding: 6px 2px 8px 2px;
-    letter-spacing: .3px;
+    letter-spacing: 0.8px;
     color: #fff;
     border: none;
     border-radius: 11px;
@@ -1807,7 +1658,7 @@ input[id='enter']:hover {
 .block2 {
     float: left;
     box-sizing: border-box;
-    width: 52.6%;
+    width: 52.5%;
     margin-top: 13px;
     border-radius: 6px;
     background: #e6e7e9;
@@ -1819,22 +1670,22 @@ input[id='enter']:hover {
 
 /*ШИНЫ Goodyear первый столбик*/
 
-.goodyear {
+.first-column, .second-column, .third-column {
     float: left;
     box-sizing: border-box;
     margin-top: 10px;
     margin-bottom: 8px;
     margin-left: 24px;
 }
-.goodyear a {
+.first-column a, .second-column a, .third-column a {
     text-decoration: none;
 }
-.goodyear a img {
+.first-column a img, .second-column a img, .third-column a img {
     margin-top: -2px;
     margin-left: -2px;
     text-align: center;
 }
-.name_of_tire {
+.name_of_tire, .name_of_tire2, .name_of_tire3 {
     font-family: 'lucida_sans_unicoderegular';
     font-size: 15px;
     font-weight: bold;
@@ -1843,28 +1694,28 @@ input[id='enter']:hover {
     margin-left: 34px;
     color: #206989;
 }
-.class_of_tire {
+.class_of_tire, .class_of_tire2, .class_of_tire3 {
     font-family: 'lucida_sans_unicoderegular';
-    font-size: 11.77px;
+    font-size: 12px;
     margin-top: 2px;
     margin-left: 14px;
     letter-spacing: .4px;
     color: #000;
 }
-.cost_of_tire_value {
+.cost_of_tire_value, .cost_of_tire_value2, .cost_of_tire_value3 {
     font-family: Arial;
-    font-size: 17.1px;
+    font-size: 17px;
     font-weight: bold;
     font-style: italic;
     padding-left: 37px;
     color: #114366;
 }
-.cost_of_tire_grn {
+.cost_of_tire_grn, .cost_of_tire_grn2, .cost_of_tire_grn3 {
     font-family: Arial;
     font-size: 12px;
     font-weight: bold;
     font-style: italic;
-    padding-left: 1.6px;
+    padding-left: 2px;
     letter-spacing: .5px;
     color: #114366;
 }
@@ -1872,121 +1723,64 @@ input[id='enter']:hover {
 /*Колесо GoodYear 3 столбец 1 кривой - настр*/
 
 .name_of_tire_different {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 15px;
-    font-weight: bold;
     margin-top: -1px;
     margin-bottom: -8px;
     margin-left: 32px;
-    color: #206989;
 }
 .class_of_tire_different {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 11.77px;
-    margin-top: 2px;
     margin-bottom: 1px;
     margin-left: 12px;
     letter-spacing: .5px;
-    color: #000;
 }
 
 /*ШИНЫ Nokian 2 столбик*/
 
-.nokian {
-    float: left;
-    box-sizing: border-box;
+.second-column {
     margin-top: 11px;
     margin-left: 21px;
 }
-.nokian a {
-    text-decoration: none;
-}
-.nokian a img {
+
+.second-column a img {
     margin: -2px 0 1px 4px;
-    text-align: center;
 }
 .name_of_tire2 {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: -9px;
     margin-left: 50px;
-    color: #206989;
 }
 .class_of_tire2 {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 11.77px;
-    margin-top: 2px;
     margin-left: 29px;
     letter-spacing: .5px;
-    color: #000;
 }
 .cost_of_tire_value2 {
-    font-family: Arial;
-    font-size: 17px;
-    font-weight: bold;
-    font-style: italic;
     padding-left: 38px;
     letter-spacing: .1px;
-    color: #114366;
 }
 .cost_of_tire_grn2 {
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: bold;
-    font-style: italic;
-    padding-left: 4.6px;
-    letter-spacing: .5px;
-    color: #114366;
+    padding-left: 5px;
 }
 
 /*ШИНЫ Hankook 3 столбик*/
 
-.hankook {
-    float: left;
-    box-sizing: border-box;
+.third-column {
     margin-top: 11px;
     margin-left: 21px;
 }
-.hankook a {
-    text-decoration: none;
-}
-.hankook a img {
+.third-column a img {
     margin: -2px 0 0 5px;
-    text-align: center;
 }
 .name_of_tire3 {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 15px;
-    font-weight: bold;
     margin-bottom: -9px;
     margin-left: 45px;
-    color: #206989;
 }
 .class_of_tire3 {
-    font-family: 'lucida_sans_unicoderegular';
-    font-size: 11.77px;
-    margin-top: 2px;
     margin-left: 16px;
     letter-spacing: .6px;
-    color: #000;
 }
 .cost_of_tire_value3 {
-    font-family: Arial;
-    font-size: 17px;
-    font-weight: bold;
-    font-style: italic;
     padding-left: 38px;
     letter-spacing: .1px;
-    color: #114366;
 }
 .cost_of_tire_grn3 {
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: bold;
-    font-style: italic;
-    padding-left: 3.6px;
-    letter-spacing: .5px;
+    padding-left: 4px;
     color: #114366;
 }
 .st_line {
@@ -2039,9 +1833,8 @@ footer {
     font-family: Arial;
     font-size: 12px;
     display: inline-block;
-    overflow: hidden;
     margin-top: 10px;
-    padding: 0 3.7px;
+    padding: 0 4px;
     letter-spacing: .4px;
 }
 .bottom_footer a {
@@ -2063,8 +1856,8 @@ footer {
     padding-right: 5px;
 }
 .bottom_footer p {
-    font-size: 10.4px;
+    font-size: 11px;
     margin-top: 12px;
-    margin-left: -2.9px;
+    margin-left: -3px;
     color: #804740;
 }
