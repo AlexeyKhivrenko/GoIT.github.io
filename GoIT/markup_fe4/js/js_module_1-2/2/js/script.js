@@ -8,14 +8,14 @@ for (var i = 0; i < 5; i++) {
     name(add);
 }
 
-console.log(add);
+alert('Введенные имена ' + add.join('; '));
 
 var userName = prompt('Ввести имя пользователя:');
 
-    for (var n = 0; n < add.length; n++){
+    loop1: for (var n = 0; n < add.length; n++){
         if (userName == add[n]) {
             var comparison = true;
-            alert (userName + ' че ты как');
+            alert (userName + ', вы успешно вошли');
             break;
         } else {
             var comparison = false;
