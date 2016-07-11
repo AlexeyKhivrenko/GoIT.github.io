@@ -10,15 +10,18 @@ for (var i = 0; i < 5; i++) {
 
 console.log(add);
 
-var userName = prompt('ввести имя пользователя:');
+var userName = prompt('Ввести имя пользователя:');
 
-    for (var i = 0; i < add.length; i++) {
-
-    if (userName == add[i]) {
-        console.log(userName + ' вы удачно вошли');
-        break;
-    } else {
-    console.log('Попробуйте еще раз!');
+    for (var n = 0; n < add.length; n++){
+        if (userName == add[n]) {
+            var comparison = true;
+            alert (userName + ' че ты как');
+            break;
+        } else {
+            var comparison = false;
+        }
     }
 
+if (comparison == false) {
+    alert('ОШИБКА!');
 }
