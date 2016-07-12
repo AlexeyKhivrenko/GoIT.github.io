@@ -1,27 +1,45 @@
-function name(add) {
-    add.unshift(prompt('Введите имя'));
+function name( add ) { //
+
+    var inputName = prompt('Введите имя');
+
+    if ( inputName == '' ) {
+        alert('Заполните поле');
+        return name( add );
+    } else {
+        add.unshift(inputName); //добавляет в конец массива элеент
+    }
 }
 
 var add = [];
 
 for (var i = 0; i < 5; i++) {
-    name(add);
+    name( add ); //выводит функцию
 }
 
-alert('Введенные имена ' + add.join('; '));
+alert( 'Введенные имена ' + add.join('; ') );
 
-var userName = prompt('Ввести имя пользователя:');
+function outputName() {
 
-    for (var n = 0; n < add.length; n++){
-        if (userName == add[n]) {
-            var comparison = true;
-            alert (userName + ', вы успешно вошли');
-            break;
-        } else {
-            var comparison = false;
+    var userName = prompt('Ввести имя пользователя:');
+    var comprasion = '';
+
+        for (var n = 0; n < add.length; n++) {
+
+            if ( userName == '' ) {
+                alert('Вы не ввели имя!')
+                return outputName();
+            } else if ( userName == add[n] ) {
+                comparison = true;
+                alert ( userName + ', вы успешно вошли!' );
+                break;
+            } else {
+                comparison = false;
+            }
         }
-    }
 
-if (comparison == false) {
-    alert('ОШИБКА!');
+    if ( comparison == false ) {
+        alert('ОШИБКА!');
+    }
 }
+
+outputName();
