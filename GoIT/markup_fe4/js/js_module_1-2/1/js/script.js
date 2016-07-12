@@ -11,12 +11,21 @@ function pow(x, n) {
 var x = prompt("input number");
 var n = prompt("input power of number");
 
-if (n == 0) { //when the power of number is zero
+  if ( x == parseInt(x) && n == '') { //number is int, power is empty
+  alert("input power");
+  console.log("input power");
+} else if ( x == '' && n == '' ) { //empty lines of power and number
+  alert( "input power and number" );
+  console.log( "input number and power" );
+} else if ( x == '' && n == parseInt(n) ) { //empty lines of power and number
+  alert( "input number" );
+  console.log( "input number" );
+} else if (n == 0) { //when the power of number is zero
   var zeroPower = pow(x, n) / pow(x, n);
   alert( zeroPower );
   console.log( zeroPower );
 } else if (n < 0) { //when the power of number less then 0
-  var negativePower = 1 / pow(x, -n); //Can reseived right answer
+  var negativePower = 1 / pow(x, -n); //Can reseive right answer
   alert( negativePower );
   console.log( negativePower );
 } else if (n != parseInt(n) ) { //when then power of number isn't integer
