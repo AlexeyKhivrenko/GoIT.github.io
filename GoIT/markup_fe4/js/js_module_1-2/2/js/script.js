@@ -2,7 +2,7 @@ function name( add ) { //
 
     var inputName = prompt('Введите имя');
 
-    if ( inputName == '' ) {
+    if ( (inputName == '') || inputName == null) {
         alert('Заполните поле');
         return name( add );
     } else {
@@ -21,11 +21,11 @@ alert( 'Введенные имена ' + add.join('; ') );
 function outputName() {
 
     var userName = prompt('Ввести имя пользователя:');
-    var comprasion = '';
+    var comprasion;
 
         for (var n = 0; n < add.length; n++) {
 
-            if ( userName == '' ) {
+            if ( (userName == '') || (userName == null)  ) {
                 alert('Вы не ввели имя!')
                 return outputName();
             } else if ( userName == add[n] ) {

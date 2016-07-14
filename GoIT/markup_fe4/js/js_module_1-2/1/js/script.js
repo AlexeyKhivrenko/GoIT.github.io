@@ -8,10 +8,29 @@ function pow(x, n) {
   return result;
 }
 
-var x = prompt("input number");
-var n = prompt("input power of number");
+function inputX() {
+  var x = prompt("input number");
 
-  if ( x == parseInt(x) && n == '') { //number is int, power is empty
+    if (x != null && x !== '') {
+      return x;
+    } else {
+      return inputX();
+    }
+}
+var x = inputX();
+
+function inputN() {
+  var n = prompt("input number");
+
+    if (n != null && n !== '') {
+      return n;
+    } else {
+      return inputN();
+    }
+}
+var n = inputN();
+
+if ( x == parseInt(x) && n == '') { //number is int, power is empty
   alert("input power");
   console.log("input power");
 } else if ( x == '' && n == '' ) { //empty lines of power and number
@@ -28,7 +47,7 @@ var n = prompt("input power of number");
   var negativePower = 1 / pow(x, -n); //Can reseive right answer
   alert( negativePower );
   console.log( negativePower );
-} else if (n != parseInt(n) ) { //when then power of number isn't integer
+} else if ( n != parseInt(n) ) { //when then power of number isn't integer
   alert('input integer power');
   console.log('input integer power');
 } else { //when didn't use another conditions
