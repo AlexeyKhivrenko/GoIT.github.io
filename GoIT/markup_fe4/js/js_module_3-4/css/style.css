@@ -1,0 +1,13 @@
+.wrapper{
+  width: 700px;
+  margin: 0 auto;
+}
+
+.header{
+  padding-top: 20px;
+  text-align:center;
+}
+
+ul > li{
+  list-style: none;
+}
