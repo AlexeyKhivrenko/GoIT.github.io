@@ -1,45 +1,64 @@
 var wrapper = document.createElement('div');
 wrapper.className = 'wrapper';
-document.body.appendChild(wrapper);
+document.documentElement.appendChild(wrapper);
 
-var header = document.createElement('div');
-header.className = 'header';
-wrapper.appendChild(header);
+var page = {
+  title: 'Тест по программированию',
+  qwestions: ['Вопрос №1', 'Вопрос №2', 'Вопрос №3'],
+  answers: [['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'], ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3'], ['Вариант ответа №1', 'Вариант ответа №2', 'Вариант ответа №3']],
+  button: ['Проверить мои результаты'],
 
-var tittle = document.createElement('span');
-tittle.className = 'tittle';
-tittle.innerHTML = 'Тест по программированию';
-header.appendChild(tittle);
+  inputTitle : function() {
 
-var main = document.createElement('div');
-main.className = 'main';
-wrapper.appendChild(main);
+    var titleDiv = document.createElement('div');
+    titleDiv.className = 'title';
+    titleDiv.innerHTML = this.title;
+    wrapper.appendChild(titleDiv);
 
-var ol = document.createElement('ol');
-main.appendChild(ol);
+  },
 
-var qwestFirst = document.createElement('li');
-qwestFirst.innerHTML = 'Вопрос №1';
-ol.appendChild(qwestFirst);
+  inputQwestions : function() {
 
-var qwestFirstAnswerUL = document.createElement('ul');
-qwestFirst.appendChild(qwestFirstAnswerUL);
+    var qwestionsInsideFunction = this.qwestions.length;
 
-var qwestFirstAnswerLI = document.createElement('li');
-qwestFirstAnswerUL.appendChild(qwestFirstAnswerLI);
+    var formInsideFunct = document.createElement('form');
+    formInsideFunct.action = '#';
+    wrapper.appendChild(formInsideFunct);
 
-var answFirst = document.createElement('INPUT');
-answFirst.setAttribute('type', 'checkbox');
-qwestFirstAnswerLI.appendChild(answFirst);
+    var numberList = document.createElement('ol');
+    formInsideFunct.appendChild(numberList);
 
-var answFirstLabel = document.createElement('label');
-answFirstLabel.innerHTML = 'Вариант ответа №1';
-qwestFirstAnswerLI.appendChild(answFirstLabel);
+    for (var i=0; i<qwestionsInsideFunction; i++) {
 
-var qwestSecondAnswerLI = qwestFirstAnswerLI.cloneNode(true);
-qwestFirstAnswerUL.appendChild(qwestSecondAnswerLI);
-cloneNode(answFirstLabel).innerHTML = 'Вариант ответа №2';
+      var listItem = document.createElement('li');
+      listItem.innerHTML = this.qwestions[i];
+      numberList.appendChild(listItem);
 
-// var footer = document.createElement('div');
-// footer.className = 'footer';
-// wrapper.appendChild(footer);
+      var ulInsideLi = document.createElement('ul');
+      listItem.appendChild(ulInsideLi);
+
+      var answersInsideFunction = this.answers.length;
+
+      for (var j=0; j<answersInsideFunction; j++) {
+
+        var liInsideUl = document.createElement('li');
+        liInsideUl.innerHTML = this.answers[i][j];
+        ulInsideLi.appendChild(liInsideUl);
+
+        var checkboxes = document.createElement('input');
+        checkboxes.type = 'checkbox';
+        liInsideUl.insertBefore(checkboxes, liInsideUl.firstChild);
+
+      }
+
+    }
+    var inputButton = document.createElement('input');
+    inputButton.value = this.button;
+    inputButton.type = 'button';
+    formInsideFunct.appendChild(inputButton);
+  }
+
+};
+
+page.inputTitle();
+page.inputQwestions();
