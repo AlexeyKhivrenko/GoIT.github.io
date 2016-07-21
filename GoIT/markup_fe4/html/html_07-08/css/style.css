@@ -51,7 +51,9 @@ header {
 
 @media (min-width: 960px) {
     .width {
-        width: 963px;
+        padding-left: 10px;
+        box-sizing:border-box;
+        width: 953px;
         margin: 0 auto;
     }
     .width:after {
@@ -233,7 +235,7 @@ header {
         background: url(../img/melody.png) no-repeat;
     }
     .column-block:first-child {
-        margin-left: 65px;
+        margin-left: 45px;
     }
     .column-block:nth-child(2) {
         margin-left: 117px;
@@ -381,6 +383,7 @@ header {
     .updates {
         float: left;
         width: 510px;
+        margin-left: -20px;
         margin-top: 100px;
     }
     .updates a {
@@ -577,7 +580,9 @@ header {
 
 @media (min-width: 768px) and (max-width: 959px) {
     .width {
-        width: 768px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        width: 758px;
         margin: 0 auto;
     }
     .width:after {
