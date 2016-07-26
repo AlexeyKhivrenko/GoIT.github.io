@@ -1,6 +1,6 @@
 var wrapper = document.createElement('div');
 wrapper.className = 'wrapper';
-document.documentElement.appendChild(wrapper);
+document.body.appendChild(wrapper);
 
 var page = {
   title: 'Тест по программированию',
