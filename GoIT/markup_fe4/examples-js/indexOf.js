@@ -2,11 +2,11 @@
   // indexOf(arr, value, fromIndex)
   function newIndexOf(arr, value, fromIndex) {
 
-    var numberOfArr = fromIndex;
-
     if (fromIndex === undefined) {
       fromIndex = 0;
     }
+
+    var numberOfArr = fromIndex;
 
     var newArr = [];
     var resultOfIndexOf;
@@ -31,4 +31,4 @@
   }
 
   abc = [1, 2, 0, null, 3, 4, 5, 6, 'fake'];
-  newIndexOf(abc, 'fake', 2);
+  newIndexOf(abc, null, 4);

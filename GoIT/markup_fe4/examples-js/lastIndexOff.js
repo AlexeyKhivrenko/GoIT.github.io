@@ -1,11 +1,10 @@
   function newIndexOf(arr, value, fromIndex) {
 
+    if (fromIndex === undefined) {
+      fromIndex = (arr.length-1);
+    }
+
       var numberOfArr = fromIndex;
-
-      if (fromIndex === undefined) {
-        fromIndex = (arr.length-1);
-      }
-
       var newArr = [];
       var resultOfIndexOf;
 
