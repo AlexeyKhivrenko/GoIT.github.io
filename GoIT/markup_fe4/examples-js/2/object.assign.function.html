@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  function newObjectAssign() {
+
+    var sources;
+    var objectCheck;
+
+      for (var keys in arguments[0]) {
+          objectCheck = true;
+      }
+
+    if (objectCheck === true) {
+
+      for (var i = 0; i < arguments.length; i++) {
+
+          var newObj = arguments[i];
+
+          for (var key in newObj) {
+            sources[key] = newObj;
+          }
+
+      }
+    }
+
+    // } else {
+    //
+    //   for (var i = 1; i < arguments.length; i++) {
+    //
+    //       var newObj = arguments[[i+1]];
+    //
+    //       for (var key in target) {
+    //         sources[key] = newObj[key];
+    //       }
+    //   }
+    //
+    // }
+
+    return sources;
+
+}
+
+  var a = {a:1};
+  var b = {b:2};
+  var c = {c:3};
+
+  console.log(newObjectAssign(a, b, c));
+
+
+  </script>
+</body>
+</html>
