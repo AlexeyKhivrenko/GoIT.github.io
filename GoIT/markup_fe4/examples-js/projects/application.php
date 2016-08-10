@@ -8,14 +8,14 @@
 <body>
 
 <?php
-$sendto   = "alexeykhivrenko@gmail.com"; // почта, на которую будет приходить письмо
+// $sendto   = "info@dantugydytojas.lt"; // почта, на которую будет приходить письмо
+$sendto   = "alexeykhivrenko@gmail.com";
 $username = $_POST['name'];   // сохраняем в переменную данные полученные из поля c именем
 $usertel = $_POST['telephone']; // сохраняем в переменную данные полученные из поля c телефонным номером
 $usermail = $_POST['email']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
 
 // Формирование заголовка письма
 $subject  = "Новое сообщение";
-$headers  = "From: " . strip_tags($usermail) . "\r\n";
 $headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
