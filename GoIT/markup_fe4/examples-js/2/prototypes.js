@@ -13,7 +13,7 @@ number.prototype.formatCurrency = function () {
         dollars = Math.floor(this.setProperty) + ('.' + Math.round(remainder));
       }
 
-      dollars = ('$' + dollars);
+      dollars = ('$' + dollars)
 
 
   } else if (dollars < 0) {
@@ -22,11 +22,13 @@ number.prototype.formatCurrency = function () {
 
     if (remainder === 0) {
       dollars = Math.ceil(this.setProperty) - ('.' + Math.round(remainder) + '0');
+      dollars = (dollars + '.00' + '$')
     } else if (remainder > 0 || remainder < 100) {
       dollars = Math.ceil(this.setProperty) - ('.' + Math.round(remainder));
+      dollars = ('-' + ('$' + (dollars * -1)));
     }
 
-     dollars = ('-' + ('$' + (dollars * -1)));
+
 
   } else {
   	dollars = '0.00$';
@@ -37,5 +39,5 @@ number.prototype.formatCurrency = function () {
 };
 
 money = new number();
-money.setProperty = 0;
+money.setProperty = -1;
 money.formatCurrency();
