@@ -7,50 +7,23 @@
 <body>
   <script type="text/javascript">
 
-  function newObjectAssign() {
-
-    var sources;
-    var objectCheck;
-
-      for (var keys in arguments[0]) {
-          objectCheck = true;
-      }
-
-    if (objectCheck === true) {
-
-      for (var i = 0; i < arguments.length; i++) {
-
-          var newObj = arguments[i];
-
-          for (var key in newObj) {
-            sources[key] = newObj;
+  function assign(target) {
+      for (var i = 1; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+              if (source.hasOwnProperty(key)) {
+                  target[key] = source[key];
+              }
           }
-
       }
-    }
-
-    // } else {
-    //
-    //   for (var i = 1; i < arguments.length; i++) {
-    //
-    //       var newObj = arguments[[i+1]];
-    //
-    //       for (var key in target) {
-    //         sources[key] = newObj[key];
-    //       }
-    //   }
-    //
-    // }
-
-    return sources;
-
-}
+      return target;
+  }
 
   var a = {a:1};
   var b = {b:2};
   var c = {c:3};
 
-  console.log(newObjectAssign(a, b, c));
+  assign(a, b, c);
 
 
   </script>
