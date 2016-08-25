@@ -1,65 +1,99 @@
-var start = document.createElement('button');
-start.innerHTML = 'start';
-document.body.appendChild(start);
+  var field = document.getElementById('field');
+  var start = document.getElementById('start');
+  var pause = document.getElementById('pause');
+  var split = document.getElementById('split');
+  var reset = document.getElementById('reset');
+  var fieldForStoppedTime = document.getElementById('fieldForStoppedTime');
 
-var pause = document.createElement('button');
-pause.innerHTML = 'pause';
-document.body.appendChild(pause);
+  start.addEventListener('click', start_click);
+  pause.addEventListener('click', pause_click);
+  reset.addEventListener('click', reset_click);
+  split.addEventListener('click', split_click);
 
-var stop = document.createElement('button');
-stop.innerHTML = 'stop';
-document.body.appendChild(stop);
-
-var box = document.createElement('div');
-document.body.appendChild(box);
-
-var field = document.createElement('textarea');
-field.disabled = 'disabled';
-box.appendChild(field);
-
-start.addEventListener('click', start_click);
-pause.addEventListener('click', pause_click);
-stop.addEventListener('click', stop_click);
+  var go = 0;
+  var count;
+  var timer;
+  var time;
+  var startTime;
+  var pauseTime = 0;
 
 
-var go = 0;
-var time = new Date().getTime();
+  function timeFormatter() {
 
-function start_click() {
+      time = new Date().getTime();
+      count = time - startTime + pauseTime;
+      var msec = count%1000;
+      var sec = Math.floor(count/1000)%60;
+      var min = Math.floor(count/60000)%60;
+      var hours = Math.floor(count/(60000*60))%24;
+      var days = Math.floor(count/(60000*60*24))%365;
+      if (sec < 10) {
+        sec = '0' + sec;
+      }
+      if (min < 10) {
+        min = '0' + min;
+      }
+      if (hours < 10) {
+        hours = '0' + hours;
+      }
+      if (days < 10) {
+        days = '0' + days;
+      }
 
-  if (go == 0) {
+      field.innerHTML = days + ':' + hours + ':' + min + ':' + sec + '.' + msec;
+      return count;
 
-    timer = setInterval(function() {
-
-       this.startTime = new Date().getTime();
-       this.count = startTime - time;
-       var msec = count%1000;
-       var sec = Math.floor(count/1000)%60;
-       var min = Math.floor(count/60000)%60;
-       var hours = Math.floor(count/(60000*60))%24;
-       var days = Math.floor(count/(60000*60*24))%365;
-       field.innerHTML = days + ' : ' + hours + ' : ' + min + ' : ' + sec + ' : ' + msec;
-       this.result = field.innerHTML; //ошибка при нажатии на стоп сразу
-
-  }, 1);
-    go = 1;
   }
 
-}
+  function start_click() {
 
-function pause_click() {
+    start.style.display = 'none';
+    pause.style.display = 'inline-block';
 
-  clearInterval(timer);
-  setTimeot(timer);
-  go = 0;
+    if (go == 0) {
 
-}
+      startTime = new Date().getTime();
+      timer = setInterval(timeFormatter, 1);
+      go = 1;
 
-function stop_click() {
+    } else if (go == 2) {
 
-  clearInterval(timer);
-  field.innerHTML = result;
+      startTime = new Date().getTime();
+      timer = setInterval(timeFormatter, 1);
+      go = 1;
 
-  go = 0;
+    }
 
-}
+  }
+
+  function pause_click() {
+
+    start.style.display = 'inline-block';
+    pause.style.display = 'none';
+
+    pauseTime = count;
+    clearInterval(timer);
+    go = 2;
+
+  }
+
+  function reset_click() {
+
+    clearInterval(timer);
+    count = 0;
+    pauseTime = 0;
+    go = 0;
+    field.innerHTML = '00:00:00:00.000';
+
+  }
+
+  function split_click() {
+
+    fieldForStoppedTime.innerHTML = fieldForStoppedTime.innerHTML + field.innerHTML + '</br>';
+
+    if (fieldForStoppedTime == '') {
+      fieldForStoppedTime.innerHTML = '00:00:00:00.000';
+    }
+
+
+  }
