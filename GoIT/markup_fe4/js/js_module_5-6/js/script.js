@@ -28,6 +28,12 @@
       var min = Math.floor(count/60000)%60;
       var hours = Math.floor(count/(60000*60))%24;
       var days = Math.floor(count/(60000*60*24))%365;
+      if (msec < 10) {
+        msec = '00' + msec;
+      } else if (msec < 100) {
+        msec = '0' + msec;
+      }
+
       if (sec < 10) {
         sec = '0' + sec;
       }
@@ -78,9 +84,17 @@
 
   }
 
+  function split_click() {
+
+    fieldForStoppedTime.innerHTML = fieldForStoppedTime.innerHTML + field.innerHTML + '</br>';
+
+  }
+
   function reset_click() {
 
     clearInterval(timer);
+    start.style.display = 'inline-block';
+    pause.style.display = 'none';
     count = 0;
     pauseTime = 0;
     go = 0;
@@ -88,11 +102,6 @@
 
   }
 
-  function split_click() {
-
-    fieldForStoppedTime.innerHTML = fieldForStoppedTime.innerHTML + field.innerHTML + '</br>';
-
-  }
 
   function reset_dblclick(){
       fieldForStoppedTime.innerHTML = '';
