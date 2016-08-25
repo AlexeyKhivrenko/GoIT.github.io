@@ -8,6 +8,7 @@
   start.addEventListener('click', start_click);
   pause.addEventListener('click', pause_click);
   reset.addEventListener('click', reset_click);
+  reset.addEventListener('dblclick', reset_dblclick);
   split.addEventListener('click', split_click);
 
   var go = 0;
@@ -91,9 +92,8 @@
 
     fieldForStoppedTime.innerHTML = fieldForStoppedTime.innerHTML + field.innerHTML + '</br>';
 
-    if (fieldForStoppedTime == '') {
-      fieldForStoppedTime.innerHTML = '00:00:00:00.000';
-    }
+  }
 
-
+  function reset_dblclick(){
+      fieldForStoppedTime.innerHTML = '';
   }
