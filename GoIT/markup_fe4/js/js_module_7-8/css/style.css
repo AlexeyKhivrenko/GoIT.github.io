@@ -1,0 +1,105 @@
+.wrapper{
+  margin: 0 auto;
+  width: 700px;
+}
+
+.tabs{
+  background-color: #e9e9e9;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.tab1, .tab2, .tab3 {
+  display: inline-block;
+  background: #f6f6f6;
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px solid #b9b9b9;
+}
+
+
+.tab:hover{
+  background: #e9e9e9;
+}
+
+.tab1:active, .tab2:active, .tab3:active{
+  border: 1px solid rgb(76, 118, 153);
+}
+
+.active{
+  background: rgb(76, 118, 153) !important;
+}
+
+.tabs li:first-child{
+  margin: 5px 0 1px 7px;
+}
+
+.boxTabs{
+  margin: 30px 20px;
+  overflow: auto;
+  height: 200px;
+}
+
+.boxTab2, .boxTab3{
+  display: none;
+}
+
+.secondTask{
+  margin-top: 20px;
+}
+
+.firstTask, .secondTask{
+  height: 300px;
+  border: 1px solid #eee;
+}
+
+.data{
+  padding: 60px 0 40px 60px;
+  float: left;
+}
+
+.data p{
+  padding: 10px;
+}
+
+.dataField, .hiddenField{
+  padding: 54px 0 40px 60px;
+  vertical-align: top;
+  float: left;
+}
+
+input[type="text"]{
+    margin-top: 18px;
+}
+
+.help{
+  width: 244px;
+  border: 1px solid #b3c9ce;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  font: italic 14px/1.3 arial, sans-serif;
+  color: #333;
+  background: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
+
+.hiddenField{
+  padding: 58px 0 30px  10px;
+}
+
+.helpField1, .helpField2, .helpField3{
+  display: none;
+}
+
+form{
+  clear: both;
+  overflow: hidden;
+}
+
+.btn{
+  margin: 20px 60px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(174, 125, 54);
+}
