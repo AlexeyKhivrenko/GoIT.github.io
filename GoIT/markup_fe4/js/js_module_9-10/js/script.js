@@ -49,14 +49,9 @@ $(function() {
     // добавить обработчик события hover
     $('nav ul li').hover(
         function() {
-            $(this).find('ul:first').stop(true, true);
-            $(this).find('ul:first').slideDown();
-        },
-        function() {
-            $(this).find('ul:first').slideUp('fast');
+            $(this).find('ul:first').stop();
+            $(this).find('ul:first').slideToggle();
         }
     );
-    // всем элементам меню с вложенностью добавить символ &raquo;
-    $('.topmenu li:has(ul)').find('a:first').append('&raquo;');
 
 });
