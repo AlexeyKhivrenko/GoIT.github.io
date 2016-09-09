@@ -20,7 +20,7 @@ $(function() {
 // ---------------------------------------------------------------------
 
   $("input[name='firstName']").on('mouseover', function() {
-    $('.helpField1').show();
+    $(".helpField1").show();
   });
   $("input[name='firstName']").on('mouseleave', function() {
     $('.helpField1').hide();
