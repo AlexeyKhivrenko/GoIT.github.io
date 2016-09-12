@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css" media="screen">
     <script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
-    <script src="js/script.js" charset="utf-8"></script>
+    <script src="js/script2.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -41,21 +41,24 @@
 
       <div class="secondTask">
         <form action="">
-          <div class="data">
-            <p>First Name</p>
-            <p>Last Name</p>
-            <p>Address</p>
-          </div>
-          <div class="dataField">
-            <input type="text" name="firstName"><br />
-            <input type="text" name="lastName"><br />
-            <input type="text" name="adress"><br />
-          </div>
-          <div class="hiddenField">
-            <p class="help helpField1">Please provide your firstname.</p>
-            <p class="help helpField2">Please provide also your lastname.</p>
-            <p class="help helpField3">Address</p>
-          </div>
+
+          <fieldset class="tooltip">
+
+      			<div>
+      				<label for="firstname">Firstname</label>
+      				<input id="firstname" name="firstname" title="Please provide your firstname.">
+      			</div>
+      			<div>
+      				<label for="lastname">Lastname</label>
+      				<input id="lastname" name="lastname" title="Please provide also your lastname.">
+      			</div>
+      			<div>
+      				<label for="address">Address</label>
+      				<input id="address" name="address" title="Please provide your address.">
+      			</div>
+
+      		</fieldset>
+
         </form>
 
         <p>
