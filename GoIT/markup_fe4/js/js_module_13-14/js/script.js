@@ -31,7 +31,6 @@ $(function() {
     var count = 0;
     var modalWrap = $('<div>').addClass('modalWrap').appendTo('body');
     var modal = $('<div>').addClass('modal').appendTo('.modalWrap');
-    var modalInside = $('<div>').addClass('modalInside');
 
 
     function modalOpen() {
@@ -61,7 +60,7 @@ $(function() {
     $('.btn').on('click', function(e) {
         e.preventDefault(e);
         modalCLose();
-        modalInside.appendTo('.modal');
+        var modalInside = $('<div>').addClass('modalInside').appendTo('.modal');
 
         for (var i = 0; i < test.questions.length; i++) {
 
