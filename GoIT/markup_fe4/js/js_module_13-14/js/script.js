@@ -40,7 +40,7 @@ $(function() {
             point = ' points!';
         }
         modalWrap.show();
-        modalInside.html('You got ' + count + point);
+        var pointCount = $('<p>').addClass('points').html('You have earned ' + count + point).appendTo('.modalInside');
         modal.show();
         modalInside.show();
     }
@@ -56,14 +56,29 @@ $(function() {
         e.preventDefault(e);
         modalCLose();
         for (var i = 0; i < test.questions.length; i++) {
+
+            var checkAnswers = $('<p>').addClass('answers').appendTo('.modalInside');
+
             for (var j = 0; j < test.options[i].length; j++) {
                 searchOfQuestions = 'question_' + (i + 1) + '_' + (j + 1);
+
                 if ($('input#' + searchOfQuestions).is(":checked")) {
                     text = $("label[for='" + searchOfQuestions + "']").html();
+                    checkAnswers.html('Вопрос №' + (i + 1) + '<span class="answer'  + (i + 1) + 'Color">' + ' Answer: ' + text + '</span>');
                     if (text == test.answers[i]) {
+                        $(".answer" + (i + 1) + "Color").css('color', 'green');
                         count++;
                     }
+                    if (text != test.answers[i]) {
+                      $(".answer" + (i + 1) + "Color").css('color', 'red');
+                    }
                 }
+
+                // if (!checkAnswers.has('.answer')) {
+                //   checkAnswers.html('Вопрос №' + (i + 1) + '<span class="answer'  + (i + 1) + 'Color">' + ' Answer: ' + '</span>');
+                //   $(".answer" + (i + 1) + "Color").css('color', 'red');
+                // }
+
             }
         }
         modalOpen();
