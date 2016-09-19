@@ -31,30 +31,38 @@ $(function() {
     var count = 0;
     var modalWrap = $('<div>').addClass('modalWrap').appendTo('body');
     var modal = $('<div>').addClass('modal').appendTo('.modalWrap');
-    var modalInside = $('<div>').addClass('modalInside').appendTo('.modal');
+    var modalInside = $('<div>').addClass('modalInside');
+
 
     function modalOpen() {
+
         if (count == 1) {
             point = ' point!';
         } else {
             point = ' points!';
         }
-        modalWrap.show();
+        $('.modalWrap').show();
         var pointCount = $('<p>').addClass('points').html('You have earned ' + count + point).appendTo('.modalInside');
-        modal.show();
-        modalInside.show();
+        $('.modal').show();
+        $('.modalInside').show();
+
     }
 
     function modalCLose() {
+      if($('.modalInside')) {
+          $('div.modalInside').remove();
+      }
       count = 0;
-      modalWrap.hide();
-      modal.hide();
-      modalInside.hide();
+      $('.modalWrap').hide();
+      $('.modal').hide();
+      $('.modalInside').hide();
     }
 
     $('.btn').on('click', function(e) {
         e.preventDefault(e);
         modalCLose();
+        modalInside.appendTo('.modal');
+
         for (var i = 0; i < test.questions.length; i++) {
 
             var checkAnswers = $('<p>').addClass('answers').appendTo('.modalInside');
@@ -74,11 +82,6 @@ $(function() {
                     }
                 }
 
-                // if (!checkAnswers.has('.answer')) {
-                //   checkAnswers.html('Вопрос №' + (i + 1) + '<span class="answer'  + (i + 1) + 'Color">' + ' Answer: ' + '</span>');
-                //   $(".answer" + (i + 1) + "Color").css('color', 'red');
-                // }
-
             }
         }
         modalOpen();
@@ -90,6 +93,5 @@ $(function() {
       }
       modalCLose();
     });
-
 
 });
