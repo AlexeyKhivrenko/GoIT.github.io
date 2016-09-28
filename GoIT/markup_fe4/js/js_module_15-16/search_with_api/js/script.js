@@ -1,13 +1,15 @@
 $(function() {
 
     $("form").on("submit", function(e) {
+      e.preventDefault();
 
         var search = $(".search").val();
 
         $.getJSON("https://www.googleapis.com/customsearch/v1?key=AIzaSyBFBGvioil72TMHARrEgqbu5boYRF5MZmw&cx=000978185509461210800:vyaidmyxf6i&q=" + search + '"',
             function(data) {
-                if ($('.site')) {
+                if ($('.site') && $('.results_quantity')) {
                     $('.site').remove();
+                    $('.results_quantity').remove();
                 }
                 $('<div class="results_quantity"></div>').html('Результатов: примерно ' + data.searchInformation.formattedTotalResults + '( ' + data.searchInformation.formattedSearchTime + ' сек. )').appendTo('.content');
                 for (var i = 0; i < data.items.length; i++) {
