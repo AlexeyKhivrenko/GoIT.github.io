@@ -2,7 +2,7 @@ $(function() {
 
     $("form").on("submit", function(e) {
         var search = $(".search").val();
-        $.getJSON("https:www.googleapis.com/customsearch/v1?key=AIzaSyBFBGvioil72TMHARrEgqbu5boYRF5MZmw&cx=000978185509461210800:vyaidmyxf6i&q=" + search + '"',
+        $.getJSON("https://www.googleapis.com/customsearch/v1?key=AIzaSyBFBGvioil72TMHARrEgqbu5boYRF5MZmw&cx=000978185509461210800:vyaidmyxf6i&q=" + search + '"',
             function(data) {
               console.log(data);
               if ($('.site')) {
