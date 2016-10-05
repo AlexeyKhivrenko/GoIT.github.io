@@ -3,12 +3,11 @@ body{
 }
 .parent{
   display: table;
-  background: red;
+  background: #fff;
 }
 
 .children{
   vertical-align: top;
   display: table-cell;
-  color: blue;
-  width: 33%;
+  color: #000;
 }

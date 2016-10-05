@@ -29,3 +29,5 @@ gulp.task('serve', ['scripts'], function() { // Создаем таск browser-
     gulp.watch('**.html', ['watch']);
     // gulp.watch("*.html").on("change", reload);
 });
+
+gulp.task('default', ['serve']);
