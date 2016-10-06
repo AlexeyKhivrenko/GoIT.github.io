@@ -1,0 +1,13 @@
+body{
+  background: #aaa;
+}
+.parent{
+  display: table;
+  background: #fff;
+}
+
+.children{
+  vertical-align: top;
+  display: table-cell;
+  color: #000;
+}
