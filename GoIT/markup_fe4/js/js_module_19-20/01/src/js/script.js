@@ -28,19 +28,19 @@ $(function() {
           $('.nav-menu__item:first-child a').css('background', '#2a2d32');
         }
 
-        if (($scrollTop > $('.slider').position().top) && ($scrollTop < $('.services').position().top - $navHeight)) {
+        if (($scrollTop >= $('.slider').position().top) && ($scrollTop < Math.floor($('.services').position().top - $navHeight))) {
           $('.nav-menu__item:nth-child(2) a').css('background', '#248cec');
         } else {
           $('.nav-menu__item:nth-child(2) a').css('background', '#2a2d32');
         }
 
-        if (($scrollTop >= $('.services').position().top - $navHeight) && ($scrollTop < $('.news').position().top - $navHeight)) {
+        if (($scrollTop >= Math.floor($('.services').position().top - $navHeight)) && ($scrollTop < Math.floor($('.news').position().top - $navHeight))) {
           $('.nav-menu__item:nth-child(3) a').css('background', '#248cec');
         } else {
           $('.nav-menu__item:nth-child(3) a').css('background', '#2a2d32');
         }
 
-        if (($scrollTop >= $('.news').position().top - $navHeight) && ($scrollTop < $('.partners').position().top)) {
+        if (($scrollTop >= Math.floor($('.news').position().top - $navHeight)) && ($scrollTop < $('.partners').position().top)) {
           $('.nav-menu__item:nth-child(4) a').css('background', '#248cec');
         } else {
           $('.nav-menu__item:nth-child(4) a').css('background', '#2a2d32');
