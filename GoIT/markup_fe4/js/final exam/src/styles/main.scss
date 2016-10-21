@@ -1,0 +1,321 @@
+@import "base/reset";
+@import "helpers/new-tags";
+@import "base/fonts";
+@import "base/sprite";
+@import "helpers/mixins";
+@import "vendors/owl.carousel";
+@import "vendors/owl.theme";
+$color: #ff4e50;
+
+// @extend %clearfix;
+// @include links(color, #fff, #c39723,  #fff);
+body {
+  font-family: Montserrat;
+}
+.clearfix {
+  @extend %clearfix;
+}
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  @include mq(xs) {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+
+}
+
+header {
+  @include mq(xs) {
+    background: url('../img/mobile.jpg') no-repeat;
+    display: block;
+    content: "";
+  }
+}
+
+@include mq(xs) {
+  .header-top {
+    overflow: hidden;
+    position: relative;
+      .header-top__menu {
+        margin: 20px;
+        text-align: center;
+      .header-top__item {
+        display: inline-block;
+      }
+      .header-top__link {
+        text-decoration: none;
+        @include links(text-decoration, none, none,  none);
+        color: #fff;
+        @include links(color, #fff, #fff,  #fff);
+        font-family: "Montserrat";
+        font-weight: bold;
+        font-size: 14px;
+        padding: 5px 10px;
+        border-radius: 30px;
+        border: 2px solid transparent;
+        &:hover {
+          padding: 5px 10px;
+          border-radius: 30px;
+          border: 2px solid #fff;
+        }
+      }
+    }
+    .header-top__name {
+      text-align: center;
+      color: #fff;
+      font-family: "Montserrat";
+      font-size: 20px;
+      font-weight: bold;
+      margin: 120px 0 30px;
+    }
+  }
+
+  .header-middle {
+    padding-bottom: 120px;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    .header-middle__title {
+      font-size: 30px;
+      padding: 4px;
+    }
+    .header-middle__text {
+      font-family: "Roboto";
+      font-weight: 300;
+      font-size: 18px;
+      padding: 10px 50px;
+    }
+  }
+  .header-middle__btn {
+    background: $color;
+    border: none;
+    color: #fff;
+    font-family: Montserrat;
+    min-width: 80%;
+    padding: 12px;
+    border-radius: 30px;
+    margin: 20px auto 20px auto;
+    @include links(background, #f93f41, #f93f41, #f93f41)
+
+  }
+
+  .works {
+    .works__title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 22px;
+      padding: 30px 0 10px;
+    }
+    .works__steps {
+      .step {
+        margin: 10px;
+        padding: 0 20px;
+        &:first-child{
+          display: block;
+          content: "";
+          background: url('../img/step1-mobile.jpg') no-repeat;
+        }
+        &:nth-child(2){
+          display: block;
+          content: "";
+          background: url('../img/step2-mobile.jpg') no-repeat;
+          padding: 16px 20px 17px;
+        }
+        &:nth-child(3){
+          display: block;
+          content: "";
+          background: url('../img/step3-mobile.jpg') no-repeat;
+        }
+        .step__mark {
+          display: inline-block;
+          border: none;
+          background: $color;
+          color: #fff;
+          border-radius: 10px;
+          font-size: 10px;
+          margin: 70px 0 0;
+          letter-spacing: 2px;
+          padding: 5px 10px;
+        }
+        .step__title {
+          font-size: 24px;
+          font-weight: 800;
+          color: #fff;
+          margin-top: 15px;
+          line-height: 30px;
+        }
+        .step__text {
+          color: #dbdbdb;
+          font-family: Roboto;
+          font-weight: 300;
+          font-size: 14px;
+          padding: 13px 0;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  .partners {
+    text-align: center;
+    .partners__title {
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      padding: 30px;
+    }
+    .partners_box {
+      text-align: center;
+      .partner__icon {
+        &:after{
+          position: absolute;
+          content: '';
+          display: inline-block;
+          @include sprite($partner4-icon);
+          margin-top: 82px;
+          margin-left: -38px;
+        }
+
+        }
+      .partner--icon2 {
+        &:after{
+          @include sprite($partner3-icon);
+        }
+
+      }
+      .partner--icon3 {
+        &:after{
+          @include sprite($partner2-icon);
+        }
+
+      }
+      .partner--icon4 {
+        &:after{
+          @include sprite($partner1-icon);
+        }
+
+      }
+      }
+      .partner__name {
+        margin: 10px;
+        font-weight: bold;
+      }
+      .partner__descript {
+        font-family: "Roboto";
+        font-size: 14px;
+        margin: 20px 50px;
+        font-weight: 300;
+        color: #ccc;
+      }
+    }
+    .partners__btn {
+      @extend .header-middle__btn;
+      background: #fff;
+      color: $color;
+      font-weight: bold;
+      border: 2px solid $color;
+      @include links(border-color, #db0d0f, #db0d0f, #db0d0f);
+      @include links(background, #fff, #fff, #fff);
+      @include links(color, #db0d0f, #db0d0f, #db0d0f);
+    }
+
+    .activities {
+      text-align: center;
+      .activities__title {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+      }
+      .activities__options {
+        .activity {
+          position: relative;
+          .activity__text {
+            top: 40%;
+            display: block;
+            position: absolute;
+            width:100%;
+            text-align: center;
+            vertical-align: middle;
+            color: #fff;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .partners-search {
+      text-align: center;
+      .partners-search__title {
+        font-size: 22px;
+        font-weight: bold;
+        padding: 30px 10px;
+      }
+      .partners-search__text {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+      }
+      .partners-search__input {
+        margin: 15px 15px 10px;
+        min-width: 80%;
+        border: 1px solid #ccc;
+        padding: 12px;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 14px;
+      }
+      .partners-search__btn {
+        margin: 0 0 40px 0;
+        @extend .header-middle__btn;
+      }
+    }
+    footer {
+      border-top: 4px solid $color;
+      text-align: center;
+      .f__name {
+        margin: 20px;
+        font-weight: bold;
+        font-size: 16px;
+        color: $color;
+        letter-spacing: 1px;
+
+      }
+      .f-company {
+        .f-company__title {
+          font-family: 14px;
+          font-weight: bold;
+        }
+        .f-company__menu {
+          .f-company__list {
+            display: inline-block;
+            padding: 10px 5px;
+          }
+          .f-company__link {
+            text-decoration: none;
+            color: #000;
+            font-family: Roboto;
+            font-weight: 300;
+          }
+        }
+      }
+      .f-partners {
+        .f-partners__title {
+          margin: 5px;
+          font-weight: bold;
+        }
+      }
+      .f-info {
+        font-size: 10px;
+        margin: 20px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        color: #ccc;
+      }
+      .f-logo {
+        @include sprite($logo);
+        margin: 40px auto 40px;
+      }
+    }
+}
