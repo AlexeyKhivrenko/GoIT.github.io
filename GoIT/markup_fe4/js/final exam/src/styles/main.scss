@@ -3,319 +3,1034 @@
 @import "base/fonts";
 @import "base/sprite";
 @import "helpers/mixins";
-@import "vendors/owl.carousel";
-@import "vendors/owl.theme";
-$color: #ff4e50;
 
-// @extend %clearfix;
+$color: #ff4e50; // @extend %clearfix;
 // @include links(color, #fff, #c39723,  #fff);
 body {
-  font-family: Montserrat;
+    font-family: Montserrat;
 }
-.clearfix {
-  @extend %clearfix;
+button, input[type="button"], input[type="submit"] {
+  cursor:pointer;
+}
+.partners-search__btn{
+  &:hover {
+    background: #cb2a2b;
+  }
 }
 .wrapper {
-  position: relative;
-  overflow: hidden;
-  @include mq(xs) {
-    min-width: 320px;
-    margin: 0 auto;
-  }
-
-}
-
-header {
-  @include mq(xs) {
-    background: url('../img/mobile.jpg') no-repeat;
-    display: block;
-    content: "";
-  }
-}
-
-@include mq(xs) {
-  .header-top {
-    overflow: hidden;
     position: relative;
-      .header-top__menu {
-        margin: 20px;
-        text-align: center;
-      .header-top__item {
-        display: inline-block;
-      }
-      .header-top__link {
-        text-decoration: none;
-        @include links(text-decoration, none, none,  none);
-        color: #fff;
-        @include links(color, #fff, #fff,  #fff);
-        font-family: "Montserrat";
-        font-weight: bold;
-        font-size: 14px;
-        padding: 5px 10px;
-        border-radius: 30px;
-        border: 2px solid transparent;
-        &:hover {
-          padding: 5px 10px;
-          border-radius: 30px;
-          border: 2px solid #fff;
-        }
-      }
+    overflow: hidden;
+    @include mq(xs) {
+        min-width: 320px;
+        margin: 0 auto;
     }
-    .header-top__name {
-      text-align: center;
-      color: #fff;
-      font-family: "Montserrat";
-      font-size: 20px;
-      font-weight: bold;
-      margin: 120px 0 30px;
+    @include mq(lg) {
+        width: 940px;
+        margin: 0 auto;
     }
-  }
-
-  .header-middle {
-    padding-bottom: 120px;
+}
+header {
+    @include mq(xs) {
+        background: url('../img/mobile.jpg') no-repeat;
+        display: block;
+        content: "";
+    }
+    @include mq(sm) {
+        background: url('../img/tablet.jpg') no-repeat;
+        background-position: 60% 20%;
+        display: block;
+        content: "";
+    }
+    @media (min-width: 768px) {
+        background: url('../img/desktop.jpg') no-repeat;
+        background-position: 50% 10%;
+        display: block;
+        content: "";
+        background-size: cover;
+    }
+}
+.header-top__link {
+    text-decoration: none;
+    @include links(text-decoration, none, none, none);
     color: #fff;
+    @include links(color, #fff, #fff, #fff);
     font-family: "Montserrat";
     font-weight: bold;
-    text-align: center;
-    .header-middle__title {
-      font-size: 30px;
-      padding: 4px;
-    }
-    .header-middle__text {
-      font-family: "Roboto";
-      font-weight: 300;
-      font-size: 18px;
-      padding: 10px 50px;
-    }
-  }
-  .header-middle__btn {
+}
+.header-middle__btn {
     background: $color;
     border: none;
     color: #fff;
     font-family: Montserrat;
-    min-width: 80%;
+    width: 282px;
     padding: 12px;
     border-radius: 30px;
-    margin: 20px auto 20px auto;
-    @include links(background, #f93f41, #f93f41, #f93f41)
-
-  }
-
-  .works {
-    .works__title {
-      text-align: center;
-      font-weight: bold;
-      font-size: 22px;
-      padding: 30px 0 10px;
-    }
-    .works__steps {
-      .step {
-        margin: 10px;
-        padding: 0 20px;
-        &:first-child{
-          display: block;
-          content: "";
-          background: url('../img/step1-mobile.jpg') no-repeat;
-        }
-        &:nth-child(2){
-          display: block;
-          content: "";
-          background: url('../img/step2-mobile.jpg') no-repeat;
-          padding: 16px 20px 17px;
-        }
-        &:nth-child(3){
-          display: block;
-          content: "";
-          background: url('../img/step3-mobile.jpg') no-repeat;
-        }
-        .step__mark {
-          display: inline-block;
-          border: none;
-          background: $color;
-          color: #fff;
-          border-radius: 10px;
-          font-size: 10px;
-          margin: 70px 0 0;
-          letter-spacing: 2px;
-          padding: 5px 10px;
-        }
-        .step__title {
-          font-size: 24px;
-          font-weight: 800;
-          color: #fff;
-          margin-top: 15px;
-          line-height: 30px;
-        }
-        .step__text {
-          color: #dbdbdb;
-          font-family: Roboto;
-          font-weight: 300;
-          font-size: 14px;
-          padding: 13px 0;
-          line-height: 16px;
-        }
-      }
-    }
-  }
-  .partners {
+    margin: 20px auto;
+}
+.partners-search {
     text-align: center;
-    .partners__title {
-      font-size: 22px;
-      font-weight: bold;
-      text-align: center;
-      padding: 30px;
-    }
-    .partners_box {
-      text-align: center;
-      .partner__icon {
-        &:after{
-          position: absolute;
-          content: '';
-          display: inline-block;
-          @include sprite($partner4-icon);
-          margin-top: 82px;
-          margin-left: -38px;
-        }
-
-        }
-      .partner--icon2 {
-        &:after{
-          @include sprite($partner3-icon);
-        }
-
-      }
-      .partner--icon3 {
-        &:after{
-          @include sprite($partner2-icon);
-        }
-
-      }
-      .partner--icon4 {
-        &:after{
-          @include sprite($partner1-icon);
-        }
-
-      }
-      }
-      .partner__name {
-        margin: 10px;
-        font-weight: bold;
-      }
-      .partner__descript {
-        font-family: "Roboto";
-        font-size: 14px;
-        margin: 20px 50px;
-        font-weight: 300;
-        color: #ccc;
-      }
-    }
-    .partners__btn {
-      @extend .header-middle__btn;
-      background: #fff;
-      color: $color;
-      font-weight: bold;
-      border: 2px solid $color;
-      @include links(border-color, #db0d0f, #db0d0f, #db0d0f);
-      @include links(background, #fff, #fff, #fff);
-      @include links(color, #db0d0f, #db0d0f, #db0d0f);
-    }
-
-    .activities {
-      text-align: center;
-      .activities__title {
-        font-size: 22px;
-        font-weight: bold;
-        text-align: center;
-        padding: 10px;
-      }
-      .activities__options {
-        .activity {
-          position: relative;
-          .activity__text {
-            top: 40%;
-            display: block;
-            position: absolute;
-            width:100%;
-            text-align: center;
-            vertical-align: middle;
-            color: #fff;
-            font-size: 22px;
-          }
-        }
-      }
-    }
-    .partners-search {
-      text-align: center;
-      .partners-search__title {
+    .partners-search__title {
         font-size: 22px;
         font-weight: bold;
         padding: 30px 10px;
-      }
-      .partners-search__text {
+    }
+    .partners-search__text {
         font-family: Roboto;
         font-size: 18px;
         font-weight: 300;
-      }
-      .partners-search__input {
-        margin: 15px 15px 10px;
-        min-width: 80%;
+    }
+    .partners-search__input {
+        display: block;
+        margin: 15px auto 10px;
+        width: 282px;
         border: 1px solid #ccc;
         padding: 12px;
         border-radius: 3px;
         font-family: Roboto;
         font-weight: 300;
         font-size: 14px;
-      }
-      .partners-search__btn {
-        margin: 0 0 40px 0;
-        @extend .header-middle__btn;
-      }
     }
-    footer {
-      border-top: 4px solid $color;
-      text-align: center;
-      .f__name {
+}
+.partners__btn {
+    @extend .header-middle__btn;
+    background: #fff;
+    color: $color;
+    font-weight: bold;
+    border: 2px solid $color;
+    @include links(border-color, #db0d0f, #db0d0f, #db0d0f);
+    @include links(background, #fff, #fff, #fff);
+    @include links(color, #db0d0f, #db0d0f, #db0d0f);
+}
+.partners-search__btn {
+    margin: 0 0 40px;
+    @extend .header-middle__btn;
+}
+.step__mark {
+    display: inline-block;
+    border: none;
+    background: #ff4e50;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 10px;
+    margin: 70px 20px 0;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+}
+.step__title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    padding: 15px 20px 0;
+    line-height: 30px;
+}
+.step__text {
+    color: #dbdbdb;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: left;
+    padding: 20px 20px 0;
+    line-height: 16px;
+}
+.partners {
+    text-align: center;
+    .partners__title {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        padding: 30px;
+    }
+    .partners__box {
+        text-align: center;
+        .partner__icon {
+            &:after {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                @include sprite($partner4-icon);
+                margin-top: 82px;
+                margin-left: -38px;
+            }
+        }
+        .partner--icon2 {
+            &:after {
+                @include sprite($partner3-icon);
+            }
+        }
+        .partner--icon3 {
+            &:after {
+                @include sprite($partner2-icon);
+            }
+        }
+        .partner--icon4 {
+            &:after {
+                @include sprite($partner1-icon);
+            }
+        }
+    }
+    .partner__name {
+        margin: 10px;
+        font-weight: bold;
+    }
+    .partner__descript {
+        font-family: "Roboto";
+        font-size: 14px;
+        margin: 20px 50px;
+        font-weight: 300;
+        color: #ccc;
+    }
+}
+.activities {
+    text-align: center;
+    .activities__title {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+    .activity {
+        .activity__text {
+            top: 40%;
+            display: block;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            color: #fff;
+            font-size: 22px;
+        }
+    }
+}
+footer {
+    border-top: 4px solid $color;
+    text-align: center;
+    .f__name {
         margin: 20px;
         font-weight: bold;
         font-size: 16px;
         color: $color;
         letter-spacing: 1px;
-
-      }
-      .f-company {
+    }
+    .f-company {
         .f-company__title {
-          font-family: 14px;
-          font-weight: bold;
+            font-weight: bold;
         }
         .f-company__menu {
-          .f-company__list {
-            display: inline-block;
-            padding: 10px 5px;
-          }
-          .f-company__link {
-            text-decoration: none;
-            color: #000;
-            font-family: Roboto;
-            font-weight: 300;
-          }
+            .f-company__link {
+                text-decoration: none;
+                color: #000;
+                font-family: Roboto;
+                font-weight: 300;
+                &:hover {
+                    color: rgb(0, 155, 255);
+                }
+            }
         }
-      }
-      .f-partners {
-        .f-partners__title {
-          margin: 5px;
-          font-weight: bold;
-        }
-      }
-      .f-info {
+    }
+    .f-partners__title {
+        font-weight: bold;
+    }
+    .f-info {
         font-size: 10px;
-        margin: 20px;
         font-weight: bold;
         letter-spacing: 1.5px;
         color: #ccc;
-      }
-      .f-logo {
-        @include sprite($logo);
-        margin: 40px auto 40px;
-      }
     }
+}
+@media (max-width: 767px) {
+    .header-top {
+        overflow: hidden;
+        position: relative;
+        .header-top__menu {
+            margin: 20px;
+            text-align: center;
+            .header-top__link {
+                text-decoration: none;
+                @include links(text-decoration, none, none, none);
+                color: #fff;
+                @include links(color, #fff, #fff, #fff);
+                font-family: "Montserrat";
+                font-weight: bold;
+                font-size: 14px;
+                padding: 5px 10px;
+                border-radius: 30px;
+                border: 2px solid transparent;
+            }
+            .header-top__item {
+                display: inline-block;
+                &:nth-child(2) {
+                    border: 3px solid #fff;
+                    border-radius: 30px;
+                    &:hover {
+                        border: 3px solid #ddd;;
+                    }
+                }
+            }
+            .header-top__link {
+                display: inline-block;
+                padding: 7px 14px;
+                &:hover {
+                    color: #ddd;
+                }
+            }
+        }
+        .header-top__name {
+            text-align: center;
+            color: #fff;
+            font-family: "Montserrat";
+            font-size: 20px;
+            font-weight: bold;
+            margin: 116px 0 30px;
+            letter-spacing: 1px;
+        }
+    }
+    .header-middle {
+        padding-bottom: 120px;
+        color: #fff;
+        font-family: "Montserrat";
+        font-weight: bold;
+        text-align: center;
+        .header-middle__title {
+          font-size: 30px;
+          padding: 4px;
+          line-height: 28px;
+        }
+        .header-middle__text {
+            font-family: "Roboto";
+            font-weight: 300;
+            font-size: 18px;
+            padding: 10px 50px;
+        }
+    }
+    .header-middle__btn {
+      margin: 8px auto 20px;
+    }
+    .works {
+        .works__title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 22px;
+            padding: 37px 0 7px;
+        }
+        .works__steps {
+            .step {
+                width: 301px;
+                height: 240px;
+                background-size: cover;
+                margin: 10px auto;
+                &:first-child {
+                    display: block;
+                    content: "";
+                    background: url("../img/step1-mobile.jpg") no-repeat;
+                    background-size: contain;
+                }
+                &:nth-child(2) {
+                    display: block;
+                    content: "";
+                    background: url("../img/step2-mobile.jpg") no-repeat;
+                    background-size: cover;
+                }
+                &:nth-child(3) {
+                    display: block;
+                    content: "";
+                    background: url("../img/step3-mobile.jpg") no-repeat;
+                    background-size: contain;
+                }
+            }
+            .step__mark {
+              padding: 5px 14px;
+            }
+            .step:nth-child(2) .step__mark {
+              margin: 100px 20px 0;
+            }
+            .step__text {
+              padding: 10px 20px 0;
+            }
+        }
+    }
+    .partners .partners__title {
+      line-height: 24px;
+    padding: 26px 15px 19px 10px;
+    }
+    .partner__name {
+      font-size: 14px;
+    }
+    .partner:nth-child(2) .partner__name {
+      margin: 28px;
+    }
+    .partner:nth-child(4) {
+      margin-top: 40px;
+    }
+    .activities {
+        .grid-lg-size,
+        .grid-tablet-size {
+            display: none;
+            line-height: 0;
+        }
+        .grid-sm-size {
+            margin: 0 auto;
+        }
+        .grid:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .activity {
+            width: 300px;
+            height: 121px;
+            margin: 10px auto;
+            &:first-child {
+                background: url('../img/group0.jpg') no-repeat;
+            }
+            &:nth-child(2) {
+                background: url('../img/group1.jpg') no-repeat;
+            }
+            &:nth-child(3) {
+                background: url('../img/group2.jpg') no-repeat;
+            }
+            &:nth-child(4) {
+                background: url('../img/group3.jpg') no-repeat;
+            }
+            &:nth-child(5) {
+                background: url('../img/group4.jpg') no-repeat;
+            }
+            &:nth-child(6) {
+                background: url('../img/group5.jpg') no-repeat;
+            }
+            &:nth-child(7) {
+                background: url('../img/group6.jpg') no-repeat;
+            }
+        }
+    }
+    .activities .activities__title {
+      padding: 16px;
+    }
+    .activities .activity {
+      margin: 0 auto 10px;
+    }
+    .partners-search .partners-search__title {
+      padding: 20px 10px;
+    }
+    .partners-search .partners-search__input {
+      width: 260px;
+    }
+    .partners-search__btn {
+      margin-top: 0;
+    }
+    footer {
+      margin-top:20px;
+        .f-company__list {
+            display: inline-block;
+            padding: 10px 5px;
+        }
+        .f__name {
+            margin: 20px 0 12px;
+        }
+        .f-info {
+            margin: 14px;
+        }
+        .f-company__link {font-size: 14px;}
+        .f-company, .f-partners {
+              font-size: 14px;
+        }
+        .f-logo {
+            @include sprite($logo);
+            display: block;
+            margin: 7px auto;
+        }
+        .f-partners__title {
+            margin: 5px;
+            font-weight: bold;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .header-top {
+        position: relative;
+        overflow: hidden;
+        .header-top__menu {
+            margin-top: 45px;
+            float: right;
+            padding: 0 45px;
+            .header-top__item {
+                font-size: 14px;
+                display: inline-block;
+                &:nth-child(2) {
+                      border: 3px solid #fff;
+                    border-radius: 30px;
+                    &:hover {
+                          border: 3px solid #ddd;
+                    }
+                }
+            }
+            .header-top__link {
+                display: inline-block;
+                padding: 7px 14px;
+                &:hover {
+                    color: #eee;
+                }
+            }
+        }
+        .header-top__name {
+            margin: 50px;
+            color: #eee;
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+    }
+    .header-middle {
+        margin-bottom: 300px;
+        text-align: center;
+        color: #fff;
+        font-size: 52px;
+        font-weight: bold;
+        .header-middle__text {
+            padding-top: 30px;
+            font-family: Roboto;
+            font-weight: 100;
+            font-size: 24px;
+        }
+        .header-middle__btn {
+            width: 210px;
+        }
+    }
+    .works {
+        padding: 80px 0;
+        .works__title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 22px;
+            padding: 20px;
+        }
+        .works__steps {
+            text-align: center;
+            .step {
+                text-align: justify;
+                .step-buttons {
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    padding: 20px;
+                    .step-prev {
+                        float: left;
+                        @include sprite($arrow-prev);
+                    }
+                    .step-next {
+                        float: right;
+                        @include sprite($arrow-next);
+                    }
+                    &:after {
+                        display: block;
+                        content: "";
+                        clear: both;
+                    }
+                }
+                display: inline-block;
+                margin: 8px;
+                vertical-align: top;
+                box-sizing: border-box;
+                width: 236px;
+                height: 401px;
+                &:first-child {
+                    background: url('../img/step1-tablet.jpg') no-repeat;
+                    background-size: cover;
+                }
+                &:nth-child(2) {
+                    background: url('../img/step2-tablet.jpg') no-repeat;
+                    background-size: cover;
+                }
+                &:nth-child(3) {
+                    background: url('../img/step3-tablet.jpg') no-repeat;
+                    background-size: cover;
+                }
+                .step__mark {
+                    margin-top: 110px;
+                }
+                .step__title {
+                    text-align: left;
+                }
+                .step__text {
+                    font-weight: 100;
+                }
+                p {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+    .partners {
+        .partners__box {
+            width: 532px;
+            margin: auto;
+            list-style: none;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -js-display: flex;
+            -webkit-flex-flow: row wrap;
+            justify-content: space-around;
+            .partner {
+                width: 50%;
+                &:nth-child(1) {
+                    order: 0;
+                    .partner__descript {
+                        margin-bottom: 50px;
+                    }
+                }
+                &:nth-child(2) {
+                    order: 2;
+                }
+                &:nth-child(3) {
+                    order: 1;
+                }
+                &:nth-child(4) {
+                    order: 3;
+                }
+            }
+            .partner__descript {
+                margin: 20px;
+            }
+        }
+        .partners__btn {
+            width: 190px;
+        }
+    }
+    .activities {
+        .activities__options {
+            .activity {
+                height: 311px;
+                &:first-child {
+                    background: url('../img/group-tablet.jpg') no-repeat;
+                }
+                &:nth-child(2) {
+                    background: url('../img/group1-tablet.jpg') no-repeat;
+                }
+                &:nth-child(3) {
+                    background: url('../img/group2-tablet.jpg') no-repeat;
+                }
+                &:nth-child(4) {
+                    background: url('../img/group3-tablet.jpg') no-repeat;
+                }
+                &:nth-child(5) {
+                    background: url('../img/group4-tablet.jpg') no-repeat;
+                }
+                &:nth-child(6) {
+                    background: url('../img/group5-tablet.jpg') no-repeat;
+                }
+                &:nth-child(7) {
+                    background: url('../img/group6-tablet.jpg') no-repeat;
+                }
+            }
+        }
+    }
+    .partners-search {
+        form {
+            margin: 30px auto;
+        }
+        .partners-search__btn,
+        .partners-search__input {
+            margin: 10px;
+            display: inline-block;
+            width: 160px;
+        }
+        .partners-search__input {
+            width: 235px;
+        }
+    }
+    footer {
+        text-align: justify;
+        .f-company,
+        .f-info,
+        .f-partners,
+        .f__name {
+            float: left;
+            box-sizing: border-box;
+            vertical-align: top;
+            padding: 40px;
+            font-size: 14px;
+            width: 23%;
+        }
+        .f__name {
+            font-size: 16px;
+            margin: 0;
+            width: 31%;
+        }
+        .f-company__title {
+            margin-bottom: 10px;
+        }
+        .f-company__link {
+            display: inline-block;
+            font-weight: 100;
+            font-size: 14px;
+            padding: 5px 0;
+        }
+    }
+    .f-info {
+        .f-info__text {
+            text-align: right;
+            font-size: 10px;
+        }
+        .f-logo {
+            @include sprite($logo);
+            float: right;
+            margin-top: 9px;
+        }
+    }
+    &:after {
+        clear: both;
+        display: block;
+        content: "";
+    }
+}
+@include mq(md) {
+    .grid-lg-size,
+    .grid-sm-size {
+        display: none;
+        line-height: 0;
+    }
+    .grid-tablet-size {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .grid-tablet {
+        width: 236px;
+        margin-bottom: 20px;
+        float: left;
+    }
+    .grid-tablet--width2 {
+        width: 492px;
+        float: left;
+    }
+}
+@include mq(lg) {
+    .header-top .header-top__name {
+        margin: 49px 0;
+        color: #eee;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    .header-top .header-top__menu {
+        margin-top: 39px;
+        margin-left: 30px;
+        padding: 0;
+        float: right;
+    }
+    .header-top .header-top__menu .header-top__link {
+        display: inline-block;
+        padding: 8px 16px;
+    }
+    .header-middle {
+        margin: 99px 0 213px;
+    }
+    .header-middle__title {
+        &:nth-child(2) {
+            margin-top: 10px;
+        }
+    }
+    .header-middle .header-middle__text {
+        margin: 33px 0 17px;
+        letter-spacing: 0.3px;
+        padding-top: 0;
+        font-family: Roboto;
+        font-weight: 100;
+        font-size: 24px;
+    }
+    .header-middle .header-middle__btn,
+    .header-middle .partners-search__btn,
+    .header-middle .partners__btn {
+        width: 224px;
+        letter-spacing: 0.4px;
+    }
+    .works .works__title {
+        padding: 18px 0 36px;
+    }
+    .works .works__steps .step {
+        float: left;
+        width: 300px;
+        height: 400px;
+        margin: 0;
+        box-sizing: border-box;
+        &:first-child {
+            background: url('../img/step1-desktop.jpg') no-repeat;
+            margin-right: 20px;
+        }
+        &:nth-child(2) {
+            background: url('../img/step2-desktop.jpg') no-repeat;
+            margin-right: 20px;
+        }
+        &:nth-child(3) {
+            background: url('../img/step3-desktop.jpg') no-repeat;
+        }
+        &:after {
+            clear: both;
+            display: block;
+            content: "";
+        }
+        .step-buttons {
+            padding: 152px 20px 0;
+        }
+        .step__mark {
+            margin-top: 22px;
+        }
+        &:nth-child(2) > .step__mark {
+            margin-top: 52px;
+        }
+        .step__title {
+            padding-left: 20px;
+            line-height: 29px;
+        }
+        .step__text {
+            letter-spacing: 0.2px;
+            padding: 12px 17px 0 19px;
+        }
+    }
+    .partners {
+
+        .partners__title {
+            padding: 18px;
+        }
+        .partners__box {
+            width: auto;
+            margin: 15px -8px;
+            .partner {
+                width: 25%;
+                    &:nth-child(1) {
+                        .partner__descript {
+                            margin-bottom: 0;
+                        }
+                    }
+
+            }
+            .partner__descript {
+                margin: 12px 12px 0;
+                line-height: 16px;
+            }
+        }
+        .partner__name {
+            margin: 17px;
+            font-size: 14px;
+        }
+        .partners__btn {
+            margin-top: 27px;
+            padding: 11px;
+            letter-spacing: 0.3px;
+        }
+    }
+    .activities {
+        .activities__title {
+            padding: 78px 0 35px;
+        }
+        .grid-sm-size,
+        .grid-tablet-size {
+            display: none;
+            line-height: 0;
+        }
+        .grid {
+            width: 940px;
+            margin: 0 auto;
+        }
+        .grid:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .grid-lg {
+            width: 300px;
+            margin-bottom: 20px;
+            float: left;
+        }
+        .grid-lg--width2 {
+            width: 620px;
+        }
+        .activities__options {
+            .activity {
+                .activity__text {
+                    top: 46%;
+                }
+                &:first-child {
+                    background: url('../img/group0-desktop.jpg') no-repeat;
+                }
+                &:nth-child(2) {
+                    background: url('../img/group1-desktop.jpg') no-repeat;
+                }
+                &:nth-child(3) {
+                    background: url('../img/group2-desktop.jpg') no-repeat;
+                    .activity__text {
+                        top: 22%;
+                        line-height: 27px;
+                        width: auto;
+                        margin: 60px;
+                    }
+                }
+                &:nth-child(4) {
+                    background: url('../img/group3-desktop.jpg') no-repeat;
+                }
+                &:nth-child(5) {
+                    background: url('../img/group4-desktop.jpg') no-repeat;
+                }
+                &:nth-child(6) {
+                    background: url('../img/group5-desktop.jpg') no-repeat;
+                }
+                &:nth-child(7) {
+                    background: url('../img/group6-desktop.jpg') no-repeat;
+                }
+            }
+        }
+    }
+    .partners-search {
+      margin: 46px 0 89px;
+        .partners-search__text {
+              margin: 6px;
+              letter-spacing: 0.1px;
+        }
+        .partners-search__input {
+          width: 218px;
+          margin: 0px 0px 0px 8px;
+          padding: 12px 7px 9px 15px;
+        }
+        .partners-search__btn {
+          margin-left: 5px;
+        }
+      }
+
+      footer {
+        .f__name, .f-company, .f-partners, .f-info {
+          padding: 37px 0;
+        }
+        .f-company, .f-partners {
+          width: 17%;
+        }
+        .f-company__menu {
+          margin-top: 13px;
+        }
+        .f__name {
+          width: 25.5%;
+          letter-spacing: 0.7px;
+        }
+        .f-info {
+          width: 40.5%;
+          .f-info__text {
+              text-align: right;
+              margin-top: 1px;
+              letter-spacing: 0.9px;
+              font-size: 10px;
+          }
+          .f-logo {
+            float: right;
+            margin-top: 9px;
+          }
+        }
+      }
+
+}
+
+@media (min-width: 768px) and (max-width: 939px) {
+  .header-top .header-top__name {
+    letter-spacing: 1px;
+  }
+  .header-top .header-top__menu {
+    margin-top: 42px;
+  }
+
+  .header-middle {
+    margin-top: 90px;
+    margin-bottom: 199px;
+  }
+  .header-middle__title {
+    line-height: 64px;
+  }
+  .header-middle .header-middle__text {
+    padding-top: 28px;
+  }
+  .header-middle__btn, .partners-search__btn, .partners__btn {
+    margin: 35px auto;
+  }
+  .works .works__title {
+    padding: 16px 0 27px 15px;
+  }
+  .works .works__steps .step .step-buttons {
+    padding: 39px 20px 11px;
+  }
+  .works .works__steps .step p {
+    padding-left: 20px;
+  }
+  .step__text {
+    padding: 10px 0px 0;
+  }
+  .works .works__steps .step:nth-child(2) {
+    .step__mark {
+      margin-top: 156px;
+    }
+  }
+  .partners .partners__title {
+    padding: 15px 0 34px;
+  }
+  .partners .partner__name {
+    font-size: 14px;
+    margin: 16px 0 15px 10px;
+  }
+  .partners .partners__box .partner:nth-child(2), .partners .partners__box .partner:nth-child(4) {
+    margin-top:10px;
+  }
+  .partners .partners__box .partner__descript {
+    font-size: 14px;
+    font-family: Roboto;
+    line-height: 15px;
+  }
+  .partners__btn {
+    margin-top: 19px;
+  }
+  .activities .activities__title {
+    margin: 50px 0 27px 0;
+  }
+  .activities .activity .activity__text {
+    top: 46%;
+  }
+  .activities .activity:nth-child(2) .activity__text {
+    width: 90%;
+    margin-left: 20px;
+    top: 43%;
+  }
+  .partners-search .partners-search__title {
+    padding: 76px 0 34px;
+  }
+  .partners-search .partners-search__input {
+    width: 210px;
+    margin-left: 30px;
+  }
+  footer {
+    display: block;
+    margin-top: 59px;
+  }
+  footer .f-company, footer .f-info, footer .f-partners, footer .f__name {
+    padding: 37px;
+  }
+}
+
+
+
+
+.received-imgs-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.received-imgs-text {
+  top: 40%;
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 22px;
 }

@@ -11,13 +11,15 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
-$logo: (0px, 0px, 0px, 0px, 110px, 24px, 110px, 110px, '../sprites/sprite.png', 'logo', );
-$partner1-icon: (0px, 26px, 0px, -26px, 41px, 41px, 110px, 110px, '../sprites/sprite.png', 'partner1-icon', );
-$partner2-icon: (43px, 26px, -43px, -26px, 41px, 41px, 110px, 110px, '../sprites/sprite.png', 'partner2-icon', );
-$partner3-icon: (43px, 69px, -43px, -69px, 41px, 40px, 110px, 110px, '../sprites/sprite.png', 'partner3-icon', );
-$partner4-icon: (0px, 69px, 0px, -69px, 41px, 41px, 110px, 110px, '../sprites/sprite.png', 'partner4-icon', );
-$spritesheet-sprites: ($logo, $partner1-icon, $partner2-icon, $partner3-icon, $partner4-icon, );
-$spritesheet: (110px, 110px, '../sprites/sprite.png', $spritesheet-sprites, );
+$arrow-next: (0px, 26px, 0px, -26px, 30px, 56px, 153px, 125px, '../sprites/sprite.png', 'arrow-next', );
+$arrow-prev: (32px, 26px, -32px, -26px, 30px, 56px, 153px, 125px, '../sprites/sprite.png', 'arrow-prev', );
+$logo: (0px, 0px, 0px, 0px, 110px, 24px, 153px, 125px, '../sprites/sprite.png', 'logo', );
+$partner1-icon: (64px, 26px, -64px, -26px, 41px, 41px, 153px, 125px, '../sprites/sprite.png', 'partner1-icon', );
+$partner2-icon: (112px, 0px, -112px, 0px, 41px, 41px, 153px, 125px, '../sprites/sprite.png', 'partner2-icon', );
+$partner3-icon: (43px, 84px, -43px, -84px, 41px, 40px, 153px, 125px, '../sprites/sprite.png', 'partner3-icon', );
+$partner4-icon: (0px, 84px, 0px, -84px, 41px, 41px, 153px, 125px, '../sprites/sprite.png', 'partner4-icon', );
+$spritesheet-sprites: ($arrow-next, $arrow-prev, $logo, $partner1-icon, $partner2-icon, $partner3-icon, $partner4-icon, );
+$spritesheet: (153px, 125px, '../sprites/sprite.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables

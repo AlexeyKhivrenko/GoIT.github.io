@@ -75,10 +75,7 @@ gulp.task('sprites', function () {
                 cssName: '_sprite.scss',
                 algorithm: 'binary-tree',
                 cssFormat: 'scss'
-                //cssFormat: 'scss_maps',
-                //cssVarMap: function (sprite) {
-                //  sprite.name = 's-' + sprite.name
-                //}
+
             }));
 
     spriteData.img.pipe(gulp.dest(path.build.sprites));
