@@ -1,7 +1,4 @@
 $(function() {
-
-  $('.slider').glide();
-
     //masonry plagin
 
 
@@ -9,7 +6,7 @@ $(function() {
         columnWidth: 300,
         itemSelector: '.grid-small',
         fitWidth: true,
-        gutter: 0,
+        gutter: 20
     });
 
     $('.grid-tablet-size').masonry({
