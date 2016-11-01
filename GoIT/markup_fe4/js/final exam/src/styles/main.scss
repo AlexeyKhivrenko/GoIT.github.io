@@ -496,6 +496,7 @@ footer {
         .works__steps {
             text-align: center;
             .step {
+                padding-top: 100px;
                 text-align: justify;
                 .step-buttons {
                     display: block;
@@ -744,6 +745,7 @@ footer {
         padding: 18px 0 36px;
     }
     .works .works__steps .step {
+        padding-top: 150px;
         float: left;
         width: 300px;
         height: 400px;
