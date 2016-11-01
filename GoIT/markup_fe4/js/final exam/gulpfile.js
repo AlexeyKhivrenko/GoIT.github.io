@@ -94,7 +94,7 @@ gulp.task('styles:build', function() {
       .pipe(plumber())
       .pipe(sourcemaps.init())
       .pipe(sass())
-      .pipe(autoprefixer(['last 15 versions', '> 0.3%', '> 1%',  'IE 8', 'IE 9', 'IE 10', 'IE 11'], { cascade: true }))
+      .pipe(autoprefixer(['last 15 versions', '> 1%', '> 1%',  'IE 8', 'IE 9', 'IE 10', 'IE 11'], { cascade: true }))
       .pipe(cssnano())
       .pipe(sourcemaps.write('../maps/'))
       .pipe(gulp.dest(path.build.styles))

@@ -257,21 +257,16 @@ footer {
                 border: 2px solid transparent;
             }
             .header-top__item {
-                display: inline-block;
-                &:nth-child(2) {
-                    border: 3px solid #fff;
+                    display: inline-block;
+                    border: 3px solid transparent;
                     border-radius: 30px;
                     &:hover {
-                        border: 3px solid #ddd;;
+                        border: 3px solid #fff;
                     }
                 }
-            }
             .header-top__link {
                 display: inline-block;
                 padding: 7px 14px;
-                &:hover {
-                    color: #ddd;
-                }
             }
         }
         .header-top__name {
@@ -455,20 +450,15 @@ footer {
             .header-top__item {
                 font-size: 14px;
                 display: inline-block;
-                &:nth-child(2) {
-                      border: 3px solid #fff;
-                    border-radius: 30px;
+                border: 3px solid transparent;
+                border-radius: 30px;
                     &:hover {
-                          border: 3px solid #ddd;
+                          border: 3px solid #fff;
                     }
                 }
-            }
             .header-top__link {
                 display: inline-block;
                 padding: 7px 14px;
-                &:hover {
-                    color: #eee;
-                }
             }
         }
         .header-top__name {
