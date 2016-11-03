@@ -76,7 +76,6 @@ $(function() {
         autoPlay:true,
         autoplayTimeout:3000,
 
-
     });
 
     $('.features-box__more').on('click', function(e) {
@@ -91,6 +90,12 @@ $(function() {
     $('.accordion__panel').on('click', function(e) {
       e.preventDefault();
       $(this).toggleClass('active-accordion-panel').siblings(".accordion-panel__contant").toggle();
+    });
+
+    $('#search').on('submit', function(e) {
+      e.preventDefault();
+      var searchText = $('.search').val();
+      window.location.href = "http://web-answers.ru";
     });
 
 });
