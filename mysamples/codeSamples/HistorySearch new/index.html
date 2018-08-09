@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>history search</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="pers-area-box">
+    <div class="pers-area__ins">
+        <div class="private-info">
+            <p class="private-info__title">история операций</p>
+            <div class="private-info__content">
+                <div class="history">
+                    <div class="history-from">
+                        <p class="history-from__text">От:</p>
+                        <input type="text" class="history-from__input" readonly="readonly">
+                    </div>
+                    <div class="history-to">
+                        <p class="history-to__text">До даты:</p>
+                        <input type="text" class="history-to__input" readonly="readonly" >
+                    </div>
+                    <div class="history-type">
+                        <p class="history-type__text">Тип</p>
+                        <select class="history-type__select">
+                            <option value="default">Все типы транзакций</option>
+                            <option value="deposit">Депозит</option>
+                            <option value="withdrawal">Снятие</option>
+                        </select>
+                    </div>
+                </div>
+
+                <table class="history-table">
+                    <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Дата</td>
+                        <td>Сумма</td>
+                        <td>Тип</td>
+                        <td>Статус
+                            транзакции</td>
+                        <td>Метод
+                            транзакции</td>
+                        <td>Confirmation
+                            Date</td>
+                        <td>Реквизиты
+                            транзакции</td>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+
+                </table>
+
+                <script type="text/template" id="history-template">
+
+                    <% for(var i = elementsFrom; i < elementsTo; i++) { %>
+                        <tr>
+                            <td>
+                                <%=list[i].id%>
+                            </td>
+                            <td>
+                                <%=list[i].date%>
+                            </td>
+                            <td>
+                                <%=list[i].currency%>
+                            </td>
+                            <td>
+                                <%=list[i].type%>
+                            </td>
+                            <td>
+                                <%=list[i].status%>
+                            </td>
+                            <td>
+                                <%=list[i].method%>
+                            </td>
+                            <td>
+                                <%=list[i].confirmDate%>
+                            </td>
+                            <td>
+                                <%=list[i].requisite%>
+                            </td>
+                        </tr>
+                    <% } %>
+
+                </script>
+
+                <div class="history-nav">
+                    <div class="history-nav__search">
+                        <span class="history-nav__p-el-text">Элементов на страницe</span>
+                        <select class="history-nav__p-el-select" name="">
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="9">9</option>
+                        </select>
+                    </div>
+
+                    <div class="history-nav__page">
+                        <span class="history-nav__text">Перейти на страницу</span>
+                        <input type="text" class="history-nav__on-page">
+                        <button class="history-nav__on-page-btn">Перейти</button>
+                    </div>
+
+                    <div class="history-nav__ch-page">
+                        <button class="history-nav__ch-page-back"><img src="img/prev-arr.png" alt=""></button>
+                        <span class="history-nav__ch-page-text">Страница <span class="history-nav__current-page">1</span> из <span class="history-nav__all-pages">3</span></span>
+                        <button class="history-nav__ch-page-next"><img src="img/pers-arr-right.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

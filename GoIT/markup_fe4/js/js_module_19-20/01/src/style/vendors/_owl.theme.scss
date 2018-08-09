@@ -1,0 +1,27 @@
+.owl-theme .owl-controls{
+	position: relative;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 30px;
+	height: 15px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+  background: url(../img/checkbox.png) -30px;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	background: url('../img/checkbox.png');
+	width: 30px;
+	height: 15px;
+}
