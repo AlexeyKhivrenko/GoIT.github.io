@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'league_gothicregular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'), url('../fonts/leaguegothic-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'), url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+}
+@font-face {
+    font-family: 'open_sanslight';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'), url('../fonts/opensans-light-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/LeagueGothicRegular.eot');
+    src: url('../fonts/LeagueGothicRegular.eot?#iefix')format('embedded-opentype'), url('../fonts/LeagueGothicRegular.woff') format('woff'), url('../fonts/LeagueGothicRegular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/OpenSansExtraBold/OpenSansExtraBold.eot');
+    src: url('../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix')format('embedded-opentype'), url('../fonts/OpenSansExtraBold/OpenSansExtraBold.woff') format('woff'), url('../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf') format('truetype');
+}
+
+html, body {
+    font-family: 'league_gothicregular';
+    height: 100%;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after { /*correct work at IE8++*/
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.wrapper {
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+}
+.header {
+    background: url('../img/head-img.jpg') no-repeat top center;
+    background-size: 100% 300%;
+}
+
+.menu__home{
+    display: none;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+}

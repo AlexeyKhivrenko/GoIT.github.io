@@ -1,0 +1,68 @@
+body {
+    background-color: #d3d3d3;
+}
+.tittle {
+    text-align: center;
+}
+.photo {
+    text-align: center;
+}
+.photo img {
+    width: 250px;
+    height: 190px;
+}
+.main {
+    width: 610px;
+    /* ширина */
+    height: 1069px;
+    /* высота */
+    padding: 51px 80px 30px 80px;
+    /* внутренние отступы - верх, право, низ, лево */
+    margin: auto;
+    /* выравнивание по центру */
+    border: 1px ridge #808080;
+    /*ширина, тип рамки: dotted, dashed, solid, double, groove, ridge, inset, outset*/
+    background-color: #fff;
+    /* цвет фона в блоке */
+    -webkit-box-shadow: 0px 0px 41px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 41px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 41px -4px rgba(0, 0, 0, 1);
+}
+.top, .part2, .part3 {
+    padding: 10px 0px 0px 0px;
+    border-bottom: solid 1px #808080;
+}
+.bottom {
+    padding: 10px 0px 0px 0px;
+}
+.list {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-left: 10px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+.text, .text1 {
+    font-size: 27px;
+    margin-left: 20px;
+}
+.tel {
+    margin-top: 10px;
+    font-size: 27px;
+    margin-left: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+.tel:active {
+    color: #000;
+}
+.text2 {
+    margin-bottom: 0px;
+    font-size: 27px;
+    margin-left: 20px;
+}
+.text3 {
+    margin-top: 10px;
+    font-size: 27px;
+    margin-left: 20px;
+}
