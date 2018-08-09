@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    font-family: Arial, Tahoma, sans-serif;
+}
+body {
+    background-color: #f9f9f9;
+}
+#wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(137, 169, 171, 1);
+    height: 100%;
+    display: table;
+    margin: 1% auto;
+    min-width: 1100px;
+    table-layout: fixed;
+    overflow: hidden;
+}
+#wrap1 {
+    display: table-row;
+    height: 100%;
+}
+.image_header {
+    padding: 40px 50px;
+}
+.links {
+    padding: 0 50px;
+}
+.links_header {
+    background: -webkit-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: -moz-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: -o-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: -ms-linear-gradient(90deg, #444343 0%, #5e5e5e 100%);
+    background: linear-gradient(0deg, #444343 0%, #5e5e5e 100%);
+}
+.links_header li {
+    display: inline-block;
+}
+.links_header a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding: 15px 50px;
+    /* Отступ от рамки вокруг ссылки до текста */
+    display: inline-block;
+    /* Ссылка как блочный элемент */
+}
+.links_header a:hover, a:visited {
+    /*когда наводишь курсор*/
+    background-color: #2a2a2a;
+    /* Цвет фона активного пункта */
+    border-right: 1px solid #fff;
+    /* Маскируем рамку вокруг ссылки */
+    border-left: 1px solid #fff;
+    /* Маскируем рамку вокруг ссылки */
+    text-decoration: none;
+}
+main {
+    margin: 50px 50px 150px 50px;
+    zoom: 1;
+    /* set hasLayout */
+    display: block;
+    /* resets display for IE/Win */
+}
+main:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.sidebar {
+    width: 250px;
+    /* Ширина меню */
+    float: left;
+}
+.menu_left {
+    list-style: none;
+    /* Для списка убираем маркеры */
+    font-size: 12px;
+    /* Размер названий в пункте меню */
+}
+.menu_left a {
+    display: block;
+    /* Ссылка как блочный элемент */
+    padding: 15px 30px;
+    /* Поля вокруг надписи */
+    text-decoration: none;
+    /* Подчеркивание у ссылок убираем */
+    color: #666;
+    /* Цвет текста */
+    border: 1px solid #ccc;
+    /* Рамка вокруг пунктов меню */
+    border-bottom: transparent;
+}
+.menu_left li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+.menu_left a:hover {
+    color: #000;
+    /* Цвет текста активного пункта */
+    background-color: #f9f9f9;
+    /* Цвет фона активного пункта */
+    padding: 15px 40px;
+}
+.content {
+    float: right;
+    width: 678px;
+}
+.content img {
+    float: right;
+    margin-bottom: 50px;
+}
+.content img:after {
+    content: "";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+.content:after {
+    content: "";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+.text {
+    margin: 0 20px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+}
+.links_footer {
+    background: #a3a6a4;
+    list-style-type: none;
+}
+.links_footer li {
+    line-height: 0;
+    letter-spacing: 0;
+    font-size: 14px;
+    display: inline-block;
+}
+.links_footer a {
+    display: inline-block;
+    padding: 15px 50px;
+    /* Отступ от рамки вокруг ссылки до текста */
+    text-decoration: none;
+    color: #000000;
+}
+.links_footer a:hover {
+    /*когда наводишь курсор*/
+    text-decoration: underline;
+}
+.links_footer p {
+    text-align: center;
+    display: inline-block;
+    padding-left: 200px;
+}
+footer{
+    margin:0 50px 100px 50px;
+}

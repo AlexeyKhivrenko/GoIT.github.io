@@ -1,0 +1,280 @@
+body{
+    font-family: helvetica;
+    background: url('../img/background.png') no-repeat;
+    background-size: cover;
+}
+.menu{
+    background-color: #006699;
+}
+
+.menu_top{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.Menu_l{
+    display: block;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    text-decoration: none;
+    color: #3399cc;
+    padding: 9px 12px 12px 12px;
+}
+
+.Menu_l:hover{
+    color:#fff; /* Цвет текста активного пункта */
+    background-color: #6699cc;/* Цвет фона активного пункта */
+    text-decoration: none;
+}
+
+.top_panel_my_suggestions{
+    padding: 8px 20px 8px 45px;
+    color: #fff;
+    margin-top: 2px;
+    border-left: 1px solid #3399cc;
+}
+
+.top_panel_my_suggestions:before{
+    content: " ";
+        display: block;
+        position: absolute;
+        background: url('../img/flag.png');
+        width: 21px;
+        height: 22px;
+        margin-left: -28px;
+        margin-top: -2px;
+}
+
+.enter_panel{
+    padding: 9px 15px 12px 2px;
+    color: white;
+}
+
+.enter_panel span:first-child{
+    padding-left: 10px;
+}
+
+.enter{
+    padding: 9px 2px 12px 2px;
+    color: white;
+}
+
+.reg{
+    padding: 9px 0 12px 3px;
+    color: white;
+}
+
+.enter_panel{
+    display:inline-block;
+    margin-right:-4px;
+    color: #fff;
+}
+.enter_panel {
+    background: rgba(149,204,234,1);
+    background: -moz-linear-gradient(top, rgba(149,204,234,1) 0%, rgba(50,170,214,1) 21%, rgba(46,141,209,1) 51%, rgba(25,89,135,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(149,204,234,1)), color-stop(21%, rgba(50,170,214,1)), color-stop(51%, rgba(46,141,209,1)), color-stop(100%, rgba(25,89,135,1)));
+    background: -webkit-linear-gradient(top, rgba(149,204,234,1) 0%, rgba(50,170,214,1) 21%, rgba(46,141,209,1) 51%, rgba(25,89,135,1) 100%);
+    background: -o-linear-gradient(top, rgba(149,204,234,1) 0%, rgba(50,170,214,1) 21%, rgba(46,141,209,1) 51%, rgba(25,89,135,1) 100%);
+    background: -ms-linear-gradient(top, rgba(149,204,234,1) 0%, rgba(50,170,214,1) 21%, rgba(46,141,209,1) 51%, rgba(25,89,135,1) 100%);
+    background: linear-gradient(to bottom, rgba(149,204,234,1) 0%, rgba(50,170,214,1) 21%, rgba(46,141,209,1) 51%, rgba(25,89,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95ccea', endColorstr='#195987', GradientType=0 );
+}
+
+.background_img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+main{
+    width: 516px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    margin: 10% auto;
+}
+
+.head{
+    font-size: 24px;
+    color: #fff;
+}
+
+.head p{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.word_with_on_button_facebook{
+    font-weight: normal;
+}
+
+.facebook{
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 30px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.facebooks_button_f{
+    height: 35px;
+    font-size: 24px;
+    background: #42619b; /* Old browsers */
+    background: -moz-linear-gradient(top, #42619b 0%, #2c539e 62%, #2c539e 89%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #42619b 0%,#2c539e 62%,#2c539e 89%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #42619b 0%,#2c539e 62%,#2c539e 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42619b', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+    padding: 1px 12px 1px 12px;
+    border-radius: 5px 0 0 5px;
+    border-width: 1px;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-color: rgba(122, 152, 210, 0.5);
+    color: #fff;
+    font-weight: bold;
+    float:left;
+}
+
+.facebooks_button_face{
+    height: 35px;
+    font-size: 14px;
+    background: #42619b; /* Old browsers */
+    background: -moz-linear-gradient(top, #42619b 0%, #2c539e 62%, #2c539e 89%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #42619b 0%,#2c539e 62%,#2c539e 89%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #42619b 0%,#2c539e 62%,#2c539e 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42619b', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+    padding: 1px 27px 1px 27px;
+    border-radius: 0 5px 5px 0;
+    border-width: 1px;
+    border-color: rgba(122, 152, 210, 0.5);
+    border-right: transparent;
+    border-bottom: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+.facebooks_button_f:hover, .facebooks_button_face:hover{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#42619b+0,00369b+100 */
+    background: #42619b; /* Old browsers */
+    background: -moz-linear-gradient(top, #42619b 0%, #00369b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #42619b 0%,#00369b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #42619b 0%,#00369b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42619b', endColorstr='#00369b',GradientType=0 ); /* IE6-9 */
+}
+
+.arrow{
+    padding-left: 20px;
+    width: 10px;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+.line > span{
+    position: absolute;
+    top: 158px;
+    left: 248px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.registration_form{
+    padding: 20px;
+}
+
+    input[type=text], input[type=email], input[type=password]{
+    height: 35px;
+    width: 255px;
+    padding: 0 0 0 20px;
+    background-color: #000;
+    color: #fff;
+    border:transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+input:focus{
+    background: #1c4a77;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(38,150,224,1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(38,150,224,1);
+    box-shadow: 0px 0px 10px 2px rgba(38,150,224,1);
+}
+
+input:hover{
+    background: #1c4a77;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(38,150,224,1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(38,150,224,1);
+    box-shadow: 0px 0px 10px 2px rgba(38,150,224,1);
+}
+
+input[type=checkbox]{
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.agreement{
+    color: rgba(255, 255, 255, 0.54);
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+input[type=submit]{
+    margin-bottom: 20px;
+    margin-left: 170px;
+    padding: 6px 8px 8px 8px;
+    color: #fff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00d4ff+0,28a9ff+44,28a9ff+100 */
+    background: #00d4ff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #00d4ff 0%, #28a9ff 44%, #28a9ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #00d4ff 0%,#28a9ff 44%,#28a9ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #00d4ff 0%,#28a9ff 44%,#28a9ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d4ff', endColorstr='#28a9ff',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 2px;
+    border-width: 0.5px;
+    border-color: #28a9ff;
+}
+
+input[type=submit]:hover{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00b1e2+0,216bd3+50,1b2fad+100 */
+background: #00b1e2; /* Old browsers */
+background: -moz-linear-gradient(top, #00b1e2 0%, #216bd3 50%, #1b2fad 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #00b1e2 0%,#216bd3 50%,#1b2fad 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #00b1e2 0%,#216bd3 50%,#1b2fad 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b1e2', endColorstr='#1b2fad',GradientType=0 ); /* IE6-9 */
+}
+
+input[type=submit], button{
+    cursor: pointer;
+}
+
+
+.agreement_text1{
+    width: 285px;
+    margin-top: 15px;
+    margin-left: 90px;
+    color:#000;
+    font-size: 10px;
+    text-align:  center;
+    color: rgba(255, 255, 255, 0.5)
+}
+.agreement_text2{
+    width: 110px;
+    margin-top: 1px;
+    margin-left: 175px;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 10px;
+    text-align:  center;
+    color: rgba(255, 255, 255, 0.5);
+}
